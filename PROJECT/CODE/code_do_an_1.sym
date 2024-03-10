@@ -1,0 +1,123 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     _displayfunction
+022     _displaycontrol
+023     _displaymode
+024     _numlines
+025     _cols
+026     _rows
+027     _backlightval
+028-029 lcd_log_info.time_s
+028     lcd_init.@SCRATCH1
+028     lcd_display.@SCRATCH1
+02A     lcd_log_info.ena_time
+02B-02C @MUL1616.P1
+02B     lcd_setCursor.col
+02B     lcd_log_info.@SCRATCH1
+02B     @PSTRINGC7_647.@SCRATCH1
+02C     lcd_setCursor.row
+02C     lcd_log_info.@SCRATCH2
+02C     @PSTRINGC7_647.@SCRATCH2
+02D-02E @MUL1616.P1
+02D-030 lcd_setCursor.row_offsets
+02D     lcd_log_info.@SCRATCH3
+02D     @PSTRINGC7_647.@SCRATCH3
+02E     @delay_ms1.P1
+02E     lcd_data.value
+02E     @PSTRINGC7_647.@SCRATCH4
+02F     @MUL1616.@SCRATCH1
+031     lcd_setCursor.@SCRATCH1
+032     lcd_command.value
+033     lcd_send.value
+034     lcd_send.mode
+035     lcd_send.highnib
+036     lcd_send.lownib
+037     lcd_send.@SCRATCH1
+038     write4bits.value
+039     pulseEnable._data
+03A     pulseEnable.@SCRATCH1
+03B     expanderWrite._data
+03C     expanderWrite.@SCRATCH1
+03D     i2c_write_1byte.payload
+03E     @I2C_WRITE_1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const666.call
+00000C  @const668.call
+000012  @const688.call
+000018  set_up_port
+00001B  @I2C_WRITE_1
+000077  @delay_ms1
+00008B  expanderWrite
+000090  i2c_write_1byte
+0000D7  write4bits
+0000DC  pulseEnable
+0000F0  lcd_send
+000105  lcd_command
+00010A  lcd_clear
+000111  lcd_init
+000116  i2c_setup_write
+000152  lcd_display
+000160  lcd_home
+000169  lcd_setCursor
+000182  lcd_data
+000188  @PSTRINGC7_647
+0001DE  lcd_log_info
+0001FF  @MUL1616
+000228  MAIN
+000228  @cinit1
+000249  @cinit2
+
+Project Directory:
+    E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\
+
+Project Files:
+    code_do_an_1.c                                          [09-Mar-24 16:30  CRC=D872A938]
+    thu_vien_do_an_1.c                                      [09-Mar-24 16:37  CRC=D54106ED]
+    define_pic_16f887.c                                     [09-Mar-24 16:37  CRC=3AE35A3B]
+    D:\APPS\PICC\Devices\16f887.h                           [12-Nov-13 14:35  CRC=6CB1A611]
+    thu_vien_i2c_lcd.c                                      [09-Mar-24 16:17  CRC=C9D8EA37]
+    thu_vien_lcd_1602.c                                     [09-Mar-24 16:25  CRC=57ECB548]
+    thu_vien_ds18b20.c                                      [09-Mar-24 15:46  CRC=77C1CB8D]
+    D:\APPS\PICC\Drivers\touch.c                            [02-Mar-10 13:04  CRC=24D0ECE7]
+
+Source signature=3871F54B
+
+Units:
+    code_do_an_1 (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   code_do_an_1.xsym
+    Errors:      code_do_an_1.err
+    Ext Symbols: code_do_an_1.esym
+    INHX8:       code_do_an_1.hex
+    Symbols:     code_do_an_1.sym
+    List:        code_do_an_1.lst
+    Debug/COFF:  code_do_an_1.cof
+    Project:     code_do_an_1.ccspjt
+    Call Tree:   code_do_an_1.tre
+    Statistics:  code_do_an_1.STA

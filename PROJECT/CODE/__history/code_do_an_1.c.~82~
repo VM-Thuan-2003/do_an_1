@@ -1,0 +1,89 @@
+#include <thu_vien_do_an_1.c>
+
+unsigned int8 ds18a_ng,ds18a_ngt=0;
+unsigned int16 ds18a_w,ds18a_tp=0,ds18a_tpt = 50;
+const unsigned int8 lcd_so_to[16][6] ={
+                  0,1,2,4,3,5,    // so 0
+                  1,2,32,3,7,3,   // so 1
+                  6,6,2,4,3,3,    // so 2
+                  6,6,2,3,3,5,    // so 3
+                  7,3,7,32,32,7,  // so 4
+                  7,6,6,3,3,5,    // so 5                               
+                  0,6,6,4,3,5,    // so 6
+                  1,1,7,32,32,7,  // so 7
+                  0,6,2,4,3,5,    // so 8
+                  0,6,2,3,3,5,    // so 9
+                  0,6,2,7,32,7,    // so A
+                  7,32,32,7,6,5,   // so b
+                  0,1,1,4,3,3,     // so C
+                  32,32,7,4,6,7,     // so d
+                  7,6,6,7,3,3,     // so e
+                  7,6,6,7,32,32     // so F
+                  };
+void lcd_xoa_so_to(si8 x, y)
+{  
+   usi8 i;
+   lcd_setCursor(x,y);         
+   for(i=0;i<6;i++) 
+   {            
+      if(i==3) lcd_setCursor(x+1,y);    
+      lcd_data(' ');
+   }
+}
+void lcd_hien_thi_so_to(si8 so, x, y)
+{                        
+   usi8 i;
+   lcd_setCursor(x,y);
+   for(i=0;i<6;i++)
+   {                                                           
+      if(i==3) lcd_setCursor(x+1,y);
+      lcd_data(lcd_so_to[so][i]);
+   }                        
+} 
+void lcd_gm_ht_2so_to_xvn(usi16 so,usi8 x,usi8 y,int1 xvn)
+{ 
+   usi8 ch,dv;    
+   lcd_setCursor(x,y);
+   ch = so/10%10;        
+   dv = so%10;
+   //lcd_hien_thi_so_to(ch,x,y);               
+   lcd_hien_thi_so_to(dv,x,y+3);  
+   if((ch==0)&&(xvn)) lcd_xoa_so_to(x,y);
+   else      lcd_hien_thi_so_to(ch,x,y);     
+}
+void ds18b20_a_ht_lcd(usi8 x , y, int1 ht_lcd,ht_tp){
+   if(ds18a_ngt != ds18a_ng){
+      ds18a_ngt=ds18a_ng;
+      if(ht_lcd) lcd_gm_ht_2so_to_xvn(ds18a_ng,x,y,kx_vn);
+   }
+}
+
+void ds18b20_a_doc_xuly_hthi(){
+   if(touch_present()){
+      ds18a_w = ds18b20_read_temp();
+      
+      ds18a_ng = ds18a_w>>4; 
+      ds18a_tp = ds18a_w & 0x000f;
+      
+      lcd_setCursor(0,1);
+      lcd_data(ds18a_ng);
+      ds18b20_a_ht_lcd(1,0,1,1);
+      //ds18b20_a_ht_7doan(1,1);
+   }
+   else ds18b20_no_ds18b(0,0);
+}
+
+void main(){
+   lcd_init();
+   lcd_setCursor(0,0);
+   lcd_data("Vo Minh Thuan");
+   lcd_setCursor(0,1);
+   lcd_data("Test LCD");
+   delay_ms(4000);
+   lcd_clear();
+   ds18b20_khoi_tao();
+   while(true){
+      ds18b20_read_temp();
+      ds18b20_a_doc_xuly_hthi();
+   }
+}

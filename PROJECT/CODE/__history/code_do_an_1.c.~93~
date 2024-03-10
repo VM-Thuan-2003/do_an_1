@@ -1,0 +1,15 @@
+#include <thu_vien_do_an_1.c>
+usi8 temp;
+void main(){
+   lcd_init();
+   lcd_setCursor(0,0);
+   lcd_data("Vo Minh Thuan");
+   lcd_setCursor(0,1);
+   lcd_data("Test LCD");
+   delay_ms(4000);
+   lcd_clear();
+   while(true){
+      lcd_setCurosr(0,0);
+      lcd_data((temp++)+0x30)
+   }
+}

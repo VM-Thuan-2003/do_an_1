@@ -1,0 +1,19 @@
+#include <16f887.h>
+#device  adc=10
+#fuses   hs, nowdt, put, noprotect, nolvp
+#use     delay(clock=20000000) // 20MHz
+#use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
+#use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7)
+
+/* Define name again to accordant user */
+#define usi8  unsigned int8
+#define usi16 unsigned int16
+#define usi32 unsigned int32
+#define si8   signed   int8
+#define si16  signed   int16
+#define si32  signed   int32
+
+#define on 1
+#define off 1
+
+

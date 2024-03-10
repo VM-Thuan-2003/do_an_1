@@ -1,0 +1,61 @@
+#include <thu_vien_do_an_1.c>
+
+unsigned int8 ds18a_ng,ds18a_ngt=0;
+unsigned int16 ds18a_w,ds18a_tp=0,ds18a_tpt = 50;
+void lcd_hien_thi_so_to(si8 so, x, y) 
+{                        
+   usi8 i;
+   lcd_setCursor(x,y);
+   for(i=0;i<6;i++)
+   {                                                           
+      if(i==3) lcd_setCursor(x+1,y);
+      lcd_data(lcd_so_to[so][i]);
+   }                        
+} 
+void lcd_gm_ht_2so_to_xvn(usi16 so,usi8 x,usi8 y,int1 xvn)
+{ 
+   usi8 ch,dv;    
+   lcd_setCursor(x,y);
+   ch = so/10%10;        
+   dv = so%10;
+   //lcd_hien_thi_so_to(ch,x,y);               
+   lcd_hien_thi_so_to(dv,x,y+3);  
+   if((ch==0)&&(xvn)) lcd_xoa_so_to(x,y);
+   else      lcd_hien_thi_so_to(ch,x,y);     
+}
+void ds18b20_a_ht_lcd(usi8 x , y, int1 ht_lcd,ht_tp){
+   if(ds18a_ngt != ds18a_ng){
+      ds18a_ngt=ds18a_ng;
+      if(ht_lcd) lcd_gm_ht_2so_to_xvn(ds18a_ng,x,y,kx_vn);
+   }
+}
+
+void ds18b20_a_doc_xuly_hthi(){
+   if(touch_present()){
+      ds18a_w = ds18b20_read_temp();
+      
+      ds18a_ng = ds18a_w>>4; 
+      ds18a_tp = ds18a_w & 0x000f;
+      
+      lcd_setCursor(0,1);
+      lcd_data(ds18a_ng);
+      ds18b20_a_ht_lcd(1,0,1,1);
+      //ds18b20_a_ht_7doan(1,1);
+   }
+   else ds18b20_no_ds18b(0,0);
+}
+
+void main(){
+   lcd_init();
+   lcd_setCursor(0,0);
+   lcd_data("Vo Minh Thuan");
+   lcd_setCursor(0,1);
+   lcd_data("Test LCD");
+   delay_ms(4000);
+   lcd_clear();
+   ds18b20_khoi_tao();
+   while(true){
+      ds18b20_read_temp();
+      ds18b20_a_doc_xuly_hthi();
+   }
+}

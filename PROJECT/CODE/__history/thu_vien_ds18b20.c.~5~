@@ -1,0 +1,18 @@
+#define  touch_pin pin_a5  
+#include <touch.c>                              
+#define  search_rom       0xf0
+#define  read_rom         0x33
+#define  match_rom        0x55    
+#define  skip_rom         0xcc
+#define  alarm_search     0xec
+#define  read_scratchpad  0xbe 
+#define  write_scratchpad 0x4e                               
+#define  copy_scratchpad  0x48  
+#define  convert_t        0x44 
+
+void ds18b20_no_ds18b(usi8 x,y) 
+{   
+   lcd_goto_xy(x,y);       
+   lcd_data("NO DS18B20"); 
+} 
+

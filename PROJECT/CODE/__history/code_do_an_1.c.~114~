@@ -1,0 +1,14 @@
+#include <thu_vien_do_an_1.c>
+
+void main(){
+   
+   set_up_port();
+   
+   lcd_init();
+   lcd_log_info(1,enable);
+   
+   
+   while(true){
+   
+   }
+}

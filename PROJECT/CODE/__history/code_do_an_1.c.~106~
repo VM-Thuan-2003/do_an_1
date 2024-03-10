@@ -1,0 +1,12 @@
+#include <thu_vien_do_an_1.c>
+
+void main(){
+   
+   lcd_init();
+   lcd_log_info();
+   while(true){
+      lcd_setCursor(0,0);
+      lcd_data(temp);
+      //delay_ms(5000);
+   }
+}
