@@ -17,9 +17,10 @@ Type=4
 3=define_pic_16f887.c
 4=thu_vien_lcd_1602.c
 5=thu_vien_btn.c
-6=
-7=
-8=
+6=thu_vien_ds18b20.c
+7=D:\APPS\PICC\Devices\16f887.h
+8=thu_vien_i2c_ds1307.c
+9=
 [Units]
 Count=1
 1=code_do_an_1 (main)

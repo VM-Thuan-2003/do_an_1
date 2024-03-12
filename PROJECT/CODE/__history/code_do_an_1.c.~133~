@@ -1,0 +1,16 @@
+#include <thu_vien_do_an_1.c>
+
+void main(){
+   
+   set_up_port();
+   
+   lcd_init();
+   lcd_log_info(4,enable);
+   ds18b20_khoi_tao();
+   ds18b20_doc_rom(2);
+   while(true){
+      if(touch_present())
+         ds18b20_lcd_data(ds18b20_read_temp(),0,0);
+      else ds18b20_no_ds18b(0,0);
+   }
+}

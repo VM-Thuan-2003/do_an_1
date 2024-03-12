@@ -1,0 +1,22 @@
+
+#define ds13_addr_wr 0xd0 // address write
+#define ds13_addr_rd 0xd1 // address read
+/*
+      mang ghi: giay-phut-gio-thu-ngay-thang-nam-madk - msds
+      mang doc: giay-phut-gio-thu-ngay-thang-nam-madk - msds
+*/
+usi8 time_w[9]={0x30,0x15,0x15,0x04,0x25,0x10,0x23,0x90,0x92};
+usi8 time_r[9]={0x30,0x30,0x10,0x08,0x20,0x02,0x20,0x90,0x96};
+
+#define giay_ds  time_r[0]
+#define phut_ds  time_r[1]
+#define gio_ds   time_r[2]
+#define thu_ds   time_r[3]
+#define ngay_ds  time_r[4]
+#define thang_ds time_r[5]
+#define nam_ds   time_r[6]
+
+#define ma_qd   time_w[8] 
+#define ma_ds   time_r[8] 
+
+

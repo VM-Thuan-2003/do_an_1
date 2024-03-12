@@ -173,3 +173,25 @@ void lcd_log_info(usi16 time_s, bool ena_time){
       lcd_clear();
    }
 }
+void lcd_dis_2num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
+   usi8 ch, dv;
+   lcd_setCursor(x, y);
+   ch = dt/10%10 + 0x30;
+   dv = dt/10 + 0x30;
+   if(is_xvn = enable) if(ch == 0x30) ch = " ";
+   if(is_dot == enable) lcd_data(".");
+   lcd_data(ch); lcd_data(dv);
+}
+void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
+   usi8 tr, ch, dv;
+   lcd_setCursor(x, y);
+   tr = dt/100%10 +0x30; 
+   ch = dt/10%10  + 0x30;
+   dv = dt/10     + 0x30;
+   if(is_xvn = enable) if(tr == 0x30){
+      tr = " ";
+      if(ch == 0x30) ch = " ";
+   }
+   if(is_dot == enable) lcd_data(".");
+   lcd_data(tr); lcd_data(ch); lcd_data(dv);
+}

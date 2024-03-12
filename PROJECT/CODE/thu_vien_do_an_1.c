@@ -1,8 +1,8 @@
-/* 
+/*
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                        SU PHAM KY THUAT - TP.HCM
  DO AN 1 - HIEU CHINH NHIET DO HO CA VA CHO CA AN TU DONG - KET NOI ESP
- 
+
    THANH VIEN:
       VO MINH THUAN   - 21161366
       LE QUANG THUONG - 21161367
@@ -10,7 +10,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 #include <define_pic_16f887.c>
 #include <thu_vien_btn.c>
+#include <thu_vien_i2c_ds1307.c>
 #include <thu_vien_i2c_lcd.c>
 #include <thu_vien_lcd_1602.c>
 #include <thu_vien_ds18b20.c>
-

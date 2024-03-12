@@ -21,35 +21,32 @@
 #define on  1
 #define off 0
 
-#ifndef btn0
-#define btn0 pin_b
+#ifndef bt0
+#define bt0    pin_b0
+#endif 
+
+#ifndef bt1
+#define bt1    pin_b1
 #endif
 
-#ifndef btn1
-#define btn1 pin_b
+#ifndef bt2
+#define bt2    pin_b2
 #endif
 
-#ifndef btn2
-#define btn2 pin_b
+#ifndef bt3
+#define bt3    pin_b3
 #endif
 
-#ifndef btn3
-#define btn3 pin_b
+#ifndef pinServo
+#define pinServo    pin_c1
 #endif
-
-#ifndef btn4
-#define btn4 pin_b
-#endif
-
-#ifndef btn5
-#define btn5 pin_b
-#endif
-
-#define btn_limit_temp_up btn0
-#define btn_limit_temp_dw btn1
 
 void set_up_port(){
-   
+   set_tris_a(0xff);
+   set_tris_b(0xff);
+   set_tris_d(0x00); output_d(0x00);
+   set_tris_e(0x00); output_e(0x00);
+   set_tris_c(0x00); output_c(0x00);
 }
 
 
