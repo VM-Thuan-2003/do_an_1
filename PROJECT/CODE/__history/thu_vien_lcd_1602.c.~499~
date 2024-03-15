@@ -176,18 +176,18 @@ void lcd_log_info(usi16 time_s, bool ena_time){
 void lcd_dis_2num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    usi8 ch, dv;
    lcd_setCursor(x, y);
-   ch = dt/10 + 0x30;
-   dv = dt%10 + 0x30;
+   ch = dt/10%10 + 0x30;
+   dv = dt/10 + 0x30;
    if(is_xvn = enable) if(ch == 0x30) ch = " ";
    if(is_dot == enable) lcd_data(".");
    lcd_data(ch); lcd_data(dv);
 }
 void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    usi8 tr, ch, dv;
-   lcd_setCursor(x, y); //xxx /10 -> xx 
-   tr = dt/100 + 0x30; 
+   lcd_setCursor(x, y);
+   tr = dt/100%10 +0x30; 
    ch = dt/10%10  + 0x30;
-   dv = dt%10     + 0x30;
+   dv = dt/10     + 0x30;
    if(is_xvn = enable) if(tr == 0x30){
       tr = " ";
       if(ch == 0x30) ch = " ";
@@ -196,13 +196,6 @@ void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    lcd_data(tr); lcd_data(ch); lcd_data(dv);
 }
 
-void lcd_dis_hh_pp_ss(usi8 x, usi8 y, usi8 hh, usi8 pp, usi8 ss){
-   usi8 hh_ch, hh_dv, pp_ch, pp_dv, ss_ch, ss_dv;
-   hh_ch = hh/10 + 0x30; hh_dv = hh%10 + 0x30;
-   pp_ch = pp/10 + 0x30; pp_dv = pp%10 + 0x30;
-   ss_ch = ss/10 + 0x30; ss_dv = ss%10 + 0x30;
-   lcd_setCursor(x, y);
-   lcd_data(hh_ch); lcd_data(hh_dv); lcd_data("-");
-   lcd_data(pp_ch); lcd_data(pp_dv); lcd_data("-");
-   lcd_data(ss_ch); lcd_data(ss_dv); lcd_data(" ");
+void lcd_dis_hh_pp_ss(usi8 x, usi8 y, usi8 hh, usi8, pp, usi8 ss){
+   
 }

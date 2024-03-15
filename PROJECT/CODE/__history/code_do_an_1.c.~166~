@@ -8,8 +8,8 @@ void main(){
    ds1307_kiem_tra_ma();
    while(true){
       if(ds18b20_read_temp_c2(&tempt))
-         ds18b20_lcd_data(tempt,0,1);
-      else ds18b20_no_ds18b(0,1);
+         ds18b20_lcd_data(tempt,0,0);
+      else ds18b20_no_ds18b(0,0);
       ds1307_doc_time(8);
       if(giay_temp != giay_ds){
          giay_temp = giay_ds;

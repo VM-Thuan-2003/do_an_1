@@ -200,9 +200,8 @@ void lcd_dis_hh_pp_ss(usi8 x, usi8 y, usi8 hh, usi8 pp, usi8 ss){
    usi8 hh_ch, hh_dv, pp_ch, pp_dv, ss_ch, ss_dv;
    hh_ch = hh/10 + 0x30; hh_dv = hh%10 + 0x30;
    pp_ch = pp/10 + 0x30; pp_dv = pp%10 + 0x30;
-   ss_ch = ss/10 + 0x30; ss_dv = ss%10 + 0x30;
+   hh_ch = ss/10 + 0x30; ss_dv = ss%10 + 0x30;
    lcd_setCursor(x, y);
    lcd_data(hh_ch); lcd_data(hh_dv); lcd_data("-");
-   lcd_data(pp_ch); lcd_data(pp_dv); lcd_data("-");
-   lcd_data(ss_ch); lcd_data(ss_dv); lcd_data(" ");
+   lcd_data(hh_ch+hh_dv+"-"+pp_ch+pp_dv+"-"+ss_ch+ss_dv);
 }

@@ -1,5 +1,5 @@
 ÀÄcode_do_an_1
-   ÀÄMAIN  0/96  Ram=0
+   ÀÄMAIN  0/118  Ram=0
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄset_up_port  0/32  Ram=0
       ÃÄlcd_init  0/88  Ram=1
@@ -57,6 +57,18 @@
       ³  ÃÄ@delay_ms1  0/20  Ram=1
       ³  ÀÄlcd_clear  0/7  Ram=0
       ³     ÀÄ*
+      ÃÄds1307_kiem_tra_ma  0/106  Ram=0
+      ³  ÃÄds1307_doc_time  0/127  Ram=4
+      ³  ³  ÃÄ@I2C_WRITE_1  0/92  Ram=1
+      ³  ³  ÃÄ@I2C_WRITE_1  0/92  Ram=1
+      ³  ³  ÃÄ@I2C_WRITE_1  0/92  Ram=1
+      ³  ³  ÃÄ@I2C_READ_1  0/84  Ram=3
+      ³  ³  ÀÄ@I2C_READ_1  0/84  Ram=3
+      ³  ÀÄds1307_cap_nhat_time  (Inline)  Ram=3
+      ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
+      ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
+      ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
+      ³     ÀÄ@I2C_WRITE_1  0/92  Ram=1
       ÃÄds18b20_read_temp_c2  0/88  Ram=8
       ³  ÃÄds18b20_start  0/38  Ram=1
       ³  ³  ÃÄ@delay_us1  0/15  Ram=1
@@ -77,11 +89,10 @@
       ³  ³  ÀÄ*
       ³  ÀÄds18b20_read_byte  0/51  Ram=1
       ³     ÀÄ*
-      ÃÄds18b20_lcd_data  0/248  Ram=14
+      ÃÄds18b20_lcd_data  0/224  Ram=14
       ³  ÃÄlcd_dis_2num_dot  (Inline)  Ram=12
       ³  ³  ÃÄlcd_setCursor  0/25  Ram=7
       ³  ³  ³  ÀÄ*
-      ³  ³  ÃÄ@DIV1616  0/37  Ram=5
       ³  ³  ÃÄ@DIV1616  0/37  Ram=5
       ³  ³  ÃÄ@DIV1616  0/37  Ram=5
       ³  ³  ÃÄ@PSTRINGC7_659  0/86  Ram=4
@@ -99,7 +110,6 @@
       ³     ÃÄ@DIV1616  0/37  Ram=5
       ³     ÃÄ@DIV1616  0/37  Ram=5
       ³     ÃÄ@DIV1616  0/37  Ram=5
-      ³     ÃÄ@DIV1616  0/37  Ram=5
       ³     ÃÄ@PSTRINGC7_659  0/86  Ram=4
       ³     ³  ÀÄ*
       ³     ÃÄlcd_data  0/6  Ram=1
@@ -108,8 +118,37 @@
       ³     ³  ÀÄ*
       ³     ÀÄlcd_data  0/6  Ram=1
       ³        ÀÄ*
-      ÀÄds18b20_no_ds18b  0/15  Ram=2
+      ÃÄds18b20_no_ds18b  0/15  Ram=2
+      ³  ÃÄlcd_setCursor  0/25  Ram=7
+      ³  ³  ÀÄ*
+      ³  ÀÄ@PSTRINGC7_659  0/86  Ram=4
+      ³     ÀÄ*
+      ÃÄds1307_doc_time  0/127  Ram=4
+      ³  ÀÄ*
+      ÀÄlcd_dis_hh_pp_ss  0/95  Ram=12
+         ÃÄ@DIV88  0/21  Ram=3
+         ÃÄ@DIV88  0/21  Ram=3
+         ÃÄ@DIV88  0/21  Ram=3
+         ÃÄ@DIV88  0/21  Ram=3
+         ÃÄ@DIV88  0/21  Ram=3
+         ÃÄ@DIV88  0/21  Ram=3
          ÃÄlcd_setCursor  0/25  Ram=7
+         ³  ÀÄ*
+         ÃÄlcd_data  0/6  Ram=1
+         ³  ÀÄ*
+         ÃÄlcd_data  0/6  Ram=1
+         ³  ÀÄ*
+         ÃÄ@PSTRINGC7_659  0/86  Ram=4
+         ³  ÀÄ*
+         ÃÄlcd_data  0/6  Ram=1
+         ³  ÀÄ*
+         ÃÄlcd_data  0/6  Ram=1
+         ³  ÀÄ*
+         ÃÄ@PSTRINGC7_659  0/86  Ram=4
+         ³  ÀÄ*
+         ÃÄlcd_data  0/6  Ram=1
+         ³  ÀÄ*
+         ÃÄlcd_data  0/6  Ram=1
          ³  ÀÄ*
          ÀÄ@PSTRINGC7_659  0/86  Ram=4
             ÀÄ*

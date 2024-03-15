@@ -13,7 +13,7 @@ void main(){
       ds1307_doc_time(8);
       if(giay_temp != giay_ds){
          giay_temp = giay_ds;
-         lcd_dis_hh_pp_ss(0,0,gio_ds,phut_ds,giay_ds);
+         lcd_dis_hh_pp_ss(0,0,55,42,12);
       }
    }
 }  

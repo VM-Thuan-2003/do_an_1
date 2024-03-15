@@ -17,10 +17,11 @@ Type=4
 3=define_pic_16f887.c
 4=thu_vien_lcd_1602.c
 5=thu_vien_btn.c
-6=thu_vien_ds18b20.c
-7=D:\APPS\PICC\Devices\16f887.h
-8=thu_vien_i2c_ds1307.c
+6=thu_vien_i2c_ds1307.c
+7=..\..\..\..\HKI-2023-2024\TT_VXL\CODE\CHUONG_5\bt_519_clock_ds1307_8led_7doan_full.c
+8=
 9=
+10=
 [Units]
 Count=1
 1=code_do_an_1 (main)
