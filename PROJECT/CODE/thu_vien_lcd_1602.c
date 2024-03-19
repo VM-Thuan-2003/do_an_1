@@ -204,5 +204,5 @@ void lcd_dis_hh_pp_ss(usi8 x, usi8 y, usi8 hh, usi8 pp, usi8 ss){
    lcd_setCursor(x, y);
    lcd_data(hh_ch); lcd_data(hh_dv); lcd_data("-");
    lcd_data(pp_ch); lcd_data(pp_dv); lcd_data("-");
-   lcd_data(ss_ch); lcd_data(ss_dv); lcd_data(" ");
+   lcd_data(ss_ch); lcd_data(ss_dv);
 }

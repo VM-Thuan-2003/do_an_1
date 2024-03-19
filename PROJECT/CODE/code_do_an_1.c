@@ -1,19 +1,17 @@
 #include <thu_vien_do_an_1.c>
 si16 tempt;
-usi8 giay_temp = 0;
 void main(){
    set_up_port();
    lcd_init();
    lcd_log_info(1,enable);
-   ds1307_kiem_tra_ma();
+   ds1307_init();
    while(true){
-      if(ds18b20_read_temp_c2(&tempt))
-         ds18b20_lcd_data(tempt,0,1);
-      else ds18b20_no_ds18b(0,1);
-      ds1307_doc_time(8);
-      if(giay_temp != giay_ds){
-         giay_temp = giay_ds;
-         lcd_dis_hh_pp_ss(0,0,gio_ds,phut_ds,giay_ds);
-      }
+      // read temperature
+      //if(ds18b20_read_temp_c2(&tempt))
+      //   ds18b20_lcd_data(tempt,0,1);
+      //else ds18b20_no_ds18b(0,1);
+      
+      // time ds1307
+      ds1307_read_dec_time(8);
    }
 }  

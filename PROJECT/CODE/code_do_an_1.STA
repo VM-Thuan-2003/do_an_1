@@ -1,97 +1,83 @@
 
-ROM used:   1672/8192 (20%)
-            1672/8192 (20%) including unused fragments
+ROM used:   1041/8192 (13%)
+            1041/8192 (13%) including unused fragments
 
-            1.1 Average locations per line
-            5.6 Average locations per statement
+            0.7 Average locations per line
+            3.6 Average locations per statement
 
-RAM used:   34/368 (9%) at main() level
-            76/368 (21%) worst case
+RAM used:   33/368 (9%) at main() level
+            56/368 (15%) worst case
 
 Stack used: 7 worst case (7 in main + 0 for interrupts)
 Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   20    14   5  code_do_an_1.c
+   18     7   2  code_do_an_1.c
    19     0   0  thu_vien_do_an_1.c
    53     8   3  define_pic_16f887.c
   768     0   0  D:\APPS\PICC\Devices\16f887.h
-   67    27   9  thu_vien_i2c_ds1307.c
+   57    25   9  thu_vien_i2c_ds1307.c
    23     8   3  thu_vien_i2c_lcd.c
-  209    88  30  thu_vien_lcd_1602.c
-  175    97  33  thu_vien_ds18b20.c
-  230    54  18  D:\APPS\PICC\Drivers\touch.c
+  209    87  30  thu_vien_lcd_1602.c
+  175    97  34  thu_vien_ds18b20.c
+  230    54  19  D:\APPS\PICC\Drivers\touch.c
 ----- -----
- 1564   296 Total
+ 1552   286 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
-0     20   1    1             @delay_ms1
-0     15   1    1             @delay_us1
-0     84   5    3             @I2C_READ_1
-0     92   6    1             @I2C_WRITE_1
-0     32   2    0   154  1.2  set_up_port
- Inline         3   262  4.6  ds1307_cap_nhat_time
-0    127   8    4   280  4.0  ds1307_doc_time
-0    106   6    0    80  2.4  ds1307_kiem_tra_ma
+0     20   2    1             @delay_ms1
+0     84   8    3             @I2C_READ_1
+0     92   9    1             @I2C_WRITE_1
+0     32   3    0   154  1.2  set_up_port
+ Inline         3    79  3.2  ds1307_bcdToDec
+ Inline         2   394  4.2  @MUL88
+0    192  18    4   267  4.0  ds1307_read_dec_time
+0     92   9    1   253  4.2  ds1307_init
  Inline         0    27  0.9  i2c_setup_write
  Inline         1   107  0.3  i2c_write_1byte
-0     88   5    1   483  3.3  lcd_init
-0      7   0    0    32  1.0  lcd_clear
+0     88   8    1   483  3.3  lcd_init
+0      7   1    0    32  1.0  lcd_clear
  Inline         0    32  1.0  lcd_home
-0     25   1    7   225  5.8  lcd_setCursor
+0     25   2    7   225  5.8  lcd_setCursor
  Inline         1    43  1.8  lcd_display
 0      5   0    1    39  1.5  lcd_command
-0      6   0    1    39  1.5  lcd_data
-0     21   1    5   200  4.8  lcd_send
-0     25   1    1    45  1.3  write4bits
-0     76   5    2    38  1.7  expanderWrite
+0      6   1    1    39  1.5  lcd_data
+0     21   2    5   200  4.8  lcd_send
+0     25   2    1    45  1.3  write4bits
+0     76   7    2    38  1.7  expanderWrite
  Inline         2   114  2.6  pulseEnable
-0     55   3    6   213  3.1  lcd_log_info
-0      8   0    0             @const678
-0     86   5    4             @PSTRINGC7_659
-0      6   0    0             @const680
-0     21   1    5             @MUL1616
- Inline        12   427  5.1  lcd_dis_2num_dot
-0     37   2    5             @DIV1616
-0      1   0    0             @const696
- Inline        13   605  5.1  lcd_dis_3num_dot
-0      1   0    0             @const708
-0     95   6   12   783  3.9  lcd_dis_hh_pp_ss
-0     21   1    3   431  5.2  @DIV88
-0      1   0    0   431  5.2  @const724
-0      1   0    0   431  5.2  @const725
-0      1   0    0   176  2.3  @const726
-0     15   1    2    66  1.6  ds18b20_no_ds18b
-0      6   0    0   158  1.3  @const743
-0      6   0    0   179  2.7  @const755
-0     38   2    1   179  2.7  ds18b20_start
- Inline         1   154  1.8  ds18b20_write_bit
-0     59   4    2   110  3.7  ds18b20_write_byte
- Inline         1   176  2.3  ds18b20_read_bit
-0     51   3    1   153  4.7  ds18b20_read_byte
-0     88   5    8   331  5.8  ds18b20_read_temp_c2
-0    224  13   14   546  6.7  ds18b20_lcd_data
-0    118   7    0   431  5.2  MAIN
- Inline         0             @cinit1
+0     74   7    6   213  3.1  lcd_log_info
+0      8   1    0   394  4.2  @const685
+0     86   8    4   427  5.1  @PSTRINGC7_666
+0      6   1    0   394  4.2  @const687
+ Inline         5   394  4.2  @MUL1616
+0      1   0    0   394  4.2  @const703
+0      1   0    0   394  4.2  @const715
+0      1   0    0   149  4.3  @const728
+0      1   0    0   450  3.3  @const729
+0      6   1    0  1004  9.3  @const746
+0      6   1    0   110  3.7  @const758
+0     82   8    0   100  2.0  MAIN
+ Inline         0   394  4.2  @cinit1
 
 Program metrics:
-    Functions               36
-    Statements              296
-    Comments                373
-    Volume (V)              15919
-    Difficulty (D)          109.0
-    Effort to implement (E) 1734989
-    Time to implement (T)   26 hours, 46 minutes
-    Est Delivered Bugs (B)  5
-    Cyclomatic Complexity   29
-    Maintainability (MI)    57
+    Functions               31
+    Statements              286
+    Comments                377
+    Volume (V)              13927
+    Difficulty (D)          97.7
+    Effort to implement (E) 1360363
+    Time to implement (T)   21 hours, 0 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   25
+    Maintainability (MI)    65
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-007FF  1668  376  
+00004-007FF  1037  1007  
 00800-00FFF     0  2048  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  

@@ -1,0 +1,72 @@
+#include <16f887.h>
+#device  adc=10
+#fuses   hs, nowdt, put, noprotect, nolvp
+#use     delay(clock=20MHz) 
+#use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
+#use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7)
+
+/* Define name again to accordant user */
+#define usi8  unsigned int8
+#define usi16 unsigned int16
+#define usi32 unsigned int32
+#define si8   signed   int8
+#define si16  signed   int16
+#define si32  signed   int32
+
+#define bool int1
+
+#define enable  1
+#define disable 0
+
+#define on  1
+#define off 0
+
+#ifndef bt0
+#define bt0    pin_b0
+#endif 
+
+#ifndef bt1
+#define bt1    pin_b1
+#endif
+
+#ifndef bt2
+#define bt2    pin_b2
+#endif
+
+#ifndef bt3
+#define bt3    pin_b3
+#endif
+
+#ifndef pinServo
+#define pinServo    pin_c1
+#endif
+
+struct time_ds1307{
+   usi8 hh;
+   usi8 pp;
+   usi8 ss;
+   usi8 day;
+   usi8 month;
+   usi8 year;
+   usi8 thu;
+}
+
+#define dec_giay_ds  time_r[0]
+#define dec_phut_ds  time_r[1]
+#define dec_gio_ds   time_r[2]
+#define dec_thu_ds   time_r[3]
+#define dec_ngay_ds  time_r[4]
+#define dec_thang_ds time_r[5]
+#define dec_nam_ds   time_r[6]
+
+struct time_ds1307 time = {dec_gio_ds,dec_phut_ds,dec_giay_ds,dec_ngay_ds,dec_thang_ds,dec_nam_ds,dec_thu_ds}
+
+void set_up_port(){
+   set_tris_a(0xff);
+   set_tris_b(0xff);
+   set_tris_d(0x00); output_d(0x00);
+   set_tris_e(0x00); output_e(0x00);
+   set_tris_c(0x00); output_c(0x00);
+}
+
+
