@@ -1,0 +1,23 @@
+usi8 dl_btn;
+usi8 count_sel_menu = 0;
+
+bool phim_btn(usi16 dl, usi8 pin)  
+{                      
+   if(!input(pin))                       
+   {   
+      dl_btn++; delay_us(500);               
+      if(dl_btn>=dl) 
+      {  
+         dl_btn=0;
+         return true;
+      }     
+      else return false; 
+   }
+   else return false;    
+} 
+
+void menu(void){
+   count_sel_menu  += phim_btn(bt0);
+   lcd_setCursor(0,0);
+   lcd_data(count_sel_menu + 0x30);
+}

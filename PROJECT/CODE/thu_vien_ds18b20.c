@@ -11,6 +11,12 @@
 #define write_scratchpad 0x4e
 #define copy_scratchpad  0x48
 #define convert_t        0x44
+
+si16 nhiet_do;
+usi8 dt_ng, dt_ngt;
+usi16 dt_tp, dt_tpt;
+usi16 dt_tp_real;
+
 /*
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
          CACH 1 SU DUNG THU VIEN TOUCH.C
@@ -151,15 +157,13 @@ bool ds18b20_read_temp_c2(int16 *raw_temp_value){
    *raw_temp_value |= (int16)(ds18b20_read_byte()) << 8;
    return true;
 }
+
 /*
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
    HIEN THI NHIET DO LEN LCD 2 SO NGUYEN VA 3 SO THAP PHAN
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 */
 void ds18b20_lcd_data(usi16 data, int8 x, int8 y){
-   usi8 dt_ng, dt_ngt;
-   usi16 dt_tp, dt_tpt;
-   usi16 dt_tp_real;
    dt_ng = data>>4;
    dt_tp = data & 0x000f;
    if(dt_ngt != dt_ng){
@@ -171,4 +175,13 @@ void ds18b20_lcd_data(usi16 data, int8 x, int8 y){
       dt_tp_real = (dt_tp*625)/10;
       lcd_dis_3num_dot(dt_tp_real, x+2, y, enable, enable);
    }
+}
+
+void ds18b20_read_temp(){
+   if(ds18b20_read_temp_c2(&nhiet_do))
+      dt_ng = nhiet_do>>4;
+      dt_tp = nhiet_do & 0x000f;
+      dt_tp_real = (dt_tp*625)/10;
+      //ds18b20_lcd_data(nhiet_do,0,1);
+   //else ds18b20_no_ds18b(0,1);
 }

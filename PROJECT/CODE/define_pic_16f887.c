@@ -41,12 +41,15 @@
 #define pinServo    pin_c1
 #endif
 
-void set_up_port(){
+void set_up_init(){
+   setup_timer_1(T1_INTERNAL|T1_DIV_BY_8);
    set_tris_a(0xff);
    set_tris_b(0xff);
    set_tris_d(0x00); output_d(0x00);
    set_tris_e(0x00); output_e(0x00);
    set_tris_c(0x00); output_c(0x00);
+   
+
 }
 
 

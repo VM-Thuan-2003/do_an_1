@@ -1,0 +1,58 @@
+#include <thu_vien_do_an_1.c>
+
+void select_menu(){
+   dem_menu_tong_curr += nhan_btn_nha(1,bt0);
+   if(dem_menu_tong_curr >= level_menu)
+   if(dem_menu_tong_curr != dem_menu_tong_prev){
+      dem_menu_tong_prev = dem_menu_tong_curr;
+      switch(dem_menu_tong_curr){
+         case 0:
+            /* hien thi man hinh chinh */
+            lcd_clear();
+            lcd_setCursor(4,0);
+            lcd_data("xx:xx:xx");
+            lcd_setCursor(1,1);
+            lcd_data("ND: xx.xxx oC");
+            break;
+         case 1:
+            /* 
+               hien thi nhiet do - nhiet do gioi han
+               chinh nhiet do gioi han 
+            */
+            lcd_clear();
+            lcd_setCursor(0,0);
+            lcd_data("menu 1");
+            break;
+         case 2:
+            /*
+               hien thi thoi gian va
+               cai dat thoi gian - thoi gian dong bo
+            */
+            lcd_clear();
+            lcd_setCursor(0,0);
+            lcd_data("menu 2.");
+            break;
+          case 3:
+            /* cai dat thoi gian - thoi gian cho ca an*/
+            lcd_clear();
+            lcd_setCursor(0,0);
+            lcd_data("menu 3.");
+            break;
+          default:
+            /* hien thi thong tin sp */
+            lcd_clear();
+            lcd_setCursor(0,0);
+            lcd_data("menu 4.");
+            break;
+      }
+   }
+}
+
+void main(){
+   set_up_init();
+   lcd_init();
+   lcd_log_info(1,enable);
+   while(true){
+      select_menu();
+   }
+}  

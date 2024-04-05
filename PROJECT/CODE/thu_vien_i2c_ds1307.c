@@ -12,8 +12,8 @@ usi8 time_r[9]={0x30,0x30,0x10,0x08,0x20,0x02,0x20,0x90,0x96}; // dec
 #define dec_thang_ds time_r[5]
 #define dec_nam_ds   time_r[6]
 
-#define dec_ma_qd   time_w[8] 
-#define dec_ma_ds   time_r[8]  
+#define dec_ma_qd   time_w[8]
+#define dec_ma_ds   time_r[8]
 
 usi8 ds1307_decToBcd(usi8 val) {
     return ((val / 10 * 16) + (val % 10));

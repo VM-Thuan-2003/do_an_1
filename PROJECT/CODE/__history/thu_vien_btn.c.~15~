@@ -1,0 +1,20 @@
+usi8 dl_btn;
+
+bool phim_btn(usi16 dl, usi8 pin)  
+{                      
+   if(!input(pin))                       
+   {   
+      dl_btn++;   delay_us(500);               
+      if(dl_btn>=dl) 
+      {  
+         dl_btn=0;
+         return true;
+      }     
+      else  return false; 
+   }
+   else  return false;    
+} 
+
+void menu(void){
+      
+}

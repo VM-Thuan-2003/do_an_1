@@ -1,0 +1,19 @@
+
+int1 phim_bt0_c2(usi16 dl)  
+{                      
+   if(!input(bt0))                       
+   {   
+      dl_btn++;   delay_us(500);               
+      if(dl_btn>=dl) 
+      {  
+         dl_btn=0;
+         return co_nhan;
+      }     
+      else  return khong_nhan; 
+   }
+   else  return khong_nhan;    
+} 
+
+void menu(void){
+      
+}
