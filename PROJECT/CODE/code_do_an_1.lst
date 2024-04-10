@@ -1,8 +1,8 @@
-CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
+CCS PCM C Compiler, Version 5.015, 5967               10-Apr-24 14:41
 
                Filename:   E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\code_do_an_1.lst
 
-               ROM used:   2076 words (25%)
+               ROM used:   2048 words (25%)
                            Largest free fragment is 2048
                RAM used:   48 (13%) at main() level
                            79 (21%) worst case
@@ -10,9 +10,9 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
                Stack size: 8
 
 *
-0000:  MOVLW  08
+0000:  MOVLW  07
 0001:  MOVWF  0A
-0002:  GOTO   000
+0002:  GOTO   7B0
 0003:  NOP
 .................... #include <thu_vien_do_an_1.c> 
 .................... /* 
@@ -26,8 +26,8 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 .................... xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
 .................... */ 
 .................... #include <define_pic_16f887.c> 
-.................... #include <16f887.h> 
-.................... //////////// Standard Header file for the PIC16F887 device //////////////// 
+.................... #include <16f877a.h> 
+.................... //////////// Standard Header file for the PIC16F877A device //////////////// 
 .................... /////////////////////////////////////////////////////////////////////////// 
 .................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
 .................... //// This source code may only be used by licensed users of the CCS C  //// 
@@ -37,7 +37,7 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 .................... //// Derivative programs created using this software in object code    //// 
 .................... //// form are not restricted in any way.                               //// 
 .................... /////////////////////////////////////////////////////////////////////////// 
-.................... #device PIC16F887 
+.................... #device PIC16F877A 
 0004:  DATA C4,37
 0005:  DATA A0,30
 0006:  DATA 6E,10
@@ -76,7 +76,7 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 0027:  DATA ED,32
 0028:  DATA EE,3A
 0029:  DATA A0,18
-002A:  DATA 00,01
+002A:  DATA 2E,00
 002B:  DATA ED,32
 002C:  DATA EE,3A
 002D:  DATA 20,19
@@ -610,29 +610,30 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 .................... #endif 
 ....................  
 .................... void set_up_init(){ 
-....................    set_tris_a(0xff); 
+....................    setup_timer_1(T1_INTERNAL|T1_DIV_BY_8); 
 *
-0037:  MOVLW  FF
-0038:  BSF    03.5
-0039:  MOVWF  05
+0037:  MOVLW  B5
+0038:  MOVWF  10
+....................    set_tris_a(0xff); 
+0039:  MOVLW  FF
+003A:  BSF    03.5
+003B:  MOVWF  05
 ....................    set_tris_b(0xff); 
-003A:  MOVWF  06
+003C:  MOVWF  06
 ....................    set_tris_d(0x00); output_d(0x00); 
-003B:  MOVLW  00
-003C:  MOVWF  08
-003D:  CLRF   08
-003E:  BCF    03.5
+003D:  MOVLW  00
+003E:  MOVWF  08
 003F:  CLRF   08
+0040:  BCF    03.5
+0041:  CLRF   08
 ....................    set_tris_e(0x00); output_e(0x00); 
-0040:  BSF    03.5
-0041:  BCF    09.0
-0042:  BCF    09.1
-0043:  BCF    09.2
-0044:  BCF    09.3
-0045:  BCF    09.0
-0046:  BCF    09.1
-0047:  BCF    09.2
-0048:  BCF    09.3
+0042:  BSF    03.5
+0043:  BCF    09.0
+0044:  BCF    09.1
+0045:  BCF    09.2
+0046:  BCF    09.0
+0047:  BCF    09.1
+0048:  BCF    09.2
 0049:  BCF    03.5
 004A:  CLRF   09
 ....................    set_tris_c(0x00); output_c(0x00); 
@@ -645,9 +646,10 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 0051:  CLRF   07
 0052:  BCF    03.5
 0053:  CLRF   07
-0054:  BSF    0A.3
+0054:  BCF    0A.3
 0055:  BCF    0A.4
-0056:  GOTO   04E (RETURN)
+0056:  GOTO   7F0 (RETURN)
+....................     
 ....................  
 .................... } 
 ....................  
@@ -773,42 +775,42 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 .................... //cap nhat time: giay-phut-gio-thu-ngay-thang-nam-madk_msds 
 .................... usi8 time_w[9]={0x31,0x15,0x15,0x04,0x25,0x10,0x23,0x90,0x92}; // bcd 
 *
-0829:  MOVLW  31
-082A:  BCF    03.6
-082B:  MOVWF  28
-082C:  MOVLW  15
-082D:  MOVWF  29
-082E:  MOVWF  2A
-082F:  MOVLW  04
-0830:  MOVWF  2B
-0831:  MOVLW  25
-0832:  MOVWF  2C
-0833:  MOVLW  10
-0834:  MOVWF  2D
-0835:  MOVLW  23
-0836:  MOVWF  2E
-0837:  MOVLW  90
-0838:  MOVWF  2F
-0839:  MOVLW  92
-083A:  MOVWF  30
+07CC:  MOVLW  31
+07CD:  BCF    03.5
+07CE:  MOVWF  28
+07CF:  MOVLW  15
+07D0:  MOVWF  29
+07D1:  MOVWF  2A
+07D2:  MOVLW  04
+07D3:  MOVWF  2B
+07D4:  MOVLW  25
+07D5:  MOVWF  2C
+07D6:  MOVLW  10
+07D7:  MOVWF  2D
+07D8:  MOVLW  23
+07D9:  MOVWF  2E
+07DA:  MOVLW  90
+07DB:  MOVWF  2F
+07DC:  MOVLW  92
+07DD:  MOVWF  30
 .................... usi8 time_r[9]={0x30,0x30,0x10,0x08,0x20,0x02,0x20,0x90,0x96}; // dec 
-083B:  MOVLW  30
-083C:  MOVWF  31
-083D:  MOVWF  32
-083E:  MOVLW  10
-083F:  MOVWF  33
-0840:  MOVLW  08
-0841:  MOVWF  34
-0842:  MOVLW  20
-0843:  MOVWF  35
-0844:  MOVLW  02
-0845:  MOVWF  36
-0846:  MOVLW  20
-0847:  MOVWF  37
-0848:  MOVLW  90
-0849:  MOVWF  38
-084A:  MOVLW  96
-084B:  MOVWF  39
+07DE:  MOVLW  30
+07DF:  MOVWF  31
+07E0:  MOVWF  32
+07E1:  MOVLW  10
+07E2:  MOVWF  33
+07E3:  MOVLW  08
+07E4:  MOVWF  34
+07E5:  MOVLW  20
+07E6:  MOVWF  35
+07E7:  MOVLW  02
+07E8:  MOVWF  36
+07E9:  MOVLW  20
+07EA:  MOVWF  37
+07EB:  MOVLW  90
+07EC:  MOVWF  38
+07ED:  MOVLW  96
+07EE:  MOVWF  39
 ....................  
 .................... #define dec_giay_ds  time_r[0] 
 .................... #define dec_phut_ds  time_r[1] 
@@ -818,8 +820,8 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 .................... #define dec_thang_ds time_r[5] 
 .................... #define dec_nam_ds   time_r[6] 
 ....................  
-.................... #define dec_ma_qd   time_w[8]  
-.................... #define dec_ma_ds   time_r[8]   
+.................... #define dec_ma_qd   time_w[8] 
+.................... #define dec_ma_ds   time_r[8] 
 ....................  
 .................... usi8 ds1307_decToBcd(usi8 val) { 
 ....................     return ((val / 10 * 16) + (val % 10)); 
@@ -1108,9 +1110,9 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 03D0:  DECFSZ 77,F
 03D1:  GOTO   3D0
 03D2:  BCF    03.5
-03D3:  BSF    0A.3
+03D3:  BCF    0A.3
 03D4:  BCF    0A.4
-03D5:  GOTO   05B (RETURN)
+03D5:  GOTO   7F8 (RETURN)
 .................... } 
 ....................  
 .................... #include <thu_vien_i2c_lcd.c> 
@@ -1394,9 +1396,9 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 ....................     
 ....................    lcd_home(); 
 *
-01A2:  BSF    0A.3
+01A2:  BCF    0A.3
 01A3:  BCF    0A.4
-01A4:  GOTO   051 (RETURN)
+01A4:  GOTO   7F1 (RETURN)
 .................... } 
 ....................  
 .................... void lcd_clear(){ 
@@ -1636,9 +1638,9 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 ....................       lcd_clear(); 
 0262:  CALL   146
 ....................    } 
-0263:  BSF    0A.3
+0263:  BCF    0A.3
 0264:  BCF    0A.4
-0265:  GOTO   058 (RETURN)
+0265:  GOTO   7F7 (RETURN)
 .................... } 
 .................... void lcd_dis_2num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){ 
 ....................    usi8 ch, dv; 
@@ -2330,9 +2332,9 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 047A:  MOVLW  44
 047B:  MOVWF  4B
 047C:  CALL   410
-047D:  BSF    0A.3
+047D:  BCF    0A.3
 047E:  BCF    0A.4
-047F:  GOTO   05E (RETURN)
+047F:  GOTO   7F9 (RETURN)
 .................... } 
 ....................  
 .................... usi16 ds18b20_read_temp_c1() 
@@ -2768,9 +2770,9 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 05BE:  MOVWF  4A
 05BF:  MOVF   78,W
 05C0:  MOVWF  49
-05C1:  BSF    0A.3
+05C1:  BCF    0A.3
 05C2:  BCF    0A.4
-05C3:  GOTO   066 (RETURN)
+05C3:  GOTO   7FD (RETURN)
 ....................       //ds18b20_lcd_data(nhiet_do,0,1); 
 ....................    //else ds18b20_no_ds18b(0,1); 
 .................... } 
@@ -2894,7 +2896,7 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 0782:  CLRF   56
 0783:  CLRF   57
 0784:  CALL   1A5
-....................             lcd_data("menu 1"); 
+....................             lcd_data("menu 1."); 
 0785:  MOVLW  27
 0786:  BSF    03.6
 0787:  MOVWF  0D
@@ -2956,99 +2958,69 @@ CCS PCM C Compiler, Version 5.015, 5967               20-Mar-24 14:57
 ....................             break; 
 ....................       } 
 ....................    } 
-07AD:  BSF    0A.3
+07AD:  BCF    0A.3
 07AE:  BCF    0A.4
-07AF:  GOTO   069 (RETURN)
+07AF:  GOTO   7FE (RETURN)
 .................... } 
 ....................  
 .................... void main(){ 
-*
-0800:  MOVF   03,W
-0801:  ANDLW  1F
-0802:  MOVWF  03
-0803:  MOVLW  FF
-0804:  MOVWF  20
-0805:  BSF    03.5
-0806:  BSF    03.6
-0807:  BSF    07.3
-0808:  MOVLW  08
-0809:  BCF    03.6
-080A:  MOVWF  19
-080B:  MOVLW  02
-080C:  MOVWF  1A
-080D:  MOVLW  A6
-080E:  MOVWF  18
-080F:  MOVLW  90
-0810:  BCF    03.5
-0811:  MOVWF  18
-0812:  CLRF   22
-0813:  MOVLW  01
-0814:  MOVWF  23
-0815:  CLRF   24
-0816:  CLRF   25
-0817:  CLRF   26
-0818:  CLRF   27
-0819:  BSF    03.5
-081A:  BSF    03.6
-081B:  MOVF   09,W
-081C:  ANDLW  C0
-081D:  MOVWF  09
-081E:  BCF    03.6
-081F:  BCF    1F.4
-0820:  BCF    1F.5
-0821:  MOVLW  00
-0822:  BSF    03.6
-0823:  MOVWF  08
-0824:  BCF    03.5
-0825:  CLRF   07
-0826:  CLRF   08
-0827:  CLRF   09
-0828:  BCF    03.7
+07B0:  MOVF   03,W
+07B1:  ANDLW  1F
+07B2:  MOVWF  03
+07B3:  MOVLW  FF
+07B4:  MOVWF  20
+07B5:  MOVLW  81
+07B6:  BSF    03.5
+07B7:  MOVWF  19
+07B8:  MOVLW  A6
+07B9:  MOVWF  18
+07BA:  MOVLW  90
+07BB:  BCF    03.5
+07BC:  MOVWF  18
+07BD:  CLRF   22
+07BE:  MOVLW  01
+07BF:  MOVWF  23
+07C0:  CLRF   24
+07C1:  CLRF   25
+07C2:  CLRF   26
+07C3:  CLRF   27
+07C4:  BSF    03.5
+07C5:  BSF    1F.0
+07C6:  BSF    1F.1
+07C7:  BSF    1F.2
+07C8:  BCF    1F.3
+07C9:  MOVLW  07
+07CA:  MOVWF  1C
+07CB:  BCF    03.7
 ....................    set_up_init(); 
 *
-084C:  BCF    0A.3
-084D:  GOTO   037
-084E:  BSF    0A.3
+07EF:  GOTO   037
 ....................    lcd_init(); 
-084F:  BCF    0A.3
-0850:  GOTO   14D
-0851:  BSF    0A.3
-....................    lcd_log_info(1,enable); 
-0852:  CLRF   4C
-0853:  MOVLW  01
-0854:  MOVWF  4B
-0855:  MOVWF  4D
-0856:  BCF    0A.3
-0857:  GOTO   22F
-0858:  BSF    0A.3
+07F0:  GOTO   14D
+....................    lcd_log_info(5,enable); 
+07F1:  CLRF   4C
+07F2:  MOVLW  05
+07F3:  MOVWF  4B
+07F4:  MOVLW  01
+07F5:  MOVWF  4D
+07F6:  GOTO   22F
 ....................    ds1307_init(); 
-0859:  BCF    0A.3
-085A:  GOTO   37A
-085B:  BSF    0A.3
+07F7:  GOTO   37A
 ....................    ds18b20_khoi_tao(); 
-085C:  BCF    0A.3
-085D:  GOTO   468
-085E:  BSF    0A.3
+07F8:  GOTO   468
 ....................    while(true){ 
 ....................       ds1307_read_dec_time(8); 
-085F:  MOVLW  08
-0860:  MOVWF  4C
-0861:  BCF    0A.3
-0862:  CALL   2BA
-0863:  BSF    0A.3
+07F9:  MOVLW  08
+07FA:  MOVWF  4C
+07FB:  CALL   2BA
 ....................       ds18b20_read_temp(); 
-0864:  BCF    0A.3
-0865:  GOTO   539
-0866:  BSF    0A.3
+07FC:  GOTO   539
 ....................       select_menu(); 
-0867:  BCF    0A.3
-0868:  GOTO   610
-0869:  BSF    0A.3
-086A:  GOTO   05F
+07FD:  GOTO   610
+07FE:  GOTO   7F9
 ....................    } 
 .................... }   
-086B:  SLEEP
+07FF:  SLEEP
 
 Configuration Fuses:
-   Word  1: 2FE2   HS NOWDT PUT MCLR NOPROTECT NOCPD BROWNOUT IESO FCMEN NOLVP NODEBUG
-   Word  2: 3FFF   BORV40 NOWRT
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

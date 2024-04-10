@@ -1,0 +1,114 @@
+CCS PCM C Compiler, Version 5.015, 5967               08-Apr-24 22:40
+
+               Filename:   E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\TEST_PIN\test.lst
+
+               ROM used:   67 words (1%)
+                           Largest free fragment is 2048
+               RAM used:   6 (2%) at main() level
+                           7 (2%) worst case
+               Stack used: 1 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   018
+0003:  NOP
+.................... #include <16f877a.h> 
+.................... //////////// Standard Header file for the PIC16F877A device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F877A 
+....................  
+.................... #list 
+....................  
+.................... #device  adc=10 
+.................... #fuses   hs, nowdt, put, noprotect, nolvp 
+.................... #use     delay(clock=20MHz)  
+0004:  MOVLW  21
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   017
+000A:  MOVLW  06
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  7B
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  DECFSZ 00,F
+0016:  GOTO   00A
+0017:  RETURN
+.................... #use     i2c(master,slow,sda=pin_c4,scl=pin_c3) 
+.................... #use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7) 
+....................  
+.................... void main(void){ 
+0018:  MOVF   03,W
+0019:  ANDLW  1F
+001A:  MOVWF  03
+001B:  MOVLW  FF
+001C:  MOVWF  20
+001D:  MOVLW  81
+001E:  BSF    03.5
+001F:  MOVWF  19
+0020:  MOVLW  A6
+0021:  MOVWF  18
+0022:  MOVLW  90
+0023:  BCF    03.5
+0024:  MOVWF  18
+0025:  BSF    03.5
+0026:  BSF    1F.0
+0027:  BSF    1F.1
+0028:  BSF    1F.2
+0029:  BCF    1F.3
+002A:  MOVLW  07
+002B:  MOVWF  1C
+002C:  BCF    03.7
+....................     
+....................    set_tris_b(0x00); 
+002D:  MOVLW  00
+002E:  MOVWF  06
+....................    output_b(0x00); 
+002F:  CLRF   06
+0030:  BCF    03.5
+0031:  CLRF   06
+....................    while(true){ 
+....................    output_b(0xff); 
+0032:  BSF    03.5
+0033:  CLRF   06
+0034:  MOVLW  FF
+0035:  BCF    03.5
+0036:  MOVWF  06
+....................    delay_ms(100); 
+0037:  MOVLW  64
+0038:  MOVWF  21
+0039:  CALL   004
+....................    output_b(0x00); 
+003A:  BSF    03.5
+003B:  CLRF   06
+003C:  BCF    03.5
+003D:  CLRF   06
+....................    delay_ms(100); 
+003E:  MOVLW  64
+003F:  MOVWF  21
+0040:  CALL   004
+0041:  GOTO   032
+....................    } 
+.................... } 
+0042:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

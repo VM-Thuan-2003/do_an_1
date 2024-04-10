@@ -1,4 +1,4 @@
-#include <16f887.h>
+#include <16f877a.h>
 #device  adc=10
 #fuses   hs, nowdt, put, noprotect, nolvp
 #use     delay(clock=20MHz) 

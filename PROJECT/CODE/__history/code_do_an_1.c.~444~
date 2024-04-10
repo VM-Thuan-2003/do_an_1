@@ -54,11 +54,11 @@ void select_menu(){
 void main(){
    set_up_init();
    lcd_init();
-   lcd_log_info(5,enable);
-   ds1307_init();
+   lcd_log_info(10,enable);
+   //ds1307_init();
    ds18b20_khoi_tao();
    while(true){
-      ds1307_read_dec_time(8);
+      //ds1307_read_dec_time(8);
       ds18b20_read_temp();
       select_menu();
    }

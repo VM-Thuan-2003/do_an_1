@@ -1,5 +1,5 @@
 ÀÄcode_do_an_1
-   ÀÄMAIN  1/108  Ram=0
+   ÀÄMAIN  0/80  Ram=0
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄset_up_init  0/32  Ram=0
       ÃÄlcd_init  0/88  Ram=1
@@ -42,7 +42,7 @@
       ³  ÃÄlcd_setCursor  0/25  Ram=7
       ³  ³  ÀÄlcd_command  0/5  Ram=1
       ³  ³     ÀÄ*
-      ³  ÃÄ@PSTRINGC7_687  0/86  Ram=4
+      ³  ÃÄ@PSTRINGC7_688  0/86  Ram=4
       ³  ³  ÃÄlcd_data  0/6  Ram=1
       ³  ³  ³  ÀÄlcd_send  0/21  Ram=5
       ³  ³  ³     ÀÄ*
@@ -50,7 +50,7 @@
       ³  ³     ÀÄ*
       ³  ÃÄlcd_setCursor  0/25  Ram=7
       ³  ³  ÀÄ*
-      ³  ÃÄ@PSTRINGC7_687  0/86  Ram=4
+      ³  ÃÄ@PSTRINGC7_688  0/86  Ram=4
       ³  ³  ÀÄ*
       ³  ÃÄ@MUL1616  0/21  Ram=5
       ³  ÃÄ@delay_ms1  0/20  Ram=1
@@ -140,13 +140,13 @@
          ³  ³  ÀÄ*
          ³  ÃÄlcd_data  0/6  Ram=1
          ³  ³  ÀÄ*
-         ³  ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ³  ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ³  ÀÄ*
          ³  ÃÄlcd_data  0/6  Ram=1
          ³  ³  ÀÄ*
          ³  ÃÄlcd_data  0/6  Ram=1
          ³  ³  ÀÄ*
-         ³  ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ³  ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ³  ÀÄ*
          ³  ÃÄlcd_data  0/6  Ram=1
          ³  ³  ÀÄ*
@@ -154,14 +154,14 @@
          ³     ÀÄ*
          ÃÄlcd_setCursor  0/25  Ram=7
          ³  ÀÄ*
-         ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ÀÄ*
          ÃÄlcd_dis_2num_dot  (Inline)  Ram=12
          ³  ÃÄlcd_setCursor  0/25  Ram=7
          ³  ³  ÀÄ*
          ³  ÃÄ@DIV1616  0/37  Ram=5
          ³  ÃÄ@DIV1616  0/37  Ram=5
-         ³  ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ³  ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ³  ÀÄ*
          ³  ÃÄlcd_data  0/6  Ram=1
          ³  ³  ÀÄ*
@@ -174,7 +174,7 @@
          ³  ÃÄ@DIV1616  0/37  Ram=5
          ³  ÃÄ@DIV1616  0/37  Ram=5
          ³  ÃÄ@DIV1616  0/37  Ram=5
-         ³  ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ³  ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ³  ÀÄ*
          ³  ÃÄlcd_data  0/6  Ram=1
          ³  ³  ÀÄ*
@@ -182,21 +182,21 @@
          ³  ³  ÀÄ*
          ³  ÀÄlcd_data  0/6  Ram=1
          ³     ÀÄ*
-         ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ÀÄ*
          ÃÄlcd_setCursor  0/25  Ram=7
          ³  ÀÄ*
-         ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ÀÄ*
          ÃÄlcd_setCursor  0/25  Ram=7
          ³  ÀÄ*
-         ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ÀÄ*
          ÃÄlcd_setCursor  0/25  Ram=7
          ³  ÀÄ*
-         ÃÄ@PSTRINGC7_687  0/86  Ram=4
+         ÃÄ@PSTRINGC7_688  0/86  Ram=4
          ³  ÀÄ*
          ÃÄlcd_setCursor  0/25  Ram=7
          ³  ÀÄ*
-         ÀÄ@PSTRINGC7_687  0/86  Ram=4
+         ÀÄ@PSTRINGC7_688  0/86  Ram=4
             ÀÄ*

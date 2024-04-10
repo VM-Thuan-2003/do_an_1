@@ -1,0 +1,18 @@
+#include <16f877a.h>
+#device  adc=10
+#fuses   hs, nowdt, put, noprotect, nolvp
+#use     delay(clock=20MHz) 
+#use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
+#use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7)
+
+void main(void){
+   
+   set_tris_b(0x00);
+   output_b(0x00);
+   while(true){
+   output_b(0xff);
+   delay_ms(100);
+   output_b(0x00);
+   delay_ms(100);
+   }
+}

@@ -1,9 +1,9 @@
 
-ROM used:   2076/8192 (25%)
-            2156/8192 (26%) including unused fragments
+ROM used:   2048/8192 (25%)
+            2048/8192 (25%) including unused fragments
 
             1.3 Average locations per line
-            6.0 Average locations per statement
+            5.9 Average locations per statement
 
 RAM used:   48/368 (13%) at main() level
             79/368 (21%) worst case
@@ -15,16 +15,16 @@ Lines Stmts  %   Files
 ----- ----- ---  -----
    66    39  11  code_do_an_1.c
    18     0   0  thu_vien_do_an_1.c
-   54     8   2  define_pic_16f887.c
-  768     0   0  D:\APPS\PICC\Devices\16f887.h
+   56     9   3  define_pic_16f887.c
+  671     0   0  D:\APPS\PICC\Devices\16f877a.h
    44    26   7  thu_vien_btn.c
    57    25   7  thu_vien_i2c_ds1307.c
    23     8   2  thu_vien_i2c_lcd.c
   209    87  25  thu_vien_lcd_1602.c
   188   101  29  thu_vien_ds18b20.c
-  230    54  16  D:\APPS\PICC\Drivers\touch.c
+  230    54  15  D:\APPS\PICC\Drivers\touch.c
 ----- -----
- 1657   348 Total
+ 1562   349 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
@@ -32,14 +32,14 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     15   1    1             @delay_us1
 0     84   4    3             @I2C_READ_1
 0     92   4    1             @I2C_WRITE_1
-0     32   2    0   152  1.3  set_up_init
+0     32   2    0   188  1.7  set_up_init
  Inline         0    74  1.6  reset_all_dem
-0     32   2    6    79  3.2  @WRITEBITA
-0     23   1    5   144  2.1  @READBITA
+0     32   2    6             @WRITEBITA
+0     23   1    5             @READBITA
  Inline         2   250  3.7  nhan_btn_nha
-0     21   1    3   144  2.1  @DIV88
+0     21   1    3             @DIV88
  Inline         3    79  3.2  ds1307_bcdToDec
- Inline         2   144  2.1  @MUL88
+ Inline         2             @MUL88
 0    192   9    4   267  4.0  ds1307_read_dec_time
 0     92   4    1   253  4.2  ds1307_init
  Inline         0    27  0.9  i2c_setup_write
@@ -56,24 +56,24 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     76   4    2    38  1.7  expanderWrite
  Inline         2   114  2.6  pulseEnable
 0     55   3    6   213  3.1  lcd_log_info
-0      8   0    0    94  2.0  @const706
-0     86   4    4    94  2.0  @PSTRINGC7_687
-0      6   0    0    94  2.0  @const708
-0     21   1    5   144  2.1  @MUL1616
+0      8   0    0             @const707
+0     86   4    4             @PSTRINGC7_688
+0      6   0    0             @const709
+0     21   1    5             @MUL1616
  Inline        12   427  5.1  lcd_dis_2num_dot
 0     37   2    5             @DIV1616
-0      1   0    0   144  2.1  @const724
+0      1   0    0             @const725
  Inline        13   605  5.1  lcd_dis_3num_dot
-0      1   0    0   144  2.1  @const736
+0      1   0    0             @const737
  Inline        12   754  3.9  lcd_dis_xx_yy_zz
-0      1   0    0   185  5.6  @const749
-0      1   0    0   144  2.1  @const750
+0      1   0    0             @const750
+0      1   0    0             @const751
  Inline         1   450  3.3  touch_write_bit
 0     88   4    3   185  5.6  touch_write_byte
 0     43   2    2   260  3.2  touch_present
-0      6   0    0   144  2.1  @const773
+0      6   0    0             @const774
 0     24   1    0   158  1.3  ds18b20_khoi_tao
-0      6   0    0   144  2.1  @const785
+0      6   0    0             @const786
 0     38   2    1   179  2.7  ds18b20_start
  Inline         1   154  1.8  ds18b20_write_bit
 0     59   3    2   110  3.7  ds18b20_write_byte
@@ -82,32 +82,32 @@ Page ROM  %  RAM   Vol Diff  Functions:
  Inline         8   331  5.8  ds18b20_read_temp_c2
 0    139   7    2   131  3.9  ds18b20_read_temp
 0    416  20    0  1035  7.7  select_menu
-0      3   0    0    80  1.9  @const805
-0      2   0    0    80  1.9  @const806
-0      4   0    0    80  1.9  @const807
-0      4   0    0    80  1.9  @const808
-0      4   0    0   144  2.1  @const809
-0      4   0    0   144  2.1  @const810
-1    108   5    0   144  2.1  MAIN
+0      3   0    0             @const806
+0      2   0    0             @const807
+0      4   0    0             @const808
+0      4   0    0             @const809
+0      4   0    0             @const810
+0      4   0    0             @const811
+0     80   4    0   144  2.1  MAIN
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               56
-    Statements              348
-    Comments                396
-    Volume (V)              22201
-    Difficulty (D)          154.7
-    Effort to implement (E) 3434504
-    Time to implement (T)   53 hours, 0 minutes
-    Est Delivered Bugs (B)  8
-    Cyclomatic Complexity   36
-    Maintainability (MI)    69
+    Functions               36
+    Statements              349
+    Comments                385
+    Volume (V)              15524
+    Difficulty (D)          105.7
+    Effort to implement (E) 1641619
+    Time to implement (T)   25 hours, 20 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   34
+    Maintainability (MI)    56
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-007FF  1964  80  
-00800-00FFF   108  1940  
+00004-007FF  2044  0  
+00800-00FFF     0  2048  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  
 

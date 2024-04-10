@@ -1,5 +1,6 @@
 004-005 @READ_PROGRAM_MEMORY8.P1
 004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
 015     CCP_1_LOW
 015     CCP_1
 016     CCP_1_HIGH
@@ -60,13 +61,13 @@
 04D     ds18b20_start.@SCRATCH1
 04D     ds18b20_read_temp_c2.@SCRATCH1
 04E     touch_write_bit.data
+04E-04F @READBITA.P1
 04E     lcd_dis_2num_dot.y
 04E     lcd_dis_xx_yy_zz.pp
 04E     lcd_dis_3num_dot.y
 04E-04F @MUL1616.P1
 04E     @delay_us1.P2
 04E     @WRITEBITA.P3
-04E-04F @READBITA.P4
 04E     ds18b20_write_byte.i
 04E     ds1307_read_dec_time.@SCRATCH1
 04E     lcd_log_info.@SCRATCH1
@@ -88,18 +89,18 @@
 050     ds1307_read_dec_time.@SCRATCH3
 050     lcd_log_info.@SCRATCH3
 050     ds18b20_read_temp_c2.@SCRATCH4
-051     @delay_ms1.P1
+051     lcd_dis_xx_yy_zz.hh_dv
 051     ds1307_bcdToDec.val
+051     @delay_ms1.P1
 051     lcd_dis_3num_dot.tr
 051     lcd_dis_2num_dot.ch
-051     lcd_dis_xx_yy_zz.hh_dv
 051     ds18b20_read_byte.value
 051     @I2C_READ_1.@SCRATCH1
 051     ds18b20_read_temp_c2.@SCRATCH5
-052     lcd_dis_xx_yy_zz.pp_ch
 052     lcd_dis_3num_dot.ch
 052     lcd_dis_2num_dot.dv
 052     ds18b20_read_byte.i
+052     lcd_dis_xx_yy_zz.pp_ch
 052     @I2C_READ_1.@SCRATCH2
 052     ds1307_bcdToDec.@SCRATCH1
 052     @MUL1616.@SCRATCH1
@@ -120,20 +121,20 @@
 056-057 @DIV1616.P1
 056     lcd_setCursor.col
 056     @DIV88.P1
-056     @PSTRINGC7_687.@SCRATCH1
+056     @PSTRINGC7_688.@SCRATCH1
 056     lcd_dis_2num_dot.@SCRATCH4
 056     lcd_dis_3num_dot.@SCRATCH3
 056     lcd_dis_xx_yy_zz.@SCRATCH1
 057     lcd_setCursor.row
 057     @DIV88.P1
-057     @PSTRINGC7_687.@SCRATCH2
+057     @PSTRINGC7_688.@SCRATCH2
 057     lcd_dis_3num_dot.@SCRATCH4
 058-05B lcd_setCursor.row_offsets
 058-059 @DIV1616.P1
 058     @DIV88.@SCRATCH1
-058     @PSTRINGC7_687.@SCRATCH3
+058     @PSTRINGC7_688.@SCRATCH3
 059     lcd_data.value
-059     @PSTRINGC7_687.@SCRATCH4
+059     @PSTRINGC7_688.@SCRATCH4
 05A     @DIV1616.@SCRATCH1
 05C     lcd_setCursor.@SCRATCH1
 05D     lcd_command.value
@@ -154,26 +155,26 @@
 078     _RETURN_
 079     @SCRATCH
 07A     @SCRATCH
-107.6   C1OUT
-108.6   C2OUT
-10D-10E @WRITE_PROGRAM_MEMORY8.P1
-10D-10E @READ_PROGRAM_MEMORY8.P2
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
 
 ROM Allocation:
-000004  @const706.call
-00000C  @const708.call
-000012  @const724.call
-000013  @const736.call
-000014  @const749.call
-000015  @const750.call
-000016  @const773.call
-00001C  @const785.call
-000022  @const805.call
-000025  @const806.call
-000027  @const807.call
-00002B  @const808.call
-00002F  @const809.call
-000033  @const810.call
+000004  @const707.call
+00000C  @const709.call
+000012  @const725.call
+000013  @const737.call
+000014  @const750.call
+000015  @const751.call
+000016  @const774.call
+00001C  @const786.call
+000022  @const806.call
+000025  @const807.call
+000027  @const808.call
+00002B  @const809.call
+00002F  @const810.call
+000033  @const811.call
 000037  set_up_init
 000057  @I2C_WRITE_1
 0000B3  @delay_ms1
@@ -190,7 +191,7 @@ ROM Allocation:
 00019C  lcd_home
 0001A5  lcd_setCursor
 0001BE  lcd_data
-0001C4  @PSTRINGC7_687
+0001C4  @PSTRINGC7_688
 00021A  @MUL1616
 00022F  lcd_log_info
 000266  @I2C_READ_1
@@ -220,32 +221,32 @@ ROM Allocation:
 00067C  lcd_dis_xx_yy_zz
 0006E6  lcd_dis_2num_dot
 000725  lcd_dis_3num_dot
-000800  MAIN
-000800  @cinit1
-000828  @cinit2
+0007B0  MAIN
+0007B0  @cinit1
+0007CB  @cinit2
 
 Project Directory:
     E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\
 
 Project Files:
-    code_do_an_1.c                                          [20-Mar-24 14:57  CRC=9EFDF4E7]
+    code_do_an_1.c                                          [10-Apr-24 14:41  CRC=11F3456F]
     thu_vien_do_an_1.c                                      [19-Mar-24 17:01  CRC=3A9258A8]
-    define_pic_16f887.c                                     [20-Mar-24 13:36  CRC=573CEDE9]
-    D:\APPS\PICC\Devices\16f887.h                           [12-Nov-13 14:35  CRC=6CB1A611]
+    define_pic_16f887.c                                     [08-Apr-24 22:40  CRC=BE9A7D1D]
+    D:\APPS\PICC\Devices\16f877a.h                          [12-Nov-13 14:35  CRC=81334808]
     thu_vien_btn.c                                          [20-Mar-24 14:53  CRC=CCDC604A]
-    thu_vien_i2c_ds1307.c                                   [19-Mar-24 16:51  CRC=7807C882]
+    thu_vien_i2c_ds1307.c                                   [30-Mar-24 09:50  CRC=B878374C]
     thu_vien_i2c_lcd.c                                      [10-Mar-24 21:08  CRC=D8102B21]
     thu_vien_lcd_1602.c                                     [20-Mar-24 14:39  CRC=086F9964]
     thu_vien_ds18b20.c                                      [20-Mar-24 14:38  CRC=0A9FE097]
     D:\APPS\PICC\Drivers\touch.c                            [02-Mar-10 13:04  CRC=24D0ECE7]
 
-Source signature=1724893F
+Source signature=466979BC
 
 Units:
     code_do_an_1 (main)
 
 Compiler Settings:
-    Processor:      PIC16F887
+    Processor:      PIC16F877A
     Pointer Size:   16
     ADC Range:      0-1023
     Opt Level:      9
