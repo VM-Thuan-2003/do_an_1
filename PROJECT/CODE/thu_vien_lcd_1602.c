@@ -81,8 +81,7 @@ void lcd_init(){
    expanderWrite(_backlightval); // back light is on
    delay_ms(100);
    
-   /*
-   It is try to set use 4bit in 3 time
+   //It is try to set use 4bit in 3 time
    write4bits(0x03 << 4);
    delay_ms(5);
    
@@ -91,7 +90,6 @@ void lcd_init(){
    
    write4bits(0x03 << 4);
    delay_ms(5);
-   */
    
    write4bits(0x02 << 4); // set using 4bit for lcd16x2
    
@@ -178,7 +176,7 @@ void lcd_dis_2num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    lcd_setCursor(x, y);
    ch = dt/10 + 0x30;
    dv = dt%10 + 0x30;
-   if(is_xvn = enable) if(ch == 0x30) ch = " ";
+   if(is_xvn == enable) if(ch == 0x30) ch = " ";
    if(is_dot == enable) lcd_data(".");
    lcd_data(ch); lcd_data(dv);
 }
@@ -188,7 +186,7 @@ void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    tr = dt/100 + 0x30; 
    ch = dt/10%10  + 0x30;
    dv = dt%10     + 0x30;
-   if(is_xvn = enable) if(tr == 0x30){
+   if(is_xvn == enable) if(tr == 0x30){
       tr = " ";
       if(ch == 0x30) ch = " ";
    }
@@ -196,13 +194,18 @@ void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    lcd_data(tr); lcd_data(ch); lcd_data(dv);
 }
 
-void lcd_dis_xx_yy_zz(usi8 x, usi8 y, usi8 hh, usi8 pp, usi8 ss){
+void lcd_dis_xx_yy_zz(usi8 x, usi8 y, usi8 hh, usi8 pp, usi8 ss, bool e3, bool e2, bool e1){
    usi8 hh_ch, hh_dv, pp_ch, pp_dv, ss_ch, ss_dv;
-   hh_ch = hh/10 + 0x30; hh_dv = hh%10 + 0x30;
-   pp_ch = pp/10 + 0x30; pp_dv = pp%10 + 0x30;
-   ss_ch = ss/10 + 0x30; ss_dv = ss%10 + 0x30;
+   hh_ch = e3 == true ? hh/10 + 0x30 : 0x20; hh_dv = e3 == true ? hh%10 + 0x30 : 0x20;
+   pp_ch = e2 == true ? pp/10 + 0x30 : 0x20; pp_dv = e2 == true ? pp%10 + 0x30 : 0x20;
+   ss_ch = e1 == true ? ss/10 + 0x30 : 0x20; ss_dv = e1 == true ? ss%10 + 0x30 : 0x20;
    lcd_setCursor(x, y);
    lcd_data(hh_ch); lcd_data(hh_dv); lcd_data("-");
    lcd_data(pp_ch); lcd_data(pp_dv); lcd_data("-");
    lcd_data(ss_ch); lcd_data(ss_dv);
+}
+void log_code_ds1307(){
+   lcd_setCursor(0, 0);
+   lcd_data(ma_qd/10 + 0x30); lcd_data(ma_qd%10 + 0x30); lcd_data("-");
+   lcd_data(ma_ds/10 + 0x30); lcd_data(ma_ds%10 + 0x30);
 }

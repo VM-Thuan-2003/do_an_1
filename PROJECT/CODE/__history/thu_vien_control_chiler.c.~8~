@@ -1,0 +1,8 @@
+void control_temperature(int8 nd_ss, int8 gh){
+   if(nd_ss > gh){
+      
+   }
+   else{
+      
+   }
+}

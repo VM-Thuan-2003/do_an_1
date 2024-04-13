@@ -1,113 +1,160 @@
 
-ROM used:   2048/8192 (25%)
-            2048/8192 (25%) including unused fragments
+ROM used:   3780/8192 (46%)
+            3787/8192 (46%) including unused fragments
 
-            1.3 Average locations per line
-            5.9 Average locations per statement
+            2.0 Average locations per line
+            6.0 Average locations per statement
 
-RAM used:   48/368 (13%) at main() level
-            79/368 (21%) worst case
+RAM used:   65/368 (18%) at main() level
+            105/368 (29%) worst case
 
-Stack used: 7 worst case (7 in main + 0 for interrupts)
+Stack used: 8 worst case (7 in main + 1 for interrupts)
 Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   66    39  11  code_do_an_1.c
-   18     0   0  thu_vien_do_an_1.c
-   56     9   3  define_pic_16f887.c
+  104    84  13  code_do_an_1.c
+   20     0   0  thu_vien_do_an_1.c
+  100    24   4  define_pic_16f887.c
   671     0   0  D:\APPS\PICC\Devices\16f877a.h
-   44    26   7  thu_vien_btn.c
-   57    25   7  thu_vien_i2c_ds1307.c
-   23     8   2  thu_vien_i2c_lcd.c
-  209    87  25  thu_vien_lcd_1602.c
-  188   101  29  thu_vien_ds18b20.c
-  230    54  15  D:\APPS\PICC\Drivers\touch.c
+   32    22   3  thu_vien_btn.c
+   84    29   5  thu_vien_i2c_ds1307.c
+   23     8   1  thu_vien_i2c_lcd.c
+  212    99  16  thu_vien_lcd_1602.c
+  231   201  32  thu_vien_control_clock.c
+  188   101  16  thu_vien_ds18b20.c
+  230    54   9  D:\APPS\PICC\Drivers\touch.c
+   13     7   1  thu_vien_control_chiler.c
 ----- -----
- 1562   349 Total
+ 1908   629 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
 0     20   1    1             @delay_ms1
-0     15   1    1             @delay_us1
-0     84   4    3             @I2C_READ_1
-0     92   4    1             @I2C_WRITE_1
-0     32   2    0   188  1.7  set_up_init
- Inline         0    74  1.6  reset_all_dem
-0     32   2    6             @WRITEBITA
+0     15   0    1             @delay_us1
+0     84   2    3             @I2C_READ_1
+0     92   2    1             @I2C_WRITE_1
+0     10   0    0    29  1.2  interrupt_timer1
+0     55   1    0   527  2.3  set_up_init
+1     44   1    3   211  4.8  nhan_btn_giu
+0     32   1    6   144  2.1  @WRITEBITA
 0     23   1    5             @READBITA
- Inline         2   250  3.7  nhan_btn_nha
-0     21   1    3             @DIV88
- Inline         3    79  3.2  ds1307_bcdToDec
- Inline         2             @MUL88
-0    192   9    4   267  4.0  ds1307_read_dec_time
-0     92   4    1   253  4.2  ds1307_init
+0     64   2    2   250  3.7  nhan_btn_nha
+1     21   1    3   144  2.1  @DIV88
+0     17   0    3    79  3.2  ds1307_bcdToDec
+0     37   1    2   144  2.1  @MUL88
+0    129   3    4   280  4.0  ds1307_read_time
+ Inline         3   262  4.6  ds1307_update_time
+0    112   3    0    80  2.4  ds1307_init
+1     82   2    2   108  1.5  ds1307_save_ds
  Inline         0    27  0.9  i2c_setup_write
  Inline         1   107  0.3  i2c_write_1byte
-0     88   4    1   483  3.3  lcd_init
-0      7   0    0    32  1.0  lcd_clear
+0    199   5    1   696  3.4  lcd_init
+ Inline         0    32  1.0  lcd_clear
  Inline         0    32  1.0  lcd_home
 0     25   1    7   225  5.8  lcd_setCursor
  Inline         1    43  1.8  lcd_display
-0      5   0    1    39  1.5  lcd_command
-0      6   0    1    39  1.5  lcd_data
-0     21   1    5   200  4.8  lcd_send
-0     25   1    1    45  1.3  write4bits
-0     76   4    2    38  1.7  expanderWrite
+0     28   1    1    39  1.5  lcd_command
+0     29   1    1    39  1.5  lcd_data
+ Inline         5   200  4.8  lcd_send
+0    263   7    1    45  1.3  write4bits
+ Inline         2    38  1.7  expanderWrite
  Inline         2   114  2.6  pulseEnable
-0     55   3    6   213  3.1  lcd_log_info
-0      8   0    0             @const707
-0     86   4    4             @PSTRINGC7_688
-0      6   0    0             @const709
-0     21   1    5             @MUL1616
- Inline        12   427  5.1  lcd_dis_2num_dot
-0     37   2    5             @DIV1616
-0      1   0    0             @const725
- Inline        13   605  5.1  lcd_dis_3num_dot
-0      1   0    0             @const737
- Inline        12   754  3.9  lcd_dis_xx_yy_zz
-0      1   0    0             @const750
-0      1   0    0             @const751
+0     60   2    6   213  3.1  lcd_log_info
+0      8   0    0   144  2.1  @const718
+0     80   2    4             @PSTRINGC7_699
+0      6   0    0             @const720
+0     21   1    5   144  2.1  @MUL1616
+1     63   2   12   427  5.1  lcd_dis_2num_dot
+0     37   1    5   144  2.1  @DIV1616
+0      1   0    0   144  2.1  @const736
+1    101   3   13   605  5.1  lcd_dis_3num_dot
+0      1   0    0   144  2.1  @const748
+1    128   3   15  1083  6.1  lcd_dis_xx_yy_zz
+0      1   0    0   144  2.1  @const764
+0      1   0    0   144  2.1  @const765
+0      1   0    0   144  2.1  @const767
+1     47   1    7   434  9.5  tang_or_giam_bcd
+ Inline         0   483  4.3  tat_bat_2led_chinh
+1     51   1    6   143  2.2  giai_ma_gpg_lcd
+1     51   1    6   143  2.2  giai_ma_ntn_lcd
+1     25   1    2   100  2.1  giai_ma_thu_lcd
+1     39   1    0   320  3.7  giai_ma_gpg_ntn_thu_lcd
+ Inline         0   104  2.9  xu_ly_choptat
+ Inline         0   365  4.7  phim_chon_hthi_mode
+ Inline         0   171  4.0  tang_giay
+ Inline         0   171  4.0  tang_phut
+ Inline         0   171  4.0  tang_gio
+ Inline         0   139  3.1  chinh_tang_gpg
+ Inline         0   171  4.0  tang_nam
+ Inline         0   171  4.0  tang_thang
+ Inline         0   171  4.0  tang_ngay
+ Inline         0   139  3.1  chinh_tang_ntn
+ Inline         0   133  4.3  chinh_tang_thu
+ Inline         0   275  4.1  phim_up
+ Inline         0   171  4.0  giam_giay
+ Inline         0   171  4.0  giam_phut
+ Inline         0   171  4.0  giam_gio
+ Inline         0   139  3.1  chinh_giam_gpg
+ Inline         0   171  4.0  giam_nam
+ Inline         0   171  4.0  giam_thang
+ Inline         0   171  4.0  giam_ngay
+ Inline         0   139  3.1  chinh_giam_ntn
+ Inline         0   133  4.3  chinh_giam_thu
+ Inline         0   275  4.1  phim_dw
+ Inline         1   506  4.2  log_mode
+0      2   0    0   144  2.1  @const803
+0      2   0    0   176  2.3  @const804
+0      2   0    0   149  4.3  @const805
+0      2   0    0   450  3.3  @const806
+1     37   1    4   185  5.6  @DIVS88
+0      2   0    0   144  2.1  @const810
  Inline         1   450  3.3  touch_write_bit
-0     88   4    3   185  5.6  touch_write_byte
-0     43   2    2   260  3.2  touch_present
-0      6   0    0             @const774
+0     88   2    3   185  5.6  touch_write_byte
+0     43   1    2   260  3.2  touch_present
+0      6   0    0   144  2.1  @const833
 0     24   1    0   158  1.3  ds18b20_khoi_tao
-0      6   0    0             @const786
-0     38   2    1   179  2.7  ds18b20_start
+0      6   0    0   144  2.1  @const845
+0     38   1    1   179  2.7  ds18b20_start
  Inline         1   154  1.8  ds18b20_write_bit
-0     59   3    2   110  3.7  ds18b20_write_byte
+0     59   2    2   110  3.7  ds18b20_write_byte
  Inline         1   176  2.3  ds18b20_read_bit
-0     51   2    1   153  4.7  ds18b20_read_byte
+0     51   1    1   153  4.7  ds18b20_read_byte
  Inline         8   331  5.8  ds18b20_read_temp_c2
-0    139   7    2   131  3.9  ds18b20_read_temp
-0    416  20    0  1035  7.7  select_menu
-0      3   0    0             @const806
-0      2   0    0             @const807
-0      4   0    0             @const808
-0      4   0    0             @const809
-0      4   0    0             @const810
-0      4   0    0             @const811
-0     80   4    0   144  2.1  MAIN
+0    139   4    2   131  3.9  ds18b20_read_temp
+1     24   1    2   183  3.3  control_temperature
+ Inline         3  3036  9.8  select_menu
+0      3   0    0             @const868
+0      2   0    0   144  2.1  @const869
+0      3   0    0   144  2.1  @const870
+0      2   0    0   144  2.1  @const871
+0      4   0    0             @const872
+0      2   0    0             @const873
+0      8   0    0   144  2.1  @const874
+0      7   0    0   144  2.1  @const875
+0      6   0    0   144  2.1  @const876
+0      8   0    0   144  2.1  @const877
+1   1026  27    0   178  2.2  MAIN
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               36
-    Statements              349
-    Comments                385
-    Volume (V)              15524
-    Difficulty (D)          105.7
-    Effort to implement (E) 1641619
-    Time to implement (T)   25 hours, 20 minutes
-    Est Delivered Bugs (B)  5
-    Cyclomatic Complexity   34
-    Maintainability (MI)    56
+    Functions               95
+    Statements              629
+    Comments                397
+    Volume (V)              47832
+    Difficulty (D)          304.6
+    Effort to implement (E) 14568397
+    Time to implement (T)   224 hours, 49 minutes
+    Est Delivered Bugs (B)  20
+    Cyclomatic Complexity   111
+    Maintainability (MI)    106
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-007FF  2044  0  
-00800-00FFF     0  2048  
+00004-00050    77  0  
+00051-007FF  1960  7  
+00800-00FFF  1739  309  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  
 

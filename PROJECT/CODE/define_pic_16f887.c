@@ -37,19 +37,63 @@
 #define bt3    pin_b3
 #endif
 
+#ifndef bt4
+#define bt4    pin_b4
+#endif
+
 #ifndef pinServo
 #define pinServo    pin_c1
 #endif
 
+#ifndef pinCold
+#define pinCold     pin_d6
+#endif
+
+#ifndef pinHot
+#define pinHot      pin_d7
+#endif
+
+usi8 gh_nd = 25;
+
+usi8 giay_tam, bdn, tt_ht = 0;
+si8 gt_mod = 0, tg_chinh = 0;
+
+#define tang 0
+#define giam 1
+
+bool e_11, e_22, e_33;
+
+usi8 eat_hh, eat_pp, eat_ss;
+
+#int_timer1
+void interrupt_timer1()
+{
+   bdn++;
+   set_timer1(3036);
+}
+
 void set_up_init(){
    setup_timer_1(T1_INTERNAL|T1_DIV_BY_8);
+   set_timer1(3036);
+   
+   enable_interrupts(global);
+   enable_interrupts(int_timer1);
+   
+   tt_ht = 0;
+   bdn = 0; gt_mod = 0;
+   
+   e_11 = true;
+   e_22 = true;
+   e_33 = true;
+   
+   gh_nd = 25;
+   eat_hh = 10; eat_pp = 10; eat_ss = 30;
+   
    set_tris_a(0xff);
    set_tris_b(0xff);
    set_tris_d(0x00); output_d(0x00);
    set_tris_e(0x00); output_e(0x00);
    set_tris_c(0x00); output_c(0x00);
-   
-
 }
 
 
