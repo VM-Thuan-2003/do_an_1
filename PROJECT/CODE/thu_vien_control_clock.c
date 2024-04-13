@@ -1,3 +1,4 @@
+
 usi8 tang_or_giam_bcd(unsigned int8 x, int1 sel){
    usi8 y, dv, ch, v;
    ch = (x>>4);
@@ -51,7 +52,7 @@ void xu_ly_choptat(){
 }
 
 void phim_chon_hthi_mode(){
-   if(nhan_btn_nha(1, bt3)){
+   if(nhan_btn_giu(2, bt3)){
       tt_ht = 1;
       if(tt_ht == 1){
          gt_mod++;
@@ -61,6 +62,7 @@ void phim_chon_hthi_mode(){
          else{
             gt_mod = 0;
             tt_ht = 0;
+            dem_menu_tong_curr = 0;
          }
       }
       tg_chinh = 0;

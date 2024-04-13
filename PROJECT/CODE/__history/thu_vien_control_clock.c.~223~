@@ -1,3 +1,5 @@
+usi16 time_back = 0;
+
 usi8 tang_or_giam_bcd(unsigned int8 x, int1 sel){
    usi8 y, dv, ch, v;
    ch = (x>>4);
@@ -52,15 +54,25 @@ void xu_ly_choptat(){
 
 void phim_chon_hthi_mode(){
    if(nhan_btn_nha(1, bt3)){
-      tt_ht++;
-      if(tt_ht >= 1){
+      tt_ht = 1;
+      if(tt_ht == 1){
          gt_mod++;
-         if(gt_mod > 7)
+         if(gt_mod < 4) tt_ht = 1;
+         else if(gt_mod < 7) tt_ht = 2;
+         else if(gt_mod == 7) tt_ht = 3;
+         else{
             gt_mod = 0;
+            tt_ht = 0;
+         }
       }
-      if(tt_ht>2) tt_ht = 0;
       tg_chinh = 0;
       giai_ma_gpg_ntn_thu_lcd();
+      time_back++;
+      if( time_back >= 100){
+         dem_menu_tong_curr = 0;
+         gt_mod = 0;
+            tt_ht = 0;
+      }
    }
 }
 void tang_giay(){
@@ -218,4 +230,9 @@ void log_mode(){
    else if(tt_ht == 3) lcd_data(" T ");
    lcd_setCursor(13, 1);
    lcd_data(gt_mod + 0x30);
+   if(gt_mod != 0){
+      lcd_data(tg_chinh/10 + 0x30); lcd_data(tg_chinh%10 + 0x30);
+   }
+   else
+      lcd_data("__");
 }

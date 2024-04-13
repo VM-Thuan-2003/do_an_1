@@ -1,5 +1,5 @@
 ÀÄcode_do_an_1
-   ÃÄMAIN  1/1026  Ram=0
+   ÃÄMAIN  1/1036  Ram=0
    ³  ÃÄ@cinit1  (Inline)  Ram=0
    ³  ÃÄset_up_init  0/55  Ram=0
    ³  ÃÄlcd_init  0/199  Ram=1
@@ -198,10 +198,10 @@
    ³  ³  ³     ÀÄ*
    ³  ³  ÃÄ@PSTRINGC7_699  0/80  Ram=4
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄnhan_btn_giu  1/44  Ram=3
+   ³  ³  ÃÄnhan_btn_giu  1/43  Ram=3
    ³  ³  ³  ÃÄ@WRITEBITA  0/32  Ram=6
    ³  ³  ³  ÀÄ@READBITA  0/23  Ram=5
-   ³  ³  ÃÄnhan_btn_giu  1/44  Ram=3
+   ³  ³  ÃÄnhan_btn_giu  1/43  Ram=3
    ³  ³  ³  ÀÄ*
    ³  ³  ÃÄnhan_btn_nha  0/64  Ram=2
    ³  ³  ³  ÀÄ*
@@ -230,7 +230,7 @@
    ³  ³  ÃÄxu_ly_choptat  (Inline)  Ram=0
    ³  ³  ³  ÀÄtat_bat_2led_chinh  (Inline)  Ram=0
    ³  ³  ÃÄphim_chon_hthi_mode  (Inline)  Ram=0
-   ³  ³  ³  ÃÄnhan_btn_nha  0/64  Ram=2
+   ³  ³  ³  ÃÄnhan_btn_giu  1/43  Ram=3
    ³  ³  ³  ³  ÀÄ*
    ³  ³  ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  1/39  Ram=0
    ³  ³  ³     ÃÄgiai_ma_gpg_lcd  1/51  Ram=6
@@ -263,7 +263,7 @@
    ³  ³  ³     ÀÄgiai_ma_thu_lcd  1/25  Ram=2
    ³  ³  ³        ÀÄ*
    ³  ³  ÃÄphim_up  (Inline)  Ram=0
-   ³  ³  ³  ÃÄnhan_btn_giu  1/44  Ram=3
+   ³  ³  ³  ÃÄnhan_btn_giu  1/43  Ram=3
    ³  ³  ³  ³  ÀÄ*
    ³  ³  ³  ÃÄchinh_tang_gpg  (Inline)  Ram=0
    ³  ³  ³  ³  ÃÄtang_giay  (Inline)  Ram=0
@@ -307,7 +307,7 @@
    ³  ³  ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  1/39  Ram=0
    ³  ³  ³     ÀÄ*
    ³  ³  ÃÄphim_dw  (Inline)  Ram=0
-   ³  ³  ³  ÃÄnhan_btn_giu  1/44  Ram=3
+   ³  ³  ³  ÃÄnhan_btn_giu  1/43  Ram=3
    ³  ³  ³  ³  ÀÄ*
    ³  ³  ³  ÃÄchinh_giam_gpg  (Inline)  Ram=0
    ³  ³  ³  ³  ÃÄgiam_giay  (Inline)  Ram=0
@@ -389,7 +389,9 @@
    ³  ³  ³  ÀÄ*
    ³  ³  ÃÄlcd_setCursor  0/25  Ram=7
    ³  ³  ³  ÀÄ*
-   ³  ³  ÀÄ@PSTRINGC7_699  0/80  Ram=4
+   ³  ³  ÃÄ@PSTRINGC7_699  0/80  Ram=4
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄnhan_btn_nha  0/64  Ram=2
    ³  ³     ÀÄ*
    ³  ÀÄcontrol_temperature  1/24  Ram=2
    ÀÄinterrupt_timer1  0/10  Ram=0

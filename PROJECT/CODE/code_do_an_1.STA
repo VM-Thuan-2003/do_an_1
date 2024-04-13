@@ -1,6 +1,6 @@
 
-ROM used:   3780/8192 (46%)
-            3787/8192 (46%) including unused fragments
+ROM used:   3789/8192 (46%)
+            3796/8192 (46%) including unused fragments
 
             2.0 Average locations per line
             6.0 Average locations per statement
@@ -13,7 +13,7 @@ Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-  104    84  13  code_do_an_1.c
+  105    86  14  code_do_an_1.c
    20     0   0  thu_vien_do_an_1.c
   100    24   4  define_pic_16f887.c
   671     0   0  D:\APPS\PICC\Devices\16f877a.h
@@ -21,12 +21,12 @@ Lines Stmts  %   Files
    84    29   5  thu_vien_i2c_ds1307.c
    23     8   1  thu_vien_i2c_lcd.c
   212    99  16  thu_vien_lcd_1602.c
-  231   201  32  thu_vien_control_clock.c
+  233   202  32  thu_vien_control_clock.c
   188   101  16  thu_vien_ds18b20.c
   230    54   9  D:\APPS\PICC\Drivers\touch.c
-   13     7   1  thu_vien_control_chiler.c
+   17     7   1  thu_vien_control_chiler.c
 ----- -----
- 1908   629 Total
+ 1915   632 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
@@ -36,7 +36,7 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     92   2    1             @I2C_WRITE_1
 0     10   0    0    29  1.2  interrupt_timer1
 0     55   1    0   527  2.3  set_up_init
-1     44   1    3   211  4.8  nhan_btn_giu
+1     43   1    3   211  4.8  nhan_btn_giu
 0     32   1    6   144  2.1  @WRITEBITA
 0     23   1    5             @READBITA
 0     64   2    2   250  3.7  nhan_btn_nha
@@ -81,7 +81,7 @@ Page ROM  %  RAM   Vol Diff  Functions:
 1     25   1    2   100  2.1  giai_ma_thu_lcd
 1     39   1    0   320  3.7  giai_ma_gpg_ntn_thu_lcd
  Inline         0   104  2.9  xu_ly_choptat
- Inline         0   365  4.7  phim_chon_hthi_mode
+ Inline         0   391  4.7  phim_chon_hthi_mode
  Inline         0   171  4.0  tang_giay
  Inline         0   171  4.0  tang_phut
  Inline         0   171  4.0  tang_gio
@@ -123,38 +123,38 @@ Page ROM  %  RAM   Vol Diff  Functions:
  Inline         8   331  5.8  ds18b20_read_temp_c2
 0    139   4    2   131  3.9  ds18b20_read_temp
 1     24   1    2   183  3.3  control_temperature
- Inline         3  3036  9.8  select_menu
-0      3   0    0             @const868
-0      2   0    0   144  2.1  @const869
-0      3   0    0   144  2.1  @const870
-0      2   0    0   144  2.1  @const871
-0      4   0    0             @const872
-0      2   0    0             @const873
-0      8   0    0   144  2.1  @const874
-0      7   0    0   144  2.1  @const875
-0      6   0    0   144  2.1  @const876
-0      8   0    0   144  2.1  @const877
-1   1026  27    0   178  2.2  MAIN
+ Inline         3  3153  9.8  select_menu
+0      3   0    0   144  2.1  @const869
+0      2   0    0   144  2.1  @const870
+0      3   0    0   144  2.1  @const871
+0      2   0    0             @const872
+0      4   0    0             @const873
+0      2   0    0   144  2.1  @const874
+0      8   0    0   144  2.1  @const875
+0      7   0    0   144  2.1  @const876
+0      6   0    0   144  2.1  @const877
+0      8   0    0   178  2.2  @const878
+1   1036  27    0   178  2.2  MAIN
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               95
-    Statements              629
+    Functions               96
+    Statements              632
     Comments                397
-    Volume (V)              47832
-    Difficulty (D)          304.6
-    Effort to implement (E) 14568397
-    Time to implement (T)   224 hours, 49 minutes
+    Volume (V)              48547
+    Difficulty (D)          307.1
+    Effort to implement (E) 14907556
+    Time to implement (T)   230 hours, 3 minutes
     Est Delivered Bugs (B)  20
-    Cyclomatic Complexity   111
-    Maintainability (MI)    106
+    Cyclomatic Complexity   112
+    Maintainability (MI)    107
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
 00004-00050    77  0  
 00051-007FF  1960  7  
-00800-00FFF  1739  309  
+00800-00FFF  1748  300  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  
 

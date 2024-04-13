@@ -265,16 +265,16 @@ ROM Allocation:
 000076  @const810.call
 000078  @const833.call
 00007E  @const845.call
-000084  @const868.call
-000087  @const869.call
-000089  @const870.call
-00008C  @const871.call
-00008E  @const872.call
-000092  @const873.call
-000094  @const874.call
-00009C  @const875.call
-0000A3  @const876.call
-0000A9  @const877.call
+000084  @const869.call
+000087  @const870.call
+000089  @const871.call
+00008C  @const872.call
+00008E  @const873.call
+000092  @const874.call
+000094  @const875.call
+00009C  @const876.call
+0000A3  @const877.call
+0000A9  @const878.call
 0000B1  set_up_init
 0000E8  @I2C_WRITE_1
 000144  @delay_ms1
@@ -315,67 +315,67 @@ ROM Allocation:
 000783  nhan_btn_nha
 0007C3  @MUL88
 0007E8  ds1307_bcdToDec
-0007F9  control_temperature
 000800  @DIV88
 000815  lcd_dis_xx_yy_zz
 000895  lcd_dis_2num_dot
 0008D4  lcd_dis_3num_dot
 000939  nhan_btn_giu
-000965  giai_ma_gpg_lcd
-000998  giai_ma_ntn_lcd
-0009CB  giai_ma_thu_lcd
-0009E4  giai_ma_gpg_ntn_thu_lcd
-000A0B  tang_or_giam_bcd
-000A3A  ds1307_save_ds
-000A8C  @DIVS88
-000AC9  @cinit1
-000AC9  MAIN
-000AE5  @cinit2
-000B25  select_menu
-000B42  lcd_clear
-000C2C  xu_ly_choptat
-000C2F  tat_bat_2led_chinh
-000C5C  phim_chon_hthi_mode
-000C88  phim_up
-000C98  chinh_tang_gpg
-000CA3  tang_giay
-000CB4  tang_phut
-000CC6  tang_gio
-000CDF  chinh_tang_ntn
-000CEA  tang_nam
-000CFC  tang_thang
-000D0F  tang_ngay
-000D27  chinh_tang_thu
-000D38  phim_dw
-000D48  chinh_giam_gpg
-000D53  giam_giay
-000D65  giam_phut
-000D78  giam_gio
-000D92  chinh_giam_ntn
-000D9D  giam_nam
-000DB0  giam_thang
-000DC2  giam_ngay
-000DD9  chinh_giam_thu
-000E04  log_mode
+000964  giai_ma_gpg_lcd
+000997  giai_ma_ntn_lcd
+0009CA  giai_ma_thu_lcd
+0009E3  giai_ma_gpg_ntn_thu_lcd
+000A0A  tang_or_giam_bcd
+000A39  ds1307_save_ds
+000A8B  @DIVS88
+000AB0  control_temperature
+000AC8  MAIN
+000AC8  @cinit1
+000AE4  @cinit2
+000B24  select_menu
+000B41  lcd_clear
+000C2B  xu_ly_choptat
+000C2E  tat_bat_2led_chinh
+000C5B  phim_chon_hthi_mode
+000C87  phim_up
+000C97  chinh_tang_gpg
+000CA2  tang_giay
+000CB3  tang_phut
+000CC5  tang_gio
+000CDE  chinh_tang_ntn
+000CE9  tang_nam
+000CFB  tang_thang
+000D0E  tang_ngay
+000D26  chinh_tang_thu
+000D37  phim_dw
+000D47  chinh_giam_gpg
+000D52  giam_giay
+000D64  giam_phut
+000D77  giam_gio
+000D91  chinh_giam_ntn
+000D9C  giam_nam
+000DAF  giam_thang
+000DC1  giam_ngay
+000DD8  chinh_giam_thu
+000E03  log_mode
 
 Project Directory:
     E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\
 
 Project Files:
-    code_do_an_1.c                                          [13-Apr-24 14:00  CRC=E2D3CB4B]
+    code_do_an_1.c                                          [13-Apr-24 15:05  CRC=CF0D36E8]
     thu_vien_do_an_1.c                                      [13-Apr-24 14:03  CRC=3A9258A8]
     define_pic_16f887.c                                     [13-Apr-24 13:56  CRC=2DC9176C]
     D:\APPS\PICC\Devices\16f877a.h                          [12-Nov-13 14:35  CRC=81334808]
-    thu_vien_btn.c                                          [13-Apr-24 13:42  CRC=E4EA6AEF]
+    thu_vien_btn.c                                          [13-Apr-24 15:17  CRC=E4EA6AEF]
     thu_vien_i2c_ds1307.c                                   [13-Apr-24 13:43  CRC=6B17E9D7]
     thu_vien_i2c_lcd.c                                      [10-Mar-24 21:08  CRC=D8102B21]
     thu_vien_lcd_1602.c                                     [13-Apr-24 13:42  CRC=5EF432D0]
-    thu_vien_control_clock.c                                [13-Apr-24 13:25  CRC=CEB7682D]
+    thu_vien_control_clock.c                                [13-Apr-24 15:17  CRC=DAA502B1]
     thu_vien_ds18b20.c                                      [20-Mar-24 14:38  CRC=0A9FE097]
     D:\APPS\PICC\Drivers\touch.c                            [02-Mar-10 13:04  CRC=24D0ECE7]
-    thu_vien_control_chiler.c                               [13-Apr-24 14:03  CRC=4551780E]
+    thu_vien_control_chiler.c                               [13-Apr-24 15:00  CRC=4551780E]
 
-Source signature=DC345BE5
+Source signature=D45B6206
 
 Units:
     code_do_an_1 (main)

@@ -1,7 +1,8 @@
-D G "__PCM__" 0 105 ""5.015""
-D G "__DEVICE__" 0 105 "877"
-D G "__DATE__" 0 105 ""13-Apr-24""
-D G "__TIME__" 0 105 ""14:03:42"" "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+D G "convert_t" 9 13 "0x44"
+D G "__PCM__" 0 106 ""5.015""
+D G "__DEVICE__" 0 106 "877"
+D G "__DATE__" 0 106 ""13-Apr-24""
+D G "__TIME__" 0 106 ""15:18:05"" "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 c L "set_tris_a" 3 1 6 "FUNCTION"
 v L "value" 3 37 "int8" `54 
 f B "set_tris_a" 3 37 "void(int8 value)" `53 
@@ -990,41 +991,41 @@ V L "pp_dv" 7 198 "int8" `761
 V L "ss_ch" 7 198 "int8" `762 
 V L "ss_dv" 7 198 "int8" `763 
 F G "log_code_ds1307" 7 207 "void()" `766 
-V L "x" 8 1 "int8" `769 
-V L "sel" 8 1 "int8" `770 
-F G "tang_or_giam_bcd" 8 1 "int8(int8 x,int8 sel)" `768 
-V L "y" 8 2 "int8" `771 
-V L "dv" 8 2 "int8" `772 
-V L "ch" 8 2 "int8" `773 
-V L "v" 8 2 "int8" `774 
-F G "tat_bat_2led_chinh" 8 13 "void()" `775 
-F G "giai_ma_gpg_lcd" 8 20 "void()" `776 
-F G "giai_ma_ntn_lcd" 8 24 "void()" `777 
-F G "giai_ma_thu_lcd" 8 28 "void()" `778 
-F G "giai_ma_gpg_ntn_thu_lcd" 8 32 "void()" `779 
-F G "xu_ly_choptat" 8 45 "void()" `780 
-F G "phim_chon_hthi_mode" 8 53 "void()" `781 
-F G "tang_giay" 8 70 "void()" `782 
-F G "tang_phut" 8 75 "void()" `783 
-F G "tang_gio" 8 80 "void()" `784 
-F G "chinh_tang_gpg" 8 85 "void()" `785 
-F G "tang_nam" 8 99 "void()" `786 
-F G "tang_thang" 8 104 "void()" `787 
-F G "tang_ngay" 8 109 "void()" `788 
-F G "chinh_tang_ntn" 8 114 "void()" `789 
-F G "chinh_tang_thu" 8 128 "void()" `790 
-F G "phim_up" 8 134 "void()" `791 
-F G "giam_giay" 8 144 "void()" `792 
-F G "giam_phut" 8 149 "void()" `793 
-F G "giam_gio" 8 154 "void()" `794 
-F G "chinh_giam_gpg" 8 159 "void()" `795 
-F G "giam_nam" 8 173 "void()" `796 
-F G "giam_thang" 8 178 "void()" `797 
-F G "giam_ngay" 8 183 "void()" `798 
-F G "chinh_giam_ntn" 8 188 "void()" `799 
-F G "chinh_giam_thu" 8 202 "void()" `800 
-F G "phim_dw" 8 207 "void()" `801 
-F G "log_mode" 8 217 "void()" `802 
+V L "x" 8 2 "int8" `769 
+V L "sel" 8 2 "int8" `770 
+F G "tang_or_giam_bcd" 8 2 "int8(int8 x,int8 sel)" `768 
+V L "y" 8 3 "int8" `771 
+V L "dv" 8 3 "int8" `772 
+V L "ch" 8 3 "int8" `773 
+V L "v" 8 3 "int8" `774 
+F G "tat_bat_2led_chinh" 8 14 "void()" `775 
+F G "giai_ma_gpg_lcd" 8 21 "void()" `776 
+F G "giai_ma_ntn_lcd" 8 25 "void()" `777 
+F G "giai_ma_thu_lcd" 8 29 "void()" `778 
+F G "giai_ma_gpg_ntn_thu_lcd" 8 33 "void()" `779 
+F G "xu_ly_choptat" 8 46 "void()" `780 
+F G "phim_chon_hthi_mode" 8 54 "void()" `781 
+F G "tang_giay" 8 72 "void()" `782 
+F G "tang_phut" 8 77 "void()" `783 
+F G "tang_gio" 8 82 "void()" `784 
+F G "chinh_tang_gpg" 8 87 "void()" `785 
+F G "tang_nam" 8 101 "void()" `786 
+F G "tang_thang" 8 106 "void()" `787 
+F G "tang_ngay" 8 111 "void()" `788 
+F G "chinh_tang_ntn" 8 116 "void()" `789 
+F G "chinh_tang_thu" 8 130 "void()" `790 
+F G "phim_up" 8 136 "void()" `791 
+F G "giam_giay" 8 146 "void()" `792 
+F G "giam_phut" 8 151 "void()" `793 
+F G "giam_gio" 8 156 "void()" `794 
+F G "chinh_giam_gpg" 8 161 "void()" `795 
+F G "giam_nam" 8 175 "void()" `796 
+F G "giam_thang" 8 180 "void()" `797 
+F G "giam_ngay" 8 185 "void()" `798 
+F G "chinh_giam_ntn" 8 190 "void()" `799 
+F G "chinh_giam_thu" 8 204 "void()" `800 
+F G "phim_dw" 8 209 "void()" `801 
+F G "log_mode" 8 219 "void()" `802 
 D G "touch_pin" 9 1 "pin_a0"
 D G "DS18B20_PIN" 9 2 "touch_pin"
 D G "TOUCH_C" 10 36 ""
@@ -1122,13 +1123,14 @@ V L "gh" 11 1 "int8" `866
 F G "control_temperature" 11 1 "void(int8 nd_ss,int8 gh)" `864 
 C L "control_temperature" 11 3 1 "FUNCTION"
 C L "control_temperature" 11 3 1 "FUNCTION"
-F G "select_menu" 0 3 "void()" `867 
+F G "control_servo" 11 14 "void()" `867 
+F G "select_menu" 0 3 "void()" `868 
 C L "select_menu" 0 18 1 "FUNCTION"
 C L "select_menu" 0 18 3 "FUNCTION"
 C L "select_menu" 0 18 2 "FUNCTION"
 C L "select_menu" 0 18 1 "FUNCTION"
 C L "select_menu" 0 18 1 "FUNCTION"
-F G "MAIN" 0 89 "void()" `878 
+F G "MAIN" 0 90 "void()" `879 
 C L "MAIN" 0 18 2 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0

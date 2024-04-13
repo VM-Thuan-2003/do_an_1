@@ -7,7 +7,7 @@ usi8 dem_menu_tong_prev = 1;
 
 bool nhan_btn_giu(usi16 dl, usi8 pin){
    if(!input(pin)){
-      dl_count += 1; delay_us(25);
+      dl_count += 1; delay_us(50);
       if(dl_count >= dl){
          dl_count = 0;
          return true;

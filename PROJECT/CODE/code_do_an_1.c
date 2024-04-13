@@ -81,6 +81,7 @@ void select_menu(){
             lcd_data("Information");
             lcd_setCursor(0,1);
             lcd_data("Version: V1.0.0");
+            if(nhan_btn_nha(1,bt3) == enable) dem_menu_tong_curr = 0;
             break;
       }
    }
