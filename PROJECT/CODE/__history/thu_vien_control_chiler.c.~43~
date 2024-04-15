@@ -1,0 +1,29 @@
+void control_temperature(int8 nd_ss, int8 gh){
+   if(nd_ss > gh){
+   // water is hot
+      output_bit(pinCold, 1);
+      output_bit(pinHot,  0);
+   }
+   else{
+   // water is cold
+      output_bit(pinCold, 0);
+      output_bit(pinHot,  1);
+   }
+}
+
+void servo_degree_0(){
+   unsigned int i;
+   for(i = 0; i < 50; i++){
+      PORTB.F0 = 1;
+      Delay_us(800); // pulse of 800us
+      PORTB.F0 = 0;
+      Delay_us(19200);
+   }
+}
+
+void control_servo(){
+   if(dec_gio_ds == dec_gio_eat && dec_phut_ds == dec_phut_eat && dec_giay_ds == dec_giay_eat){
+      flag_servo = true;
+   }
+   output_bit(pinServo, flag_servo);
+}

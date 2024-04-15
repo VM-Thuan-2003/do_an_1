@@ -180,6 +180,7 @@ void lcd_dis_2num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    if(is_dot == enable) lcd_data(".");
    lcd_data(ch); lcd_data(dv);
 }
+
 void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    usi8 tr, ch, dv;
    lcd_setCursor(x, y); //xxx /10 -> xx 
@@ -204,8 +205,9 @@ void lcd_dis_xx_yy_zz(usi8 x, usi8 y, usi8 hh, usi8 pp, usi8 ss, bool e3, bool e
    lcd_data(pp_ch); lcd_data(pp_dv); lcd_data("-");
    lcd_data(ss_ch); lcd_data(ss_dv);
 }
+
 void log_code_ds1307(){
    lcd_setCursor(0, 0);
-   lcd_data(ma_qd/10 + 0x30); lcd_data(ma_qd%10 + 0x30); lcd_data("-");
+   lcd_data(ma_qd/10 + 0x30); lcd_data(ma_qd%10 + 0x30); lcd_data(" - ");
    lcd_data(ma_ds/10 + 0x30); lcd_data(ma_ds%10 + 0x30);
 }

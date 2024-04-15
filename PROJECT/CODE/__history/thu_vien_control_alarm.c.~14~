@@ -1,0 +1,15 @@
+void giai_ma_gpg_alarm_lcd(){
+   lcd_dis_xx_yy_zz(4,1,dec_gio_eat,dec_phut_eat,dec_giay_eat,e_33, e_22, e_11);
+}
+void phim_chon_mode_alarm(){
+   if(nhan_btn_giu(2, bt3)){
+      gt_mod++;
+      if(gt_mod < 4) gt_mod++;
+      else{
+         gt_mod = 0;
+         dem_menu_tong_curr = 0;
+      }
+      tg_chinh = 0;
+      giai_ma_gpg_ntn_thu_lcd();
+   }
+}

@@ -1,0 +1,46 @@
+void giai_ma_gpg_alarm_lcd(){
+   lcd_dis_xx_yy_zz(4,1,dec_gio_eat,dec_phut_eat,dec_giay_eat,e_33, e_22, e_11);
+}
+
+void phim_chon_mode_alarm(){
+   if(nhan_btn_giu(2, bt3)){
+      gt_mod++;
+      if(gt_mod < 4) gt_mod++;
+      else{
+         gt_mod = 0;
+         dem_menu_tong_curr = 0;
+      }
+      tg_chinh = 0;
+      giai_ma_gpg_alarm_lcd();
+   }
+}
+
+void tang_giay(){
+   if(giay_ds == 0x59) giay_ds = 0;
+   else giay_ds = tang_or_giam_bcd(giay_ds, tang);
+   ds1307_save_ds(0,giay_ds);
+}
+void tang_phut(){
+   if(phut_ds == 0x59) phut_ds = 0;
+   else phut_ds = tang_or_giam_bcd(phut_ds, tang);
+   ds1307_save_ds(1,phut_ds);
+}
+void tang_gio(){
+   if(gio_ds == 0x23) gio_ds = 0;
+   else gio_ds = tang_or_giam_bcd(gio_ds, tang);
+   ds1307_save_ds(2,gio_ds);
+}
+void chinh_tang_gpg(){
+   switch(gt_mod){
+      case 1:
+         tang_giay();
+         break;
+      case 2:
+         tang_phut();
+         break;
+      case 3:
+         tang_gio();
+         break;
+      default: break;
+   }
+}

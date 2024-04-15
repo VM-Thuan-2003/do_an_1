@@ -73,7 +73,28 @@ void select_menu(){
             /* cai dat thoi gian - thoi gian cho ca an*/
             lcd_setCursor(1,0);
             lcd_data("t/g cho ca an");
-            lcd_dis_xx_yy_zz(4,1,dec_gio_eat,dec_phut_eat,dec_giay_eat,1, 1, 1);
+            if(bdn < 2){
+               if(gt_mod != 0) xu_ly_choptat();
+               phim_chon_mode_alarm();
+               phim_up_eat();
+               phim_dw_eat();
+            }
+            else if(bdn >= 10){
+               bdn = 0;
+               if(tg_chinh < 20) tg_chinh++;
+               else{
+                  gt_mod = 0;
+                  e_11 = true; e_22 = true; e_33 = true;
+               }
+            }
+            giai_ma_gpg_alarm_lcd();
+            log_mode_alarm();
+            break;
+          case 4:
+            /* kiem tra ket noi uart - wifi - esp - firebase */
+            lcd_setCursor(1,0);
+            lcd_data("check com esp");
+            
             break;
           default:
             /* hien thi thong tin sp */
@@ -100,5 +121,6 @@ void main(){
       ds18b20_read_temp();
       select_menu();
       control_temperature(dt_ng,gh_nd);
+      control_servo();
    }
-}  
+}
