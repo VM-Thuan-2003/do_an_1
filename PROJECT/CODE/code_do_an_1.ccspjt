@@ -35,8 +35,9 @@ AdditionalOptionString=
 8=thu_vien_i2c_lcd.c
 9=thu_vien_control_alarm.c
 10=define_pic_16f877a.c
-11=
-12=
+11=D:\APPS\PICC\Devices\16f877a.h
+12=thu_vien_uart.c
+13=
 [defines]
 enabled=0
 chip=1

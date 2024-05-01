@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PCF8574AT")(type "KiCad")(uri "${KIPRJMOD}/PCF8574AT.kicad_sym")(options "")(descr ""))
+)

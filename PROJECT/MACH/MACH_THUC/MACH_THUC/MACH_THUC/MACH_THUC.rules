@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2641)
+    (start_pass_no 3871)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -71,14 +71,13 @@
     "unconnected-(PIC16F877A1-RC5{slash}SDO-Pad24)" "Net-(U3-VO)" "Net-(U2-X1)" "unconnected-(PIC16F877A1-RD4-Pad27)" "unconnected-(PIC16F877A1-RD5-Pad28)" "Net-(U2-X2)" "unconnected-(U2-SQW{slash}OUT-Pad7)" "Net-(U3-RS)"
     "Net-(U3-R{slash}~{W})" "Net-(U3-E)" "unconnected-(U3-DB0-Pad7)" "unconnected-(PIC16F877A1-RB4-Pad37)" "unconnected-(PIC16F877A1-RB5-Pad38)" pgc " pgd" rst
     "btn_1" "btn_2" "btn_3" "btn_4" "unconnected-(U3-DB1-Pad8)" "unconnected-(U3-DB2-Pad9)" "unconnected-(U3-DB3-Pad10)" "Net-(U3-DB4)"
-    "Net-(U3-DB5)" "Net-(U3-DB6)" "Net-(U3-DB7)" "Net-(U3-A{slash}VEE)" "Net-(D4-K)" "unconnected-(U3-PadA1)" "unconnected-(U3-PadA2)" "unconnected-(U3-PadK1)"
+    "Net-(U3-DB5)" "Net-(U3-DB6)" "Net-(U3-DB7)" "unconnected-(ESP_12E1-TX-Pad18)" "Net-(D4-K)" "unconnected-(U3-PadA1)" "unconnected-(U3-PadA2)" "unconnected-(U3-PadK1)"
     "unconnected-(U3-PadK2)" "relay_1" "unconnected-(U4-~{INT}-Pad13)" "unconnected-(ESP_12E1-A0-Pad1)" "unconnected-(ESP_12E1-G-Pad2)" "unconnected-(ESP_12E1-VU-Pad3)" "unconnected-(ESP_12E1-S3-Pad4)" "unconnected-(ESP_12E1-S2-Pad5)"
     "unconnected-(ESP_12E1-S1-Pad6)" "unconnected-(ESP_12E1-SC-Pad7)" "unconnected-(ESP_12E1-S0-Pad8)" "unconnected-(ESP_12E1-SK-Pad9)" "unconnected-(ESP_12E1-G-Pad10)" "unconnected-(ESP_12E1-3V-Pad11)" "unconnected-(ESP_12E1-EN-Pad12)" "unconnected-(ESP_12E1-RST-Pad13)"
-    "unconnected-(ESP_12E1-3V-Pad16)" "unconnected-(ESP_12E1-G-Pad17)" "Net-(ESP_12E1-RX)" "unconnected-(ESP_12E1-D8-Pad20)" "unconnected-(ESP_12E1-D7-Pad21)" "unconnected-(ESP_12E1-D6-Pad22)" "unconnected-(ESP_12E1-D5-Pad23)" "unconnected-(ESP_12E1-G-Pad24)"
+    "unconnected-(ESP_12E1-3V-Pad16)" "unconnected-(ESP_12E1-G-Pad17)" "unconnected-(ESP_12E1-RX-Pad19)" "Net-(ESP_12E1-D7)" "unconnected-(U4-P3-Pad7)" "unconnected-(ESP_12E1-D6-Pad22)" "unconnected-(ESP_12E1-D5-Pad23)" "unconnected-(ESP_12E1-G-Pad24)"
     "unconnected-(ESP_12E1-3V-Pad25)" "unconnected-(ESP_12E1-D4-Pad26)" "unconnected-(ESP_12E1-D3-Pad27)" "unconnected-(ESP_12E1-D2-Pad28)" "unconnected-(ESP_12E1-D1-Pad29)" "unconnected-(ESP_12E1-D0-Pad30)" "relay_2" "Net-(Q3-B)"
-    "Net-(R15-Pad2)" "Net-(R16-Pad2)" "Net-(R17-Pad1)" "Net-(d3r1-NO)" "Net-(d3r1-CO)" "Net-(d3r1-NC)" "Net-(d3r2-NO)" "Net-(d3r2-CO)"
-    "Net-(d3r2-NC)" "Net-(D5-A)" "Net-(D6-K)" "Net-(D7-A)" "Net-(Q2-B)" "Net-(R18-Pad2)" "Net-(R19-Pad2)" "Net-(R20-Pad1)"
-    "unconnected-(C6P1-Pad6)"
+    "Net-(R15-Pad2)" "Net-(R17-Pad1)" "Net-(d3r1-NO)" "Net-(d3r1-CO)" "Net-(d3r1-NC)" "Net-(d3r2-NO)" "Net-(d3r2-CO)" "Net-(d3r2-NC)"
+    "Net-(D5-A)" "Net-(D6-K)" "Net-(D7-A)" "Net-(Q2-B)" "Net-(R18-Pad2)" "Net-(R20-Pad1)" "unconnected-(C6P1-Pad6)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

@@ -37,10 +37,6 @@
 #define bt3    pin_b3
 #endif
 
-#ifndef bt4
-#define bt4    pin_b4
-#endif
-
 #ifndef pinServo
 #define pinServo    pin_c1
 #endif

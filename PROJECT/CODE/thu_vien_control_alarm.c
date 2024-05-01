@@ -2,7 +2,7 @@ void giai_ma_gpg_alarm_lcd(){
    lcd_dis_xx_yy_zz(4,1,dec_gio_eat,dec_phut_eat,dec_giay_eat,e_33, e_22, e_11);
 }
 void phim_chon_mode_alarm(){
-   if(nhan_btn_giu(2, bt3)){
+   if(nhan_btn_giu(1, bt3)){
       if(gt_mod < 3) gt_mod++;
       else{
          gt_mod = 0;

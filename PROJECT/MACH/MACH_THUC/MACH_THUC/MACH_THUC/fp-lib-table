@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "library_thuan_footprint")(type "KiCad")(uri "${KIPRJMOD}/library_thuan_footprint.pretty")(options "")(descr ""))
+)

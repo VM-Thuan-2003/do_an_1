@@ -52,7 +52,7 @@ void xu_ly_choptat(){
 }
 
 void phim_chon_hthi_mode(){
-   if(nhan_btn_giu(2, bt3)){
+   if(nhan_btn_giu(1, bt3)){
       tt_ht = 1;
       if(tt_ht == 1){
          gt_mod++;
