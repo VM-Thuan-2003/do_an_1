@@ -1,3 +1,8 @@
-      Memory usage:   ROM=53%      RAM=18% - 29%
-      0 Errors,  0 Warnings.
+Compiling E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\code_do_an_1 on 03-May-24 at 07:55
+>>> Warning 230 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\thu_vien_lcd_1602.c" Line 179(1,1): String truncated  8-bit value passed to function, only 8 MSB of duty will be set
+>>> Warning 230 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\thu_vien_lcd_1602.c" Line 191(1,1): String truncated
+>>> Warning 230 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\thu_vien_lcd_1602.c" Line 192(1,1): String truncated
+>>> Warning 240 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\thu_vien_ds18b20.c" Line 181(29,37): Pointer types do not match
+      Memory usage:   ROM=43%      RAM=18% - 30%
+      0 Errors,  4 Warnings.
 Build Successful.

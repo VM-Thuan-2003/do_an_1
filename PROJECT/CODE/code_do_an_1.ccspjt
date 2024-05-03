@@ -1,7 +1,7 @@
 [PROJECT]
 Target=code_do_an_1.hex
 Processor_Text=PIC16F877A
-CCSVersion=5.015
+CCSVersion=5.115
 Compiler=PCM
 Development_Mode=
 ToolSuite=CCS
@@ -38,13 +38,16 @@ AdditionalOptionString=
 11=D:\APPS\PICC\Devices\16f877a.h
 12=thu_vien_uart.c
 13=
+t1=81
+Count=1
 [defines]
 enabled=0
 chip=1
 D1=
 V1=
+buildcount=1
 [fileformats]
-forcecoff=1
+forcecoff=0
 debug=4
 error=2
 object=0
@@ -60,6 +63,19 @@ stayupoe=0
 0=0000 %S 0 0 796 451 3 0
 [CompilerVersion]
 Fixed=
+
+[ProjectLog]
+Days=1
+D1=03-05-2024
+D1_L=4
+D1_L1=[28543]Project Opened.
+D1_L2=[28551]Started Editing.
+D1_L3=[28554]Stopped Editing.
+TotalEdit=1
+TotalDebug=0
+D1_E=1
+D1_D=0
+D1_L4=[28748]Project Closed.
 [Units]
 Count=1
 1=code_do_an_1 (main)

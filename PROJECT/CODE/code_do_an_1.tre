@@ -1,17 +1,18 @@
 ÀÄcode_do_an_1
-   ÃÄMAIN  2/1540  Ram=0
+   ÃÄMAIN  1/1387  Ram=0
    ³  ÃÄ@cinit1  (Inline)  Ram=0
-   ³  ÃÄset_up_init  0/66  Ram=0
-   ³  ÃÄlcd_init  0/199  Ram=1
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄset_up_init  0/67  Ram=0
+   ³  ÃÄlcd_init  0/117  Ram=1
    ³  ³  ÃÄi2c_setup_write  (Inline)  Ram=0
-   ³  ³  ³  ÀÄ@I2C_WRITE_1  0/92  Ram=1
+   ³  ³  ³  ÀÄ@I2C_WRITEU_129  0/18  Ram=1
    ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
    ³  ³  ÃÄexpanderWrite  (Inline)  Ram=2
    ³  ³  ³  ÀÄi2c_write_1byte  (Inline)  Ram=1
-   ³  ³  ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³  ³  ³     ÀÄ@I2C_WRITE_1  0/92  Ram=1
+   ³  ³  ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³     ÀÄ@I2C_WRITEU_129  0/18  Ram=1
    ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
-   ³  ³  ÃÄwrite4bits  0/263  Ram=1
+   ³  ³  ÃÄwrite4bits  0/93  Ram=1
    ³  ³  ³  ÃÄexpanderWrite  (Inline)  Ram=2
    ³  ³  ³  ³  ÀÄ*
    ³  ³  ³  ÀÄpulseEnable  (Inline)  Ram=2
@@ -20,24 +21,24 @@
    ³  ³  ³     ÀÄexpanderWrite  (Inline)  Ram=2
    ³  ³  ³        ÀÄ*
    ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
-   ³  ³  ÃÄwrite4bits  0/263  Ram=1
+   ³  ³  ÃÄwrite4bits  0/93  Ram=1
    ³  ³  ³  ÀÄ*
    ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
-   ³  ³  ÃÄwrite4bits  0/263  Ram=1
+   ³  ³  ÃÄwrite4bits  0/93  Ram=1
    ³  ³  ³  ÀÄ*
    ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
-   ³  ³  ÃÄwrite4bits  0/263  Ram=1
+   ³  ³  ÃÄwrite4bits  0/93  Ram=1
    ³  ³  ³  ÀÄ*
    ³  ³  ÃÄlcd_command  0/28  Ram=1
    ³  ³  ³  ÀÄlcd_send  (Inline)  Ram=5
-   ³  ³  ³     ÃÄwrite4bits  0/263  Ram=1
+   ³  ³  ³     ÃÄwrite4bits  0/93  Ram=1
    ³  ³  ³     ³  ÀÄ*
-   ³  ³  ³     ÀÄwrite4bits  0/263  Ram=1
+   ³  ³  ³     ÀÄwrite4bits  0/93  Ram=1
    ³  ³  ³        ÀÄ*
    ³  ³  ÃÄlcd_display  (Inline)  Ram=1
    ³  ³  ³  ÀÄlcd_command  0/28  Ram=1
    ³  ³  ³     ÀÄ*
-   ³  ³  ÃÄlcd_clear  (Inline)  Ram=0
+   ³  ³  ÃÄlcd_clear  0/9  Ram=0
    ³  ³  ³  ÃÄlcd_command  0/28  Ram=1
    ³  ³  ³  ³  ÀÄ*
    ³  ³  ³  ÀÄ@delay_ms1  0/20  Ram=1
@@ -47,73 +48,73 @@
    ³  ³     ÃÄlcd_command  0/28  Ram=1
    ³  ³     ³  ÀÄ*
    ³  ³     ÀÄ@delay_ms1  0/20  Ram=1
-   ³  ÃÄds1307_init  0/112  Ram=0
-   ³  ³  ÃÄds1307_read_time  0/129  Ram=4
-   ³  ³  ³  ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³  ³  ³  ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³  ³  ³  ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³  ³  ³  ÃÄ@I2C_READ_1  0/84  Ram=3
-   ³  ³  ³  ÀÄ@I2C_READ_1  0/84  Ram=3
+   ³  ÃÄds1307_init  0/60  Ram=0
+   ³  ³  ÃÄds1307_read_time  0/46  Ram=4
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³  ³  ÃÄ@I2C_READU_129  0/16  Ram=1
+   ³  ³  ³  ÀÄ@I2C_READU_129  0/16  Ram=1
    ³  ³  ÀÄds1307_update_time  (Inline)  Ram=3
-   ³  ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³  ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³  ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³  ³     ÀÄ@I2C_WRITE_1  0/92  Ram=1
+   ³  ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³  ³     ÀÄ@I2C_WRITEU_129  0/18  Ram=1
    ³  ÃÄds18b20_khoi_tao  0/24  Ram=0
-   ³  ³  ÃÄtouch_present  0/43  Ram=2
+   ³  ³  ÃÄtouch_present  0/39  Ram=2
    ³  ³  ³  ÃÄ@delay_us1  0/15  Ram=1
    ³  ³  ³  ÀÄ@delay_us1  0/15  Ram=1
-   ³  ³  ÃÄtouch_write_byte  0/88  Ram=3
+   ³  ³  ÃÄtouch_write_byte  0/84  Ram=3
    ³  ³  ³  ÀÄtouch_write_bit  (Inline)  Ram=1
-   ³  ³  ÃÄtouch_write_byte  0/88  Ram=3
+   ³  ³  ÃÄtouch_write_byte  0/84  Ram=3
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄtouch_write_byte  0/88  Ram=3
+   ³  ³  ÃÄtouch_write_byte  0/84  Ram=3
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄtouch_write_byte  0/88  Ram=3
+   ³  ³  ÃÄtouch_write_byte  0/84  Ram=3
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄtouch_write_byte  0/88  Ram=3
+   ³  ³  ÃÄtouch_write_byte  0/84  Ram=3
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄtouch_present  0/43  Ram=2
+   ³  ³  ÃÄtouch_present  0/39  Ram=2
    ³  ³  ³  ÀÄ*
-   ³  ³  ÃÄtouch_write_byte  0/88  Ram=3
+   ³  ³  ÃÄtouch_write_byte  0/84  Ram=3
    ³  ³  ³  ÀÄ*
-   ³  ³  ÀÄtouch_write_byte  0/88  Ram=3
+   ³  ³  ÀÄtouch_write_byte  0/84  Ram=3
    ³  ³     ÀÄ*
-   ³  ÃÄds1307_read_time  0/129  Ram=4
+   ³  ÃÄds1307_read_time  0/46  Ram=4
    ³  ³  ÀÄ*
    ³  ÃÄds18b20_read_temp  0/158  Ram=2
    ³  ³  ÃÄds18b20_read_temp_c2  (Inline)  Ram=8
    ³  ³  ³  ÃÄds18b20_start  0/38  Ram=1
    ³  ³  ³  ³  ÃÄ@delay_us1  0/15  Ram=1
    ³  ³  ³  ³  ÀÄ@delay_us1  0/15  Ram=1
-   ³  ³  ³  ÃÄds18b20_write_byte  0/59  Ram=2
+   ³  ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
    ³  ³  ³  ³  ÀÄds18b20_write_bit  (Inline)  Ram=1
-   ³  ³  ³  ÃÄds18b20_write_byte  0/59  Ram=2
+   ³  ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄds18b20_read_byte  0/51  Ram=1
+   ³  ³  ³  ÃÄds18b20_read_byte  0/47  Ram=2
    ³  ³  ³  ³  ÀÄds18b20_read_bit  (Inline)  Ram=1
    ³  ³  ³  ÃÄds18b20_start  0/38  Ram=1
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄds18b20_write_byte  0/59  Ram=2
+   ³  ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄds18b20_write_byte  0/59  Ram=2
+   ³  ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÃÄds18b20_read_byte  0/51  Ram=1
+   ³  ³  ³  ÃÄds18b20_read_byte  0/47  Ram=2
    ³  ³  ³  ³  ÀÄ*
-   ³  ³  ³  ÀÄds18b20_read_byte  0/51  Ram=1
+   ³  ³  ³  ÀÄds18b20_read_byte  0/47  Ram=2
    ³  ³  ³     ÀÄ*
    ³  ³  ÃÄ@MUL1616  (Inline)  Ram=5
    ³  ³  ÀÄ@DIV1616  0/37  Ram=5
    ³  ÀÄselect_menu  (Inline)  Ram=3
    ³     ÃÄnhan_btn_nha  0/60  Ram=2
    ³     ³  ÃÄ@WRITEBITA  0/32  Ram=6
-   ³     ³  ÃÄ@READBITA  0/23  Ram=5
+   ³     ³  ÃÄ@READBITA  0/25  Ram=5
    ³     ³  ÃÄ@delay_ms1  0/20  Ram=1
    ³     ³  ÃÄ@WRITEBITA  0/32  Ram=6
-   ³     ³  ÃÄ@READBITA  0/23  Ram=5
+   ³     ³  ÃÄ@READBITA  0/25  Ram=5
    ³     ³  ÃÄ@WRITEBITA  0/32  Ram=6
-   ³     ³  ÀÄ@READBITA  0/23  Ram=5
-   ³     ÃÄlcd_clear  (Inline)  Ram=0
+   ³     ³  ÀÄ@READBITA  0/25  Ram=5
+   ³     ÃÄlcd_clear  0/9  Ram=0
    ³     ³  ÀÄ*
    ³     ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³  ÀÄ@MUL88  0/37  Ram=2
@@ -121,14 +122,14 @@
    ³     ³  ÀÄ*
    ³     ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_dis_xx_yy_zz  1/140  Ram=15
+   ³     ÃÄlcd_dis_xx_yy_zz  0/110  Ram=15
    ³     ³  ÃÄ@DIV88  0/21  Ram=3
    ³     ³  ÃÄ@DIV88  0/21  Ram=3
    ³     ³  ÃÄ@DIV88  0/21  Ram=3
    ³     ³  ÃÄ@DIV88  0/21  Ram=3
    ³     ³  ÃÄ@DIV88  0/21  Ram=3
    ³     ³  ÃÄ@DIV88  0/21  Ram=3
-   ³     ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ³  ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ³  ÀÄlcd_command  0/28  Ram=1
    ³     ³  ³     ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
@@ -136,7 +137,7 @@
    ³     ³  ³     ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ³  ÀÄ*
    ³     ³  ³  ÀÄlcd_data  0/29  Ram=1
@@ -145,35 +146,35 @@
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
    ³     ³  ÀÄlcd_data  0/29  Ram=1
    ³     ³     ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_dis_2num_dot  1/63  Ram=12
-   ³     ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_dis_2num_dot  0/51  Ram=12
+   ³     ³  ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄ@DIV1616  0/37  Ram=5
    ³     ³  ÃÄ@DIV1616  0/37  Ram=5
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
    ³     ³  ÀÄlcd_data  0/29  Ram=1
    ³     ³     ÀÄ*
-   ³     ÃÄlcd_dis_3num_dot  1/101  Ram=13
-   ³     ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_dis_3num_dot  0/83  Ram=13
+   ³     ³  ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄ@DIV1616  0/37  Ram=5
    ³     ³  ÃÄ@DIV1616  0/37  Ram=5
    ³     ³  ÃÄ@DIV1616  0/37  Ram=5
    ³     ³  ÃÄ@DIV1616  0/37  Ram=5
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
@@ -181,170 +182,170 @@
    ³     ³  ³  ÀÄ*
    ³     ³  ÀÄlcd_data  0/29  Ram=1
    ³     ³     ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ÃÄ@WRITEBITA  0/32  Ram=6
-   ³     ³  ÀÄ@READBITA  0/23  Ram=5
-   ³     ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ³  ÀÄ@READBITA  0/25  Ram=5
+   ³     ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ÀÄ*
    ³     ÃÄnhan_btn_nha  0/60  Ram=2
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_dis_2num_dot  1/63  Ram=12
+   ³     ÃÄlcd_dis_2num_dot  0/51  Ram=12
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_dis_3num_dot  1/101  Ram=13
+   ³     ÃÄlcd_dis_3num_dot  0/83  Ram=13
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_dis_2num_dot  1/63  Ram=12
+   ³     ÃÄlcd_dis_2num_dot  0/51  Ram=12
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄxu_ly_choptat  1/49  Ram=0
+   ³     ÃÄxu_ly_choptat  0/49  Ram=0
    ³     ³  ÀÄtat_bat_2led_chinh  (Inline)  Ram=0
    ³     ÃÄphim_chon_hthi_mode  (Inline)  Ram=0
-   ³     ³  ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ³  ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ³  ÀÄ*
-   ³     ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  1/39  Ram=0
-   ³     ³     ÃÄgiai_ma_gpg_lcd  1/51  Ram=6
+   ³     ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  0/39  Ram=0
+   ³     ³     ÃÄgiai_ma_gpg_lcd  0/45  Ram=6
    ³     ³     ³  ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ³  ÀÄ*
    ³     ³     ³  ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ³  ÀÄ*
    ³     ³     ³  ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ³  ÀÄ*
-   ³     ³     ³  ÀÄlcd_dis_xx_yy_zz  1/140  Ram=15
+   ³     ³     ³  ÀÄlcd_dis_xx_yy_zz  0/110  Ram=15
    ³     ³     ³     ÀÄ*
-   ³     ³     ÃÄgiai_ma_ntn_lcd  1/51  Ram=6
+   ³     ³     ÃÄgiai_ma_ntn_lcd  0/45  Ram=6
    ³     ³     ³  ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ³  ÀÄ*
    ³     ³     ³  ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ³  ÀÄ*
    ³     ³     ³  ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ³  ÀÄ*
-   ³     ³     ³  ÀÄlcd_dis_xx_yy_zz  1/140  Ram=15
+   ³     ³     ³  ÀÄlcd_dis_xx_yy_zz  0/110  Ram=15
    ³     ³     ³     ÀÄ*
-   ³     ³     ÃÄgiai_ma_thu_lcd  1/25  Ram=2
+   ³     ³     ÃÄgiai_ma_thu_lcd  0/23  Ram=2
    ³     ³     ³  ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ³  ÀÄ*
-   ³     ³     ³  ÀÄlcd_dis_xx_yy_zz  1/140  Ram=15
+   ³     ³     ³  ÀÄlcd_dis_xx_yy_zz  0/110  Ram=15
    ³     ³     ³     ÀÄ*
-   ³     ³     ÃÄgiai_ma_gpg_lcd  1/51  Ram=6
+   ³     ³     ÃÄgiai_ma_gpg_lcd  0/45  Ram=6
    ³     ³     ³  ÀÄ*
-   ³     ³     ÃÄgiai_ma_ntn_lcd  1/51  Ram=6
+   ³     ³     ÃÄgiai_ma_ntn_lcd  0/45  Ram=6
    ³     ³     ³  ÀÄ*
-   ³     ³     ÀÄgiai_ma_thu_lcd  1/25  Ram=2
+   ³     ³     ÀÄgiai_ma_thu_lcd  0/23  Ram=2
    ³     ³        ÀÄ*
    ³     ÃÄphim_up  (Inline)  Ram=0
-   ³     ³  ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ³  ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄchinh_tang_gpg  (Inline)  Ram=0
    ³     ³  ³  ÃÄtang_giay  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÃÄ@MUL88  0/37  Ram=2
    ³     ³  ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
    ³     ³  ³  ³  ³  ÀÄ@DIV88  0/21  Ram=3
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
-   ³     ³  ³  ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³     ³  ³  ³     ÃÄ@I2C_WRITE_1  0/92  Ram=1
-   ³     ³  ³  ³     ÀÄ@I2C_WRITE_1  0/92  Ram=1
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
+   ³     ³  ³  ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³     ³  ³  ³     ÃÄ@I2C_WRITEU_129  0/18  Ram=1
+   ³     ³  ³  ³     ÀÄ@I2C_WRITEU_129  0/18  Ram=1
    ³     ³  ³  ÃÄtang_phut  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÀÄ*
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÀÄtang_gio  (Inline)  Ram=0
-   ³     ³  ³     ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³     ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³     ³  ÀÄ*
-   ³     ³  ³     ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³     ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³        ÀÄ*
    ³     ³  ÃÄchinh_tang_ntn  (Inline)  Ram=0
    ³     ³  ³  ÃÄtang_nam  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÀÄ*
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÃÄtang_thang  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÀÄ*
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÀÄtang_ngay  (Inline)  Ram=0
-   ³     ³  ³     ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³     ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³     ³  ÀÄ*
-   ³     ³  ³     ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³     ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³        ÀÄ*
    ³     ³  ÃÄchinh_tang_thu  (Inline)  Ram=0
-   ³     ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³     ÀÄ*
-   ³     ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  1/39  Ram=0
+   ³     ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  0/39  Ram=0
    ³     ³     ÀÄ*
    ³     ÃÄphim_dw  (Inline)  Ram=0
-   ³     ³  ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ³  ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄchinh_giam_gpg  (Inline)  Ram=0
    ³     ³  ³  ÃÄgiam_giay  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÀÄ*
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÃÄgiam_phut  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÀÄ*
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÀÄgiam_gio  (Inline)  Ram=0
-   ³     ³  ³     ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³     ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³     ³  ÀÄ*
-   ³     ³  ³     ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³     ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³        ÀÄ*
    ³     ³  ÃÄchinh_giam_ntn  (Inline)  Ram=0
    ³     ³  ³  ÃÄgiam_nam  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÀÄ*
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÃÄgiam_thang  (Inline)  Ram=0
-   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³  ³  ÀÄ*
-   ³     ³  ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÀÄgiam_ngay  (Inline)  Ram=0
-   ³     ³  ³     ÃÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³     ÃÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³     ³  ÀÄ*
-   ³     ³  ³     ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³     ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³        ÀÄ*
    ³     ³  ÃÄchinh_giam_thu  (Inline)  Ram=0
-   ³     ³  ³  ÀÄds1307_save_ds  1/82  Ram=2
+   ³     ³  ³  ÀÄds1307_save_ds  1/30  Ram=2
    ³     ³  ³     ÀÄ*
-   ³     ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  1/39  Ram=0
+   ³     ³  ÀÄgiai_ma_gpg_ntn_thu_lcd  0/39  Ram=0
    ³     ³     ÀÄ*
-   ³     ÃÄgiai_ma_gpg_ntn_thu_lcd  1/39  Ram=0
+   ³     ÃÄgiai_ma_gpg_ntn_thu_lcd  0/39  Ram=0
    ³     ³  ÀÄ*
    ³     ÃÄlog_mode  (Inline)  Ram=1
-   ³     ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ³  ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ³  ÀÄ*
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÀÄ*
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÀÄ*
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÀÄ*
-   ³     ³  ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ³  ÀÄ*
-   ³     ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ³  ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
@@ -354,60 +355,60 @@
    ³     ³  ÃÄ@DIVS88  1/37  Ram=4
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
-   ³     ³  ÀÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÀÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³     ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄxu_ly_choptat  1/49  Ram=0
+   ³     ÃÄxu_ly_choptat  0/49  Ram=0
    ³     ³  ÀÄ*
    ³     ÃÄphim_chon_mode_alarm  (Inline)  Ram=0
-   ³     ³  ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ³  ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ³  ÀÄ*
-   ³     ³  ÀÄgiai_ma_gpg_alarm_lcd  1/51  Ram=6
+   ³     ³  ÀÄgiai_ma_gpg_alarm_lcd  1/53  Ram=6
    ³     ³     ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ÀÄ*
    ³     ³     ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ÀÄ*
    ³     ³     ÃÄds1307_bcdToDec  0/17  Ram=3
    ³     ³     ³  ÀÄ*
-   ³     ³     ÀÄlcd_dis_xx_yy_zz  1/140  Ram=15
+   ³     ³     ÀÄlcd_dis_xx_yy_zz  0/110  Ram=15
    ³     ³        ÀÄ*
    ³     ÃÄphim_up_eat  (Inline)  Ram=0
-   ³     ³  ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ³  ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄchinh_tang_gpg_eat  (Inline)  Ram=0
    ³     ³  ³  ÃÄtang_giay_eat  (Inline)  Ram=0
-   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÃÄtang_phut_eat  (Inline)  Ram=0
-   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÀÄtang_gio_eat  (Inline)  Ram=0
-   ³     ³  ³     ÀÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³     ÀÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³        ÀÄ*
-   ³     ³  ÀÄgiai_ma_gpg_alarm_lcd  1/51  Ram=6
+   ³     ³  ÀÄgiai_ma_gpg_alarm_lcd  1/53  Ram=6
    ³     ³     ÀÄ*
    ³     ÃÄphim_dw_eat  (Inline)  Ram=0
-   ³     ³  ÃÄnhan_btn_giu  1/43  Ram=3
+   ³     ³  ÃÄnhan_btn_giu  0/39  Ram=3
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄchinh_giam_gpg_eat  (Inline)  Ram=0
    ³     ³  ³  ÃÄgiam_giay_eat  (Inline)  Ram=0
-   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÃÄgiam_phut_eat  (Inline)  Ram=0
-   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³  ³  ÀÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³  ³     ÀÄ*
    ³     ³  ³  ÀÄgiam_gio_eat  (Inline)  Ram=0
-   ³     ³  ³     ÀÄtang_or_giam_bcd  1/51  Ram=7
+   ³     ³  ³     ÀÄtang_or_giam_bcd  0/45  Ram=7
    ³     ³  ³        ÀÄ*
-   ³     ³  ÀÄgiai_ma_gpg_alarm_lcd  1/51  Ram=6
+   ³     ³  ÀÄgiai_ma_gpg_alarm_lcd  1/53  Ram=6
    ³     ³     ÀÄ*
-   ³     ÃÄgiai_ma_gpg_alarm_lcd  1/51  Ram=6
+   ³     ÃÄgiai_ma_gpg_alarm_lcd  1/53  Ram=6
    ³     ³  ÀÄ*
    ³     ÃÄlog_mode_alarm  (Inline)  Ram=1
-   ³     ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ³  ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ³  ÀÄ*
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
@@ -417,24 +418,24 @@
    ³     ³  ÃÄ@DIVS88  1/37  Ram=4
    ³     ³  ÃÄlcd_data  0/29  Ram=1
    ³     ³  ³  ÀÄ*
-   ³     ³  ÀÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ³  ÀÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³     ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
    ³     ÃÄ@PSTRINGC7_9600_62_63  (Inline)  Ram=4
    ³     ÃÄ@delay_ms1  0/20  Ram=1
    ³     ÃÄnhan_btn_nha  0/60  Ram=2
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
-   ³     ÃÄlcd_setCursor  0/25  Ram=7
+   ³     ÃÄlcd_setCursor  0/27  Ram=9
    ³     ³  ÀÄ*
-   ³     ÃÄ@PSTRINGC7_685  0/80  Ram=4
+   ³     ÃÄ@PSTRINGC7_764  0/80  Ram=4
    ³     ³  ÀÄ*
    ³     ÀÄnhan_btn_nha  0/60  Ram=2
    ³        ÀÄ*
-   ÀÄinterrupt_timer1  0/20  Ram=1
+   ÀÄinterrupt_timer1  0/21  Ram=1
