@@ -1,0 +1,303 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @INTERRUPT_AREA
+021     @INTERRUPT_AREA
+022     @INTERRUPT_AREA
+023     @INTERRUPT_AREA
+024     @INTERRUPT_AREA
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     @INTERRUPT_AREA
+02A     @INTERRUPT_AREA
+02B     @TRIS_C
+02C.0   flag_10ms
+02C.1   isDs18b20
+02D     countPush
+02E     countTick
+02F     _displayfunction
+030     _displaycontrol
+031     _displaymode
+032     _numlines
+033     _cols
+034     _rows
+035     _backlightval
+036-037 @sprintf_string
+038-040 time_w
+041-049 time_r
+04A-04B temperature
+04C     dt_ng
+04D     dt_ngt
+04E-04F dt_tp
+050-051 dt_tpt
+052-053 tt
+054     countLevel
+055     countLevelRev
+056     push_btn.isRelease
+056-057 @MUL1616.P1
+056     ds1307_read_time.j
+056     ds1307_update_time.sel
+056-057 ds18b20_read_temp_c2.raw_temp_value
+056     lcd_setup.@SCRATCH1
+056     lcd_display.@SCRATCH1
+056     log_lcd_initialize.@SCRATCH1
+056     ds18b20_read_temp.@SCRATCH1
+056     menu.@SCRATCH1
+057     push_btn.pin
+057     ds1307_update_time.i
+057     @delay_ms1.P1
+057     ds1307_read_time.i
+057     ds18b20_read_temp.@SCRATCH2
+057     menu.@SCRATCH2
+058     ds1307_bcdToDec.val
+058     @WRITEBITA.P1
+058     ds18b20_write_byte.value
+058-059 @MUL1616.P1
+058-059 @DIV1616.P2
+058     @READBITA.P3
+058     push_btn.@SCRATCH1
+058     ds1307_read_time.@SCRATCH1
+058     ds1307_update_time.@SCRATCH1
+058     ds18b20_start.@SCRATCH1
+058     ds18b20_read_temp_c2.@SCRATCH1
+058     menu.@SCRATCH3
+059-05A @READBITA.P1
+059     @WRITEBITA.P2
+059     @delay_us1.P3
+059     ds18b20_write_byte.i
+059     lcd_dis_xx_yy_zz.x
+059     ds1307_bcdToDec.@SCRATCH1
+059     ds1307_read_time.@SCRATCH2
+059     ds18b20_read_temp_c2.@SCRATCH2
+05A-05B @WRITEBITA.P1
+05A     lcd_dis_xx_yy_zz.y
+05A     @I2C_READU_129.P1
+05A-05B @DIV1616.P2
+05A     ds1307_bcdToDec.@SCRATCH2
+05A     ds18b20_write_byte.@SCRATCH1
+05A     ds18b20_read_temp_c2.@SCRATCH3
+05A     @MUL1616.@SCRATCH1
+05B     ds18b20_write_bit.value
+05B     @MUL88.P1
+05B     lcd_dis_xx_yy_zz.a
+05B     ds18b20_read_temp_c2.@SCRATCH4
+05C     lcd_dis_xx_yy_zz.b
+05C     ds18b20_read_byte.value
+05C     @MUL88.P1
+05C     ds18b20_read_temp_c2.@SCRATCH5
+05C     @DIV1616.@SCRATCH1
+05D     ds18b20_read_byte.i
+05D     lcd_dis_xx_yy_zz.c
+05D     ds18b20_read_temp_c2.@SCRATCH6
+05E     lcd_dis_xx_yy_zz.e3
+05E.0   ds18b20_read_bit.value
+05F     lcd_dis_xx_yy_zz.e2
+060     lcd_dis_xx_yy_zz.e1
+061     lcd_dis_xx_yy_zz.a_ch
+062     lcd_dis_xx_yy_zz.a_dv
+063     lcd_dis_xx_yy_zz.b_ch
+064     lcd_dis_xx_yy_zz.b_dv
+065     lcd_dis_xx_yy_zz.c_ch
+066     lcd_dis_xx_yy_zz.c_dv
+067     @DIV88.P1
+067     lcd_setCursor.col
+067     @PSTRINGC7_745.@SCRATCH1
+067     lcd_dis_xx_yy_zz.@SCRATCH1
+068     lcd_setCursor.row
+068     @DIV88.P1
+068     @PSTRINGC7_745.@SCRATCH2
+069-06C lcd_setCursor.row_offsets
+069     @PSTRINGC7_745.@SCRATCH3
+069     @DIV88.@SCRATCH1
+06A     lcd_data.value
+06A     @PSTRINGC7_745.@SCRATCH4
+06D     lcd_setCursor.@SCRATCH1
+06E     lcd_command.value
+06F     lcd_send.value
+070     lcd_send.mode
+071     lcd_send.highnib
+072     lcd_send.lownib
+073     lcd_send.@SCRATCH1
+074     write4bits.value
+075     pulseEnable._data
+076     pulseEnable.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     expanderWrite._data
+07C     expanderWrite.@SCRATCH1
+07D     i2c_write_1byte.payload
+07E     @I2C_WRITEU_129.P1
+07F     @INTERRUPT_AREA
+09C.6   C1OUT
+09C.7   C2OUT
+0FF     @INTERRUPT_AREA
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+17F     @INTERRUPT_AREA
+1FF     @INTERRUPT_AREA
+27F     @INTERRUPT_AREA
+2FF     @INTERRUPT_AREA
+37F     @INTERRUPT_AREA
+3FF     @INTERRUPT_AREA
+47F     @INTERRUPT_AREA
+4FF     @INTERRUPT_AREA
+57F     @INTERRUPT_AREA
+5FF     @INTERRUPT_AREA
+67F     @INTERRUPT_AREA
+6FF     @INTERRUPT_AREA
+77F     @INTERRUPT_AREA
+7FF     @INTERRUPT_AREA
+87F     @INTERRUPT_AREA
+8FF     @INTERRUPT_AREA
+97F     @INTERRUPT_AREA
+9FF     @INTERRUPT_AREA
+A7F     @INTERRUPT_AREA
+AFF     @INTERRUPT_AREA
+B7F     @INTERRUPT_AREA
+BFF     @INTERRUPT_AREA
+C7F     @INTERRUPT_AREA
+CFF     @INTERRUPT_AREA
+D7F     @INTERRUPT_AREA
+DFF     @INTERRUPT_AREA
+E7F     @INTERRUPT_AREA
+EFF     @INTERRUPT_AREA
+F7F     @INTERRUPT_AREA
+FFF     @INTERRUPT_AREA
+107F     @INTERRUPT_AREA
+10FF     @INTERRUPT_AREA
+117F     @INTERRUPT_AREA
+11FF     @INTERRUPT_AREA
+127F     @INTERRUPT_AREA
+12FF     @INTERRUPT_AREA
+137F     @INTERRUPT_AREA
+13FF     @INTERRUPT_AREA
+147F     @INTERRUPT_AREA
+14FF     @INTERRUPT_AREA
+157F     @INTERRUPT_AREA
+15FF     @INTERRUPT_AREA
+167F     @INTERRUPT_AREA
+16FF     @INTERRUPT_AREA
+177F     @INTERRUPT_AREA
+17FF     @INTERRUPT_AREA
+187F     @INTERRUPT_AREA
+18FF     @INTERRUPT_AREA
+197F     @INTERRUPT_AREA
+19FF     @INTERRUPT_AREA
+1A7F     @INTERRUPT_AREA
+1AFF     @INTERRUPT_AREA
+1B7F     @INTERRUPT_AREA
+1BFF     @INTERRUPT_AREA
+1C7F     @INTERRUPT_AREA
+1CFF     @INTERRUPT_AREA
+1D7F     @INTERRUPT_AREA
+1DFF     @INTERRUPT_AREA
+1E7F     @INTERRUPT_AREA
+1EFF     @INTERRUPT_AREA
+1F7F     @INTERRUPT_AREA
+1FFF     @INTERRUPT_AREA
+
+ROM Allocation:
+000051  interrupt_timer1
+00005D  @const762.call
+000065  @const767.call
+00006B  @const786.call
+00006C  @const787.call
+00006D  setup_initialize
+000099  @I2C_WRITEU_129
+0000A9  @I2C_READU_129
+0000B9  ds1307_read_time
+0000E5  ds1307_setup
+0000EE  ds1307_update_time
+00011B  @delay_ms1
+00012F  expanderWrite
+000134  i2c_write_1byte
+000145  write4bits
+00014A  pulseEnable
+00015C  lcd_send
+000171  lcd_command
+000176  lcd_clear
+00017D  lcd_setup
+000182  i2c_setup_write
+0001B3  lcd_display
+0001C1  lcd_home
+0001CA  lcd_setCursor
+0001E3  lcd_data
+0001E9  @PSTRINGC7_745
+00023F  log_lcd_initialize
+000261  @delay_us1
+000270  ds18b20_start
+000296  ds18b20_write_byte
+0002AB  ds18b20_write_bit
+0002CB  ds18b20_read_byte
+0002D1  ds18b20_read_bit
+0002FA  @WRITEBITA
+00031A  @READBITA
+000333  ds1307_bcdToDec
+00033D  @MUL88
+000368  @DIV88
+00037D  loop
+000380  ds18b20_read_temp
+000383  ds18b20_read_temp_c2
+0003F8  @MUL1616
+000417  @DIV1616
+000441  menu
+000444  push_btn
+0004C1  lcd_dis_xx_yy_zz
+000536  MAIN
+000536  @cinit1
+000562  @cinit2
+
+Project Directory:
+    E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\
+
+Project Files:
+    main.c                                                  [02-Jun-24 01:43  CRC=FD936B13]
+    library_project.c                                       [02-Jun-24 01:38  CRC=BF8A55FA]
+    define_pic16f.c                                         [02-Jun-24 01:56  CRC=7013F401]
+    C:\Program Files (x86)\PICC\Devices\16f877a.h           [07-Mar-23 19:19  CRC=32478F9C]
+    library_button.c                                        [02-Jun-24 01:46  CRC=BE9CD8DA]
+    library_i2c.c                                           [02-Jun-24 01:07  CRC=4C339988]
+    library_lcd_i2c.c                                       [02-Jun-24 02:05  CRC=60413ECA]
+    library_ds1307_i2c.c                                    [02-Jun-24 01:18  CRC=6DFC1FD9]
+    library_ds18b20.c                                       [02-Jun-24 01:30  CRC=E63D1207]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 14:04  CRC=24D0ECE7]
+    library_menu.c                                          [02-Jun-24 02:05  CRC=6161EF89]
+
+Source signature=0658F3AF
+Program memory checksum=0000
+Hex file CRC=04E1
+
+Units:
+    E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

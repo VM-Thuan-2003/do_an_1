@@ -1,0 +1,15 @@
+#include <16f877a.h>
+#device  adc=10
+#use     delay(clock=20MHz) 
+
+void main(void){
+   
+   set_tris_b(0x00);
+   output_b(0x00);
+   while(1){
+   output_b(0xff);
+   delay_ms(100);
+   output_b(0x00);
+   delay_ms(100);
+   }
+}

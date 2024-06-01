@@ -8,7 +8,8 @@
 01B     CCP_2
 01C     CCP_2_HIGH
 020     @TRIS_C
-021     @delay_ms1.P1
+021     main.@SCRATCH1
+022     @delay_ms1.P1
 077     @SCRATCH
 078     @SCRATCH
 078     _RETURN_
@@ -16,34 +17,37 @@
 07A     @SCRATCH
 09C.6   C1OUT
 09C.7   C2OUT
-10D-10E @READ_PROGRAM_MEMORY8.P1
-10D-10E @WRITE_PROGRAM_MEMORY8.P2
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
 
 ROM Allocation:
 000004  @delay_ms1
 000018  main
 000018  @cinit1
-00002C  @cinit2
+00003C  @cinit2
 
 Project Directory:
     E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\TEST_PIN\
 
 Project Files:
-    test.c                                                  [08-Apr-24 21:32  CRC=7DFCA5F0]
-    D:\APPS\PICC\Devices\16f877a.h                          [12-Nov-13 14:35  CRC=81334808]
+    test.c                                                  [14-May-24 02:16  CRC=47EE4013]
+    C:\Program Files (x86)\PICC\Devices\16f877a.h           [07-Mar-23 19:19  CRC=32478F9C]
 
-Source signature=80633600
+Source signature=AC7D5F4B
+Program memory checksum=0000
+Hex file CRC=4FF2
 
 Units:
-    test (main)
+    E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\TEST_PIN\test (main)
 
 Compiler Settings:
     Processor:      PIC16F877A
     Pointer Size:   16
-    ADC Range:      0-1023
+    ADC Range:      0-255
     Opt Level:      9
     Short,Int,Long: UNSIGNED: 1,8,16
     Float,Double:   32,32
+    Compile Mode:   CCS5
 
 Output Files:
     XREF file:   test.xsym

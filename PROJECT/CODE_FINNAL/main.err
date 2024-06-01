@@ -1,0 +1,4 @@
+Compiling E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\main on 02-Jun-24 at 02:07
+>>> Warning 245 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\define_pic16f.c" Line 83(0,1): File may have mis-matched #if/#endif
+>>> Warning 240 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_ds18b20.c" Line 80(29,40): Pointer types do not match
+>>> Warning 245 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_project.c" Line 36(0,1): File may have mis-matched #if/#endif

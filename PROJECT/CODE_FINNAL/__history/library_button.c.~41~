@@ -1,0 +1,35 @@
+usi8 countPush = 0;
+usi8 countTick = 0;
+
+bool push_btn(bool isRelease, usi8 pin){
+//! isRelease == 0 --> push button is hold
+//! isRelease == 1 --> push button is release
+   if(!input(pin)){
+      
+      if(flag_10ms == true) countPush++;
+      if(countPush >= 2){
+         
+      }
+      return false;
+      
+      if(!input(pin)){
+         if(isRelease) while(!input(pin));
+         return true;   
+      }
+      return false;
+   }
+   return false;
+}
+
+bool tick_btn(usi8 dl, usi8 pin){
+//! dl is time delay that compute with 10ms for dl is 1
+   if(!input(pin)){
+      countTick++; delay_us(25);
+      if(countTick >= dl){
+         countTick = 0;
+         return true;
+      }
+      return false;
+   }
+   return false;
+}

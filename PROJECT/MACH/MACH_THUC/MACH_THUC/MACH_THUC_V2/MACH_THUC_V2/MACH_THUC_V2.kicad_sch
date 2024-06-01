@@ -921,6 +921,374 @@
 				)
 			)
 		)
+		(symbol "Display_Character:WC1602A"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "DS"
+				(at -5.842 19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WC1602A"
+				(at 5.334 19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Display:WC1602A"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf"
+				(at 17.78 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "LCD 16x2 Alphanumeric , 8 bit parallel bus, 5V VDD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "display LCD dot-matrix"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*WC*1602A*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WC1602A_1_1"
+				(rectangle
+					(start -7.62 17.78)
+					(end 7.62 -17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 0 -20.32 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "D4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -10.16 0)
+					(length 2.54)
+					(name "D5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -12.7 0)
+					(length 2.54)
+					(name "D6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -15.24 0)
+					(length 2.54)
+					(name "D7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "LED(+)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "LED(-)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 20.32 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 15.24 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(name "RS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 12.7 0)
+					(length 2.54)
+					(name "R/W"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 15.24 0)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "D0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "D1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "D2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Library_Thuan_V2:1935161"
 			(pin_names
 				(offset 1.016)
@@ -7203,6 +7571,119 @@
 			(project "MACH_THUC"
 				(path "/fa9b692b-a58b-4246-a447-a74a2194b64e"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Display_Character:WC1602A")
+		(at 49.53 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e0983696-9cc1-4d7b-9010-7516f240c494")
+		(property "Reference" "DS1"
+			(at 51.7241 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "WC1602A"
+			(at 51.7241 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Display:WC1602A"
+			(at 49.53 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf"
+			(at 67.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LCD 16x2 Alphanumeric , 8 bit parallel bus, 5V VDD"
+			(at 49.53 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "33daa2b5-9123-4b44-aa61-7b1750d36e9d")
+		)
+		(pin "12"
+			(uuid "cb1b5ad0-a997-4481-8abc-93f7a9a73085")
+		)
+		(pin "1"
+			(uuid "d339fc58-f84d-44d5-881a-5a4dc3af9fa9")
+		)
+		(pin "7"
+			(uuid "8e6db3e7-04c2-4f0d-af05-31d6ea04b001")
+		)
+		(pin "10"
+			(uuid "fe18aaf5-1699-434c-86a9-79c9b0a6cf41")
+		)
+		(pin "16"
+			(uuid "7c9006eb-fefd-4ebf-812a-69dd5274cc57")
+		)
+		(pin "8"
+			(uuid "e73c9972-84ea-417a-a608-c23006ca9733")
+		)
+		(pin "9"
+			(uuid "f0b7f892-80de-41e4-8d04-324347fc02a9")
+		)
+		(pin "13"
+			(uuid "2ebd5264-c0b6-4c4c-a730-7beb29df7bc2")
+		)
+		(pin "5"
+			(uuid "2c762733-d3c6-450c-b05e-ba55b789c8d2")
+		)
+		(pin "2"
+			(uuid "44ebb15f-cbca-4c54-b362-7990c3adb417")
+		)
+		(pin "14"
+			(uuid "6ee18275-4b16-4889-adb4-8574bc0dfef6")
+		)
+		(pin "3"
+			(uuid "69e31e58-52c3-480c-be92-9b8ebfda8c56")
+		)
+		(pin "4"
+			(uuid "055dfad6-f005-4916-96c6-e40d68993d09")
+		)
+		(pin "6"
+			(uuid "5c77a7c4-e67d-4734-a75a-1199416c0d44")
+		)
+		(pin "11"
+			(uuid "2ee30cfc-1a95-4b32-ad56-89f1d4a5a82e")
+		)
+		(instances
+			(project "MACH_THUC_V2"
+				(path "/5e179f03-c6e4-4dcc-af17-ffe7add0ada4"
+					(reference "DS1")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,147 @@
+ÀÄmain
+   ÃÄMAIN  0/87  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄsetup_initialize  0/44  Ram=0
+   ³  ÃÄds1307_setup  0/54  Ram=0
+   ³  ³  ÃÄds1307_read_time  0/44  Ram=4
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ³  ÃÄ@I2C_READU_129  0/16  Ram=1
+   ³  ³  ³  ÀÄ@I2C_READU_129  0/16  Ram=1
+   ³  ³  ÀÄds1307_update_time  (Inline)  Ram=3
+   ³  ³     ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³     ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³     ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³     ÀÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ÃÄlcd_setup  0/77  Ram=1
+   ³  ³  ÃÄi2c_setup_write  (Inline)  Ram=0
+   ³  ³  ³  ÀÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³  ÀÄi2c_write_1byte  (Inline)  Ram=1
+   ³  ³  ³     ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ³     ÀÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÃÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄpulseEnable  (Inline)  Ram=2
+   ³  ³  ³     ÃÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÀÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_command  0/5  Ram=1
+   ³  ³  ³  ÀÄlcd_send  0/21  Ram=5
+   ³  ³  ³     ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÀÄwrite4bits  0/23  Ram=1
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄlcd_display  (Inline)  Ram=1
+   ³  ³  ³  ÀÄlcd_command  0/5  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_clear  0/7  Ram=0
+   ³  ³  ³  ÃÄlcd_command  0/5  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_command  0/5  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄlcd_home  (Inline)  Ram=0
+   ³  ³     ÃÄlcd_command  0/5  Ram=1
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄ@delay_ms1  0/20  Ram=1
+   ³  ÃÄlog_lcd_initialize  0/34  Ram=1
+   ³  ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³  ³  ³  ÀÄlcd_command  0/5  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC7_745  0/86  Ram=4
+   ³  ³  ³  ÃÄlcd_data  0/6  Ram=1
+   ³  ³  ³  ³  ÀÄlcd_send  0/21  Ram=5
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÀÄlcd_data  0/6  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC7_745  0/86  Ram=4
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÀÄlcd_clear  0/7  Ram=0
+   ³  ³     ÀÄ*
+   ³  ÀÄloop  0/441  Ram=0
+   ³     ÃÄds1307_read_time  0/44  Ram=4
+   ³     ³  ÀÄ*
+   ³     ÃÄds18b20_read_temp  (Inline)  Ram=2
+   ³     ³  ÃÄds18b20_read_temp_c2  (Inline)  Ram=8
+   ³     ³  ³  ÃÄds18b20_start  0/38  Ram=1
+   ³     ³  ³  ³  ÃÄ@delay_us1  0/15  Ram=1
+   ³     ³  ³  ³  ÀÄ@delay_us1  0/15  Ram=1
+   ³     ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
+   ³     ³  ³  ³  ÀÄds18b20_write_bit  (Inline)  Ram=1
+   ³     ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄds18b20_read_byte  0/47  Ram=2
+   ³     ³  ³  ³  ÀÄds18b20_read_bit  (Inline)  Ram=1
+   ³     ³  ³  ÃÄds18b20_start  0/38  Ram=1
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄds18b20_write_byte  0/53  Ram=3
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÃÄds18b20_read_byte  0/47  Ram=2
+   ³     ³  ³  ³  ÀÄ*
+   ³     ³  ³  ÀÄds18b20_read_byte  0/47  Ram=2
+   ³     ³  ³     ÀÄ*
+   ³     ³  ÃÄ@MUL1616  (Inline)  Ram=5
+   ³     ³  ÀÄ@DIV1616  (Inline)  Ram=5
+   ³     ÀÄmenu  (Inline)  Ram=3
+   ³        ÃÄpush_btn  (Inline)  Ram=3
+   ³        ³  ÃÄ@WRITEBITA  0/32  Ram=6
+   ³        ³  ÃÄ@READBITA  0/25  Ram=5
+   ³        ³  ÃÄ@WRITEBITA  0/32  Ram=6
+   ³        ³  ÃÄ@READBITA  0/25  Ram=5
+   ³        ³  ÃÄ@WRITEBITA  0/32  Ram=6
+   ³        ³  ÀÄ@READBITA  0/25  Ram=5
+   ³        ÃÄlcd_clear  0/7  Ram=0
+   ³        ³  ÀÄ*
+   ³        ÃÄds1307_bcdToDec  0/53  Ram=3
+   ³        ³  ÀÄ@MUL88  (Inline)  Ram=2
+   ³        ÃÄds1307_bcdToDec  0/53  Ram=3
+   ³        ³  ÀÄ*
+   ³        ÃÄds1307_bcdToDec  0/53  Ram=3
+   ³        ³  ÀÄ*
+   ³        ÀÄlcd_dis_xx_yy_zz  (Inline)  Ram=15
+   ³           ÃÄ@DIV88  0/21  Ram=3
+   ³           ÃÄ@DIV88  0/21  Ram=3
+   ³           ÃÄ@DIV88  0/21  Ram=3
+   ³           ÃÄ@DIV88  0/21  Ram=3
+   ³           ÃÄ@DIV88  0/21  Ram=3
+   ³           ÃÄ@DIV88  0/21  Ram=3
+   ³           ÃÄlcd_setCursor  0/25  Ram=7
+   ³           ³  ÀÄ*
+   ³           ÃÄlcd_data  0/6  Ram=1
+   ³           ³  ÀÄ*
+   ³           ÃÄlcd_data  0/6  Ram=1
+   ³           ³  ÀÄ*
+   ³           ÃÄ@PSTRINGC7_745  0/86  Ram=4
+   ³           ³  ÀÄ*
+   ³           ÃÄlcd_data  0/6  Ram=1
+   ³           ³  ÀÄ*
+   ³           ÃÄlcd_data  0/6  Ram=1
+   ³           ³  ÀÄ*
+   ³           ÃÄ@PSTRINGC7_745  0/86  Ram=4
+   ³           ³  ÀÄ*
+   ³           ÃÄlcd_data  0/6  Ram=1
+   ³           ³  ÀÄ*
+   ³           ÀÄlcd_data  0/6  Ram=1
+   ³              ÀÄ*
+   ÀÄinterrupt_timer1  0/12  Ram=0

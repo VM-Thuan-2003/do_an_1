@@ -1,0 +1,46 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.115
+Compiler=PCM
+[Target Data]
+FileList=main.c
+[main.c]
+Type=4
+[mru-list]
+1=main.c
+
+[defines]
+buildcount=34
+
+[ProjectLog]
+Days=1
+D1=02-06-2024
+D1_L=3
+D1_L1=[467]Started Editing.
+D1_L2=[2526]Stopped Editing.
+D1_L3=[2548]Started Editing.
+
+[Opened Files]
+1=main.c
+t1=1
+2=define_pic16f.c
+t2=28
+3=library_project.c
+t3=1
+Count=9
+4=library_button.c
+t4=1
+5=library_i2c.c
+t5=1
+6=library_lcd_i2c.c
+t6=170
+7=library_ds1307_i2c.c
+t7=1
+8=library_ds18b20.c
+t8=58
+9=library_menu.c
+t9=58
+[Units]
+Count=1
+1=main (main)

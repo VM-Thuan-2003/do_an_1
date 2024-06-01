@@ -1,12 +1,12 @@
-CCS PCM C Compiler, Version 5.015, 5967               08-Apr-24 22:40
+CCS PCM C Compiler, Version 5.115, 43599               14-May-24 02:16
 
                Filename:   E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\TEST_PIN\test.lst
 
-               ROM used:   67 words (1%)
+               ROM used:   117 words (1%)
                            Largest free fragment is 2048
-               RAM used:   6 (2%) at main() level
-                           7 (2%) worst case
-               Stack used: 1 locations
+               RAM used:   7 (2%) at main() level
+                           8 (2%) worst case
+               Stack used: 0 locations
                Stack size: 8
 
 *
@@ -14,25 +14,24 @@ CCS PCM C Compiler, Version 5.015, 5967               08-Apr-24 22:40
 0001:  MOVWF  0A
 0002:  GOTO   018
 0003:  NOP
-.................... #include <16f877a.h> 
-.................... //////////// Standard Header file for the PIC16F877A device //////////////// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
-.................... //// This source code may only be used by licensed users of the CCS C  //// 
-.................... //// compiler.  This source code may only be distributed to other      //// 
-.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
-.................... //// or distribution is permitted without written permission.          //// 
-.................... //// Derivative programs created using this software in object code    //// 
-.................... //// form are not restricted in any way.                               //// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-.................... #device PIC16F877A 
-....................  
-.................... #list 
-....................  
-.................... #device  adc=10 
-.................... #fuses   hs, nowdt, put, noprotect, nolvp 
-.................... #use     delay(clock=20MHz)  
-0004:  MOVLW  21
+.................... #include <16f877a.h>
+.................... //////////// Standard Header file for the PIC16F877A device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2020 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC16F877A
+.................... 
+.................... #list
+.................... 
+.................... #fuses   hs, nowdt, put, noprotect, nolvp
+.................... #use     delay(clock=20MHz) 
+0004:  MOVLW  22
 0005:  MOVWF  04
 0006:  BCF    03.7
 0007:  MOVF   00,W
@@ -52,63 +51,119 @@ CCS PCM C Compiler, Version 5.015, 5967               08-Apr-24 22:40
 0015:  DECFSZ 00,F
 0016:  GOTO   00A
 0017:  RETURN
-.................... #use     i2c(master,slow,sda=pin_c4,scl=pin_c3) 
-.................... #use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7) 
-....................  
-.................... void main(void){ 
+.................... #use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
+.................... #use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7)
+.................... 
+.................... void main(){
 0018:  MOVF   03,W
 0019:  ANDLW  1F
 001A:  MOVWF  03
 001B:  MOVLW  FF
 001C:  MOVWF  20
-001D:  MOVLW  81
-001E:  BSF    03.5
-001F:  MOVWF  19
-0020:  MOVLW  A6
-0021:  MOVWF  18
-0022:  MOVLW  90
-0023:  BCF    03.5
-0024:  MOVWF  18
-0025:  BSF    03.5
-0026:  BSF    1F.0
-0027:  BSF    1F.1
-0028:  BSF    1F.2
-0029:  BCF    1F.3
-002A:  MOVLW  07
-002B:  MOVWF  1C
-002C:  BCF    03.7
-....................     
-....................    set_tris_b(0x00); 
-002D:  MOVLW  00
-002E:  MOVWF  06
-....................    output_b(0x00); 
-002F:  CLRF   06
-0030:  BCF    03.5
-0031:  CLRF   06
-....................    while(true){ 
-....................    output_b(0xff); 
-0032:  BSF    03.5
-0033:  CLRF   06
-0034:  MOVLW  FF
-0035:  BCF    03.5
-0036:  MOVWF  06
-....................    delay_ms(100); 
-0037:  MOVLW  64
-0038:  MOVWF  21
-0039:  CALL   004
-....................    output_b(0x00); 
-003A:  BSF    03.5
-003B:  CLRF   06
-003C:  BCF    03.5
-003D:  CLRF   06
-....................    delay_ms(100); 
-003E:  MOVLW  64
-003F:  MOVWF  21
-0040:  CALL   004
-0041:  GOTO   032
-....................    } 
-.................... } 
-0042:  SLEEP
+001D:  BSF    20.3
+001E:  MOVF   20,W
+001F:  BSF    03.5
+0020:  MOVWF  07
+0021:  BCF    03.5
+0022:  BSF    20.4
+0023:  MOVF   20,W
+0024:  BSF    03.5
+0025:  MOVWF  07
+0026:  MOVLW  31
+0027:  MOVWF  13
+0028:  MOVLW  28
+0029:  BCF    03.5
+002A:  MOVWF  14
+002B:  BSF    03.5
+002C:  BSF    14.7
+002D:  BCF    14.6
+002E:  MOVLW  81
+002F:  MOVWF  19
+0030:  MOVLW  A6
+0031:  MOVWF  18
+0032:  MOVLW  90
+0033:  BCF    03.5
+0034:  MOVWF  18
+0035:  BSF    03.5
+0036:  BSF    1F.0
+0037:  BSF    1F.1
+0038:  BSF    1F.2
+0039:  BCF    1F.3
+003A:  MOVLW  07
+003B:  MOVWF  1C
+003C:  BCF    03.7
+....................    set_tris_b (0x00);
+003D:  MOVLW  00
+003E:  MOVWF  06
+....................    set_tris_d (0x00);
+003F:  MOVWF  08
+....................    output_bit(PIN_B5, 0);
+0040:  BCF    03.5
+0041:  BCF    06.5
+0042:  BSF    03.5
+0043:  BCF    06.5
+....................    output_bit(PIN_D6, 0); 
+0044:  BCF    03.5
+0045:  BCF    08.6
+0046:  BSF    03.5
+0047:  BCF    08.6
+....................    output_bit(PIN_D7, 0); 
+0048:  BCF    03.5
+0049:  BCF    08.7
+004A:  BSF    03.5
+004B:  BCF    08.7
+....................    while(1){
+....................    output_bit(PIN_B5, 1);
+004C:  BCF    03.5
+004D:  BSF    06.5
+004E:  BSF    03.5
+004F:  BCF    06.5
+....................    output_bit(PIN_D6, 1);
+0050:  BCF    03.5
+0051:  BSF    08.6
+0052:  BSF    03.5
+0053:  BCF    08.6
+....................    output_bit(PIN_D7, 0);
+0054:  BCF    03.5
+0055:  BCF    08.7
+0056:  BSF    03.5
+0057:  BCF    08.7
+....................    delay_ms(1000);
+0058:  MOVLW  04
+0059:  BCF    03.5
+005A:  MOVWF  21
+005B:  MOVLW  FA
+005C:  MOVWF  22
+005D:  CALL   004
+005E:  DECFSZ 21,F
+005F:  GOTO   05B
+....................    output_bit(PIN_B5, 0);
+0060:  BCF    06.5
+0061:  BSF    03.5
+0062:  BCF    06.5
+....................    output_bit(PIN_D6, 0); 
+0063:  BCF    03.5
+0064:  BCF    08.6
+0065:  BSF    03.5
+0066:  BCF    08.6
+....................    output_bit(PIN_D7, 1); 
+0067:  BCF    03.5
+0068:  BSF    08.7
+0069:  BSF    03.5
+006A:  BCF    08.7
+....................    delay_ms(1000);
+006B:  MOVLW  04
+006C:  BCF    03.5
+006D:  MOVWF  21
+006E:  MOVLW  FA
+006F:  MOVWF  22
+0070:  CALL   004
+0071:  DECFSZ 21,F
+0072:  GOTO   06E
+0073:  GOTO   04D
+....................    }
+.................... }
+0074:  SLEEP
 
 Configuration Fuses:
    Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

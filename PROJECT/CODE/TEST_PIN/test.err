@@ -1,3 +1,5 @@
+Compiling E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\TEST_PIN\test on 14-May-24 at 02:16
+>>> Warning 203 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE\TEST_PIN\test.c" Line 13(1,1): Condition always TRUE
       Memory usage:   ROM=1%      RAM=2% - 2%
-      0 Errors,  0 Warnings.
+      0 Errors,  1 Warnings.
 Build Successful.

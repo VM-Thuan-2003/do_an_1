@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/STUDY/HKII-2023-2024/DO_AN_1/PROJECT/CODE",
-      "program": "e:/STUDY/HKII-2023-2024/DO_AN_1/PROJECT/CODE/build/Debug/outDebug",
+      "cwd": "e:/STUDY/HKII-2023-2024/DO_AN_1",
+      "program": "e:/STUDY/HKII-2023-2024/DO_AN_1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

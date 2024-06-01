@@ -1,0 +1,13 @@
+#include <16f877a.h>
+#fuses   hs, nowdt, put, noprotect, nolvp
+
+void main(){
+   set_tris_b (0x00);
+   output_bit(PIN_B5, 0); 
+   while(1){
+   output_bit(PIN_B5, 1);
+   delay_ms(1000);
+   output_bit(PIN_B5, 0); 
+   delay_ms(1000);
+   }
+}
