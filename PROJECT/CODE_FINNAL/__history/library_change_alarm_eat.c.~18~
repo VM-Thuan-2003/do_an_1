@@ -1,0 +1,93 @@
+void giai_ma_gpg_alarm_lcd(){
+   lcd_dis_xx_yy_zz(4,1,dec_gio_eat,dec_phut_eat,dec_giay_eat,e_33, e_22, e_11);
+}
+void phim_chon_mode_alarm(){
+   if(tick_btn(1, bt3)){
+      if(gt_mod < 3) gt_mod++;
+      else{
+         gt_mod = 0;
+         countLevel = 0;
+      }
+      tg_chinh = 0;
+      giai_ma_gpg_alarm_lcd();
+   }
+}
+void tang_giay_eat(){
+   if(eat_ss >= 0x59) eat_ss = 0x00;
+   else eat_ss = tang_or_giam_bcd(eat_ss, tang);
+}
+void tang_phut_eat(){
+   if(eat_pp >= 0x59) eat_pp = 0;
+   else eat_pp = tang_or_giam_bcd(eat_pp, tang);
+}
+void tang_gio_eat(){
+   if(eat_hh >= 0x23) eat_hh = 0;
+   else eat_hh = tang_or_giam_bcd(eat_hh, tang);
+}
+void chinh_tang_gpg_eat(){
+   switch(gt_mod){
+      case 1:
+         tang_giay_eat();
+         break;
+      case 2:
+         tang_phut_eat();
+         break;
+      case 3:
+         tang_gio_eat();
+         break;
+      default: break;
+   }
+}
+
+void phim_up_eat(){
+   if(tick_btn(1, bt1)){
+      tg_chinh = 0;
+      chinh_tang_gpg_eat();
+      e_11 = true; e_22 = true; e_33 = true;
+      giai_ma_gpg_alarm_lcd();
+   }
+}
+void giam_giay_eat(){
+   if(eat_ss <= 0) eat_ss = 0x59;
+   else eat_ss = tang_or_giam_bcd(eat_ss,giam);
+}
+void giam_phut_eat(){
+   if(eat_pp <= 0) eat_pp = 0x59;
+   else eat_pp = tang_or_giam_bcd(eat_pp,giam);
+}
+void giam_gio_eat(){
+   if(eat_hh <= 0) eat_hh = 0x23;
+   else eat_hh = tang_or_giam_bcd(eat_hh,giam);
+}
+void chinh_giam_gpg_eat(){
+   switch(gt_mod){
+      case 1:
+         giam_giay_eat();
+         break;
+      case 2:
+         giam_phut_eat();
+         break;
+      case 3:
+         giam_gio_eat();
+         break;
+      default: break;
+   }
+}
+void phim_dw_eat(){
+   if(tick_btn(1, bt2)){
+      tg_chinh = 0;
+      chinh_giam_gpg_eat();
+      e_11 = true; e_22 = true; e_33 = true;
+      giai_ma_gpg_alarm_lcd();
+   }
+}
+void log_mode_alarm(){
+   lcd_setCursor(13, 1);
+   lcd_data(gt_mod + 0x30);
+   if(gt_mod != 0){
+      lcd_data(tg_chinh/10 + 0x30); lcd_data(tg_chinh%10 + 0x30);
+   }
+   else
+      lcd_data("__");
+}
+

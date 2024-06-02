@@ -89,7 +89,10 @@ void menu(){
          log_mode_alarm();
          break;
       case 4:
-      
+         lcd_setCursor(1,0);
+         lcd_data("check com esp");
+         
+         if(tick_btn(1,bt3)) countLevel = 0;
          break;
       default:
          lcd_setCursor(2,0);

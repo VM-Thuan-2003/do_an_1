@@ -4,7 +4,9 @@
 #fuses   hs, nowdt, put, noprotect, nolvp
 #use     delay(clock=20MHz) 
 #use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
-#use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7)
+#use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7, bits=8)
+
+//!#include <library_uart.c>
 
 //! define name again to user
 #define usi8  unsigned int8
@@ -30,7 +32,7 @@ bool e_11, e_22, e_33;
 
 usi8 eat_hh, eat_pp, eat_ss;
 
-#define maxLevel 5
+#define maxLevel 6
 
 usi8 countLevel = 0;
 usi8 countLevelRev = 0;
@@ -38,8 +40,8 @@ usi8 countLevelRev = 0;
 bool flag_servo;
 usi8 count_servo = 0;
 
-#define tang true
-#define giam false
+#define tang false
+#define giam true
 
 //! define button to use
 #ifndef bt0
@@ -76,6 +78,8 @@ usi8 count_servo = 0;
 #ifndef ledTest
 #define ledTest      pin_b5
 
+char ccsc;
+
 #int_timer1
 void interrupt_timer1()
 {
@@ -101,14 +105,21 @@ void interrupt_timer1()
    }
 }
 
+#int_rda
+void rrsf(){
+   ccsc = getc();
+}
+
 void setup_initialize(){
 //! set up timer 1 to timer count is 10ms of one cycle
    setup_timer_1(T1_INTERNAL|T1_DIV_BY_8);
    set_timer1(59286);
 
-//! enable interrupt timer 1
+//! enable interrupt timer 1 and read data uart
    enable_interrupts(global);
    enable_interrupts(int_timer1);
+   enable_interrupts(int_rda);
+
 
 //! setup mode for all gpio of pic16f877a
    set_tris_a(0xff);
@@ -125,5 +136,5 @@ void setup_initialize(){
    
    e_11 = true; e_22 = true; e_33 = true;
    
-   eat_hh = 0x16; eat_pp = 0x00; eat_ss = 0x01;
+   eat_hh = 0x09; eat_pp = 0x30; eat_ss = 0x30;
 }

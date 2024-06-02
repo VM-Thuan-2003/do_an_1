@@ -2,7 +2,7 @@ void giai_ma_gpg_alarm_lcd(){
    lcd_dis_xx_yy_zz(4,1,dec_gio_eat,dec_phut_eat,dec_giay_eat,e_33, e_22, e_11);
 }
 void phim_chon_mode_alarm(){
-   if(tick_btn(1, bt3)){
+   if(tick_btn(2, bt3)){
       if(gt_mod < 3) gt_mod++;
       else{
          gt_mod = 0;
@@ -13,15 +13,15 @@ void phim_chon_mode_alarm(){
    }
 }
 void tang_giay_eat(){
-   if(eat_ss >= 0x59) eat_ss = 0;
+   if(eat_ss == 0x59) eat_ss = 0x00;
    else eat_ss = tang_or_giam_bcd(eat_ss, tang);
 }
 void tang_phut_eat(){
-   if(eat_pp >= 0x59) eat_pp = 0;
+   if(eat_pp == 0x59) eat_pp = 0x00;
    else eat_pp = tang_or_giam_bcd(eat_pp, tang);
 }
 void tang_gio_eat(){
-   if(eat_hh >= 0x23) eat_hh = 0;
+   if(eat_hh == 0x23) eat_hh = 0x00;
    else eat_hh = tang_or_giam_bcd(eat_hh, tang);
 }
 void chinh_tang_gpg_eat(){
@@ -47,16 +47,17 @@ void phim_up_eat(){
       giai_ma_gpg_alarm_lcd();
    }
 }
+
 void giam_giay_eat(){
-   if(eat_ss <= 0) eat_ss = 0x59;
+   if(eat_ss == 0) eat_ss = 0x59;
    else eat_ss = tang_or_giam_bcd(eat_ss,giam);
 }
 void giam_phut_eat(){
-   if(eat_pp <= 0) eat_pp = 0x59;
+   if(eat_pp == 0) eat_pp = 0x59;
    else eat_pp = tang_or_giam_bcd(eat_pp,giam);
 }
 void giam_gio_eat(){
-   if(eat_hh <= 0) eat_hh = 0x23;
+   if(eat_hh == 0) eat_hh = 0x23;
    else eat_hh = tang_or_giam_bcd(eat_hh,giam);
 }
 void chinh_giam_gpg_eat(){

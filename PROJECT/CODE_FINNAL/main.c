@@ -9,7 +9,7 @@ void main(){
 
 //! setup enviroments
    setup_initialize();
-
+   
 //! setup ds1307 rtc
    ds1307_setup();
 
@@ -22,8 +22,9 @@ void main(){
 //! display info include: name project and name university
    log_lcd_initialize();
 
+//!   UART_SendString(payload);
+   printf("Hello from PIC16F877A!\r\n");
    while(true){
-
 //! loop function is function suport in process of system
       loop();
    }

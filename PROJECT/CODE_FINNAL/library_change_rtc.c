@@ -70,17 +70,17 @@ void phim_chon_hthi_mode(){
    }
 }
 void tang_giay(){
-   if(giay_ds >= 0x59) giay_ds = 0;
+   if(giay_ds == 0x59) giay_ds = 0;
    else giay_ds = tang_or_giam_bcd(giay_ds, tang);
    ds1307_save_ds(0,giay_ds);
 }
 void tang_phut(){
-   if(phut_ds >= 0x59) phut_ds = 0;
+   if(phut_ds == 0x59) phut_ds = 0;
    else phut_ds = tang_or_giam_bcd(phut_ds, tang);
    ds1307_save_ds(1,phut_ds);
 }
 void tang_gio(){
-   if(gio_ds >= 0x23) gio_ds = 0;
+   if(gio_ds == 0x23) gio_ds = 0;
    else gio_ds = tang_or_giam_bcd(gio_ds, tang);
    ds1307_save_ds(2,gio_ds);
 }
@@ -99,17 +99,17 @@ void chinh_tang_gpg(){
    }
 }
 void tang_nam(){
-   if(nam_ds >= 0x99) nam_ds = 0;
+   if(nam_ds == 0x99) nam_ds = 0;
    else nam_ds = tang_or_giam_bcd(nam_ds, tang);
    ds1307_save_ds(6,nam_ds);
 }
 void tang_thang(){
-   if(thang_ds >= 0x12) thang_ds = 1;
+   if(thang_ds == 0x12) thang_ds = 1;
    else thang_ds = tang_or_giam_bcd(thang_ds, tang);
    ds1307_save_ds(5,thang_ds);
 }
 void tang_ngay(){
-   if(ngay_ds >= 0x31) ngay_ds = 1;
+   if(ngay_ds == 0x31) ngay_ds = 1;
    else ngay_ds = tang_or_giam_bcd(ngay_ds, tang);
    ds1307_save_ds(4,ngay_ds);
 }
@@ -134,7 +134,7 @@ void chinh_tang_thu(){
 }
 
 void phim_up(){
-   if(tick_btn(2, bt1)){
+   if(tick_btn(1, bt1)){
       tg_chinh = 0;
       if(gt_mod<4) chinh_tang_gpg();
       else if(gt_mod<7) chinh_tang_ntn();
@@ -144,17 +144,17 @@ void phim_up(){
    }
 }
 void giam_giay(){
-   if(giay_ds <= 0) giay_ds = 0x59;
+   if(giay_ds == 0) giay_ds = 0x59;
    else giay_ds = tang_or_giam_bcd(giay_ds,giam);
    ds1307_save_ds(0,giay_ds);
 }
 void giam_phut(){
-   if(phut_ds <= 0) phut_ds = 0x59;
+   if(phut_ds == 0) phut_ds = 0x59;
    else phut_ds = tang_or_giam_bcd(phut_ds,giam);
    ds1307_save_ds(1,phut_ds);
 }
 void giam_gio(){
-   if(gio_ds <= 0) gio_ds = 0x23;
+   if(gio_ds == 0) gio_ds = 0x23;
    else gio_ds = tang_or_giam_bcd(gio_ds,giam);
    ds1307_save_ds(2,gio_ds);
 }
@@ -173,17 +173,17 @@ void chinh_giam_gpg(){
    }
 }
 void giam_nam(){
-   if(nam_ds <= 0x0) nam_ds = 0x99;
+   if(nam_ds == 0x0) nam_ds = 0x99;
    else nam_ds = tang_or_giam_bcd(nam_ds, giam);
    ds1307_save_ds(6,nam_ds);
 }
 void giam_thang(){
-   if(thang_ds <= 0x1) thang_ds = 12;
+   if(thang_ds == 0x1) thang_ds = 12;
    else thang_ds = tang_or_giam_bcd(thang_ds, giam);
    ds1307_save_ds(5,thang_ds);
 }
 void giam_ngay(){
-   if(ngay_ds <= 0x1) ngay_ds = 21;
+   if(ngay_ds == 0x1) ngay_ds = 21;
    else ngay_ds = tang_or_giam_bcd(ngay_ds, giam);
    ds1307_save_ds(4,ngay_ds);
 }
@@ -207,7 +207,7 @@ void chinh_giam_thu(){
    ds1307_save_ds(3,thu_ds);
 }
 void phim_dw(){
-   if(tick_btn(2, bt2)){
+   if(tick_btn(1, bt2)){
       tg_chinh = 0;
       if(gt_mod<4) chinh_giam_gpg();
       else if(gt_mod<7) chinh_giam_ntn();

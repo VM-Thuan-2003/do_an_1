@@ -1,11 +1,11 @@
 
-ROM used:   3475/8192 (42%)
-            3516/8192 (43%) including unused fragments
+ROM used:   3590/8192 (44%)
+            3609/8192 (44%) including unused fragments
 
             1.7 Average locations per line
-            5.0 Average locations per statement
+            5.1 Average locations per statement
 
-RAM used:   69/368 (19%) at main() level
+RAM used:   70/368 (19%) at main() level
             111/368 (30%) worst case
 
 Stack used: 8 worst case (7 in main + 1 for interrupts)
@@ -13,9 +13,9 @@ Stack size: 8
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   31     9   1  main.c
-   24     0   0  library_project.c
-  130    35   5  define_pic16f.c
+   32    10   1  main.c
+   22     0   0  library_project.c
+  141    37   5  define_pic16f.c
   708     0   0  C:\Program Files (x86)\PICC\Devices\16f877a.h
    41    26   4  library_button.c
    27     8   1  library_i2c.c
@@ -24,11 +24,11 @@ Lines Stmts  %   Files
    88    50   7  library_ds18b20.c
   230    54   8  C:\Program Files (x86)\PICC\Drivers\touch.c
   234   202  29  library_change_rtc.c
-   94    67  10  library_change_alarm_eat.c
+   95    67  10  library_change_alarm_eat.c
    56    33   5  library_control_chiller.c
-  105    81  12  library_menu.c
+  108    85  12  library_menu.c
 ----- -----
- 2073   694 Total
+ 2087   701 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
@@ -37,17 +37,18 @@ Page ROM  %  RAM    Vol Diff  Functions:
 0     18   1    1    213  5.0  @I2C_WRITEU_129
 0     16   0    1     21  1.0  @I2C_READU_129
 0     35   1    1    255  5.0  interrupt_timer1
-0     55   2    0    497  2.4  setup_initialize
+0      8   0    0     20  1.3  rrsf
+0     56   2    0    524  2.4  setup_initialize
  Inline         3    336  5.5  push_btn
-0     32   1    6     32  1.0  @WRITEBITA
-0     25   1    5     32  1.0  @READBITA
+0     32   1    6    369  8.0  @WRITEBITA
+0     25   1    5    213  5.0  @READBITA
 0     31   1    3    213  5.0  tick_btn
  Inline         0     27  0.9  i2c_setup_write
  Inline         1    107  0.3  i2c_write_1byte
 0    117   3    1    696  3.4  lcd_setup
 0      9   0    0     32  1.0  lcd_clear
  Inline         0     32  1.0  lcd_home
-0     27   1    8    225  5.8  lcd_setCursor
+0     27   1    7    225  5.8  lcd_setCursor
  Inline         1     43  1.8  lcd_display
 0     28   1    1     39  1.5  lcd_command
 0     29   1    1     39  1.5  lcd_data
@@ -56,38 +57,38 @@ Page ROM  %  RAM    Vol Diff  Functions:
  Inline         2     38  1.7  expanderWrite
  Inline         2    114  2.6  pulseEnable
 0     34   1    1    125  1.6  log_lcd_initialize
-0      8   0    0             @const779
-0     80   2    7             @PSTRINGC7_762
-0      6   0    0             @const784
+0      8   0    0    226  6.4  @const781
+0     80   2    6     85  3.6  @PSTRINGC7_764
+0      6   0    0   1083  6.1  @const786
 0    110   3   15   1083  6.1  lcd_dis_xx_yy_zz
-0     21   1    3    605  5.1  @DIV88
-0      1   0    0             @const803
-0      1   0    0             @const804
+0     21   1    3    215  5.8  @DIV88
+0      1   0    0    302  7.4  @const805
+0      1   0    0    427  5.1  @const806
 0     51   1   12    427  5.1  lcd_dis_2num_dot
-0     37   1    5    295  2.5  @DIV1616
-0      1   0    0             @const817
+0     37   1    5    255  5.0  @DIV1616
+0      1   0    0    605  5.1  @const819
  Inline        13    605  5.1  lcd_dis_3num_dot
-0      1   0    0     79  3.2  @const829
+0      1   0    0    295  2.5  @const831
 0    131   4    7    295  2.5  lcd_dis_temperature
-0      3   0    0             @const835
-0      2   0    0    280  4.0  @const836
+0      3   0    0    107  0.3  @const837
+0      2   0    0    191  2.1  @const838
  Inline         5    191  2.1  lcd_dis_temperature_limit
-0      4   0    0     80  2.4  @const841
-0      2   0    0    115  1.2  @const842
+0      4   0    0     32  1.0  @const843
+0      2   0    0     79  3.2  @const844
 0     17   0    3     79  3.2  ds1307_bcdToDec
-0     37   1    2    450  3.3  @MUL88
+0     37   1    2    280  4.0  @MUL88
 0     46   1    4    280  4.0  ds1307_read_time
  Inline         3    262  4.6  ds1307_update_time
 0     60   2    0     80  2.4  ds1307_setup
-0     24   1    2    115  1.2  ds1307_save_ds
+1     30   1    2    115  1.2  ds1307_save_ds
 0     38   1    1    179  2.7  ds18b20_start
  Inline         1    154  1.8  ds18b20_write_bit
-0     53   2    3    110  3.7  ds18b20_write_byte
+0     53   1    3    110  3.7  ds18b20_write_byte
  Inline         1    176  2.3  ds18b20_read_bit
 0     47   1    2    153  4.7  ds18b20_read_byte
  Inline         8    331  5.8  ds18b20_read_temp_c2
-0    159   5    2    187  4.4  ds18b20_read_temp
- Inline         5    104  2.9  @MUL1616
+0    159   4    2    187  4.4  ds18b20_read_temp
+ Inline         5    434  9.5  @MUL1616
 0     45   1    7    434  9.5  tang_or_giam_bcd
  Inline         0    483  4.3  tat_bat_2led_chinh
 0     45   1    6    143  2.2  giai_ma_gpg_lcd
@@ -117,13 +118,13 @@ Page ROM  %  RAM    Vol Diff  Functions:
  Inline         0    133  4.3  chinh_giam_thu
  Inline         0    275  4.1  phim_dw
  Inline         1    488  5.1  log_mode
-0      2   0    0    160  3.9  @const931
-0      2   0    0     83  3.2  @const932
-0      2   0    0     83  3.2  @const933
-0      2   0    0     83  3.2  @const934
-0     37   1    4    139  3.1  @DIVS88
-0      2   0    0    141  2.6  @const938
-0     45   1    6    108  1.7  giai_ma_gpg_alarm_lcd
+0      2   0    0    434  9.5  @const933
+0      2   0    0    434  9.5  @const934
+0      2   0    0    483  4.3  @const935
+0      2   0    0    143  2.2  @const936
+1     37   1    4    143  2.2  @DIVS88
+0      2   0    0    108  1.7  @const940
+1     53   1    6    108  1.7  giai_ma_gpg_alarm_lcd
  Inline         0    160  3.9  phim_chon_mode_alarm
  Inline         0     83  3.2  tang_giay_eat
  Inline         0     83  3.2  tang_phut_eat
@@ -136,38 +137,41 @@ Page ROM  %  RAM    Vol Diff  Functions:
  Inline         0    139  3.1  chinh_giam_gpg_eat
  Inline         0    141  2.6  phim_dw_eat
  Inline         1    203  4.3  log_mode_alarm
-0      2   0    0             @const952
+0      2   0    0    183  3.3  @const954
  Inline         2    183  3.3  control_temperature
 0     33   1    2    187  3.6  servo_degree_0
  Inline         2    187  3.6  servo_degree_90
  Inline         1    248  4.1  control_servo
- Inline         3   2805  9.3  menu
-0      8   0    0     75  1.5  @const964
-0      7   0    0             @const965
-0      6   0    0             @const966
-0      8   0    0             @const967
+ Inline         3   2993  9.3  menu
+0      8   0    0    139  3.1  @const966
+0      7   0    0    133  4.3  @const967
+0      7   0    0    275  4.1  @const968
+0      6   0    0    488  5.1  @const969
+0      8   0    0    216  2.6  @const970
  Inline         0     12  0.8  loop
-1   1468  42    0     89  1.6  MAIN
- Inline         0             @cinit1
+1   1441  40    0    112  1.5  MAIN
+0     13   0    0    293  2.7  @const975
+0     90   3    4    112  1.5  @PSTRINGC7_9600_62_63
+ Inline         0    108  1.7  @cinit1
 
 Program metrics:
-    Functions               105
-    Statements              694
-    Comments                433
-    Volume (V)              51166
-    Difficulty (D)          355.6
-    Effort to implement (E) 18192358
-    Time to implement (T)   280 hours, 45 minutes
-    Est Delivered Bugs (B)  23
-    Cyclomatic Complexity   161
-    Maintainability (MI)    108
+    Functions               121
+    Statements              701
+    Comments                435
+    Volume (V)              65866
+    Difficulty (D)          445.6
+    Effort to implement (E) 29351154
+    Time to implement (T)   452 hours, 57 minutes
+    Est Delivered Bugs (B)  32
+    Cyclomatic Complexity   185
+    Maintainability (MI)    120
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00003     4  0  
-00004-00050    77  0  
-00051-007FF  1926  41  
-00800-00FFF  1468  580  
+00004-00059    86  0  
+0005A-007FF  1939  19  
+00800-00FFF  1561  487  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  
 

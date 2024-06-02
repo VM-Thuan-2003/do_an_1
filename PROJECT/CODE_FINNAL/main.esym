@@ -1,9 +1,9 @@
-D G "__PCM__" 0 32 ""5.115""
-D G "__DEVICE__" 0 32 "877"
-D G "__DATE__" 0 32 ""02-Jun-24""
-D G "__TIME__" 0 32 ""11:34:33""
-D G "_UNICODE" 0 32 ""?""
-D G "__EVAL" 0 32 ""?"" "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+D G "__PCM__" 0 33 ""5.115""
+D G "__DEVICE__" 0 33 "877"
+D G "__DATE__" 0 33 ""02-Jun-24""
+D G "__TIME__" 0 33 ""17:14:54""
+D G "_UNICODE" 0 33 ""?""
+D G "__EVAL" 0 33 ""?"" "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 c L "set_tris_a" 3 1 6 "FUNCTION"
 F N "set_tris_a" 3 37 ""
 V L "value" 3 37 "int8" `55 
@@ -1166,82 +1166,85 @@ D G "INT_BUSCOL" 3 702 "0x008D08"
 D G "INT_EEPROM" 3 703 "0x008D10"
 D G "INT_TIMER0" 3 704 "0x000B20"
 D G "INT_COMP" 3 705 "0x008D40"
-D G "usi8" 2 10 "unsigned int8"
-D G "usi16" 2 11 "unsigned int16"
-D G "usi32" 2 12 "unsigned int32"
-D G "si8" 2 13 "signed   int8"
-D G "si16" 2 14 "signed   int16"
-D G "si32" 2 15 "signed   int32"
-D G "bool" 2 16 "int1"
+D G "usi8" 2 12 "unsigned int8"
+D G "usi16" 2 13 "unsigned int16"
+D G "usi32" 2 14 "unsigned int32"
+D G "si8" 2 15 "signed   int8"
+D G "si16" 2 16 "signed   int16"
+D G "si32" 2 17 "signed   int32"
+D G "bool" 2 18 "int1"
 C L "jump_to_isr" 2 9 1 "FUNCTION"
-V G "flag_10ms" 2 19 "int1" `708 
-V G "isDs18b20" 2 20 "int1" `709 
-V G "limitTemperature" 2 22 "int16" `710 
-V G "tick_10ms" 2 24 "int16" `711 
-V G "giay_tam" 2 26 "int8" `712 
-V G "bdn" 2 26 "int8" `713 
-V G "tt_ht" 2 26 "int8" `714 
-V G "gt_mod" 2 27 "sint8" `715 
-V G "tg_chinh" 2 27 "sint8" `716 
-V G "e_11" 2 29 "int1" `717 
-V G "e_22" 2 29 "int1" `718 
-V G "e_33" 2 29 "int1" `719 
-V G "eat_hh" 2 31 "int8" `720 
-V G "eat_pp" 2 31 "int8" `721 
-V G "eat_ss" 2 31 "int8" `722 
-D G "maxLevel" 2 33 "5"
-V G "countLevel" 2 35 "int8" `723 
-V G "countLevelRev" 2 36 "int8" `724 
-V G "flag_servo" 2 38 "int1" `725 
-V G "count_servo" 2 39 "int8" `726 
-D G "tang" 2 41 "true"
-D G "giam" 2 42 "false"
-D G "bt0" 2 46 "pin_b0"
-D G "bt1" 2 50 "pin_b1"
-D G "bt2" 2 54 "pin_b2"
-D G "bt3" 2 58 "pin_b3"
-D G "pin_ds18b20" 2 62 "pin_a0"
-D G "pinServo" 2 66 "pin_c1"
-D G "pinDLCold" 2 70 "pin_d6"
-D G "pinDLHot" 2 74 "pin_d7"
-D G "ledTest" 2 77 "pin_b5"
-F N "interrupt_timer1" 2 80 ""
-F G "interrupt_timer1" 2 81 "void()" `727 
+V G "flag_10ms" 2 21 "int1" `708 
+V G "isDs18b20" 2 22 "int1" `709 
+V G "limitTemperature" 2 24 "int16" `710 
+V G "tick_10ms" 2 26 "int16" `711 
+V G "giay_tam" 2 28 "int8" `712 
+V G "bdn" 2 28 "int8" `713 
+V G "tt_ht" 2 28 "int8" `714 
+V G "gt_mod" 2 29 "sint8" `715 
+V G "tg_chinh" 2 29 "sint8" `716 
+V G "e_11" 2 31 "int1" `717 
+V G "e_22" 2 31 "int1" `718 
+V G "e_33" 2 31 "int1" `719 
+V G "eat_hh" 2 33 "int8" `720 
+V G "eat_pp" 2 33 "int8" `721 
+V G "eat_ss" 2 33 "int8" `722 
+D G "maxLevel" 2 35 "6"
+V G "countLevel" 2 37 "int8" `723 
+V G "countLevelRev" 2 38 "int8" `724 
+V G "flag_servo" 2 40 "int1" `725 
+V G "count_servo" 2 41 "int8" `726 
+D G "tang" 2 43 "false"
+D G "giam" 2 44 "true"
+D G "bt0" 2 48 "pin_b0"
+D G "bt1" 2 52 "pin_b1"
+D G "bt2" 2 56 "pin_b2"
+D G "bt3" 2 60 "pin_b3"
+D G "pin_ds18b20" 2 64 "pin_a0"
+D G "pinServo" 2 68 "pin_c1"
+D G "pinDLCold" 2 72 "pin_d6"
+D G "pinDLHot" 2 76 "pin_d7"
+D G "ledTest" 2 79 "pin_b5"
+V G "ccsc" 2 81 "int8" `727 
+F N "interrupt_timer1" 2 84 ""
+F G "interrupt_timer1" 2 85 "void()" `728 
 C L "interrupt_timer1" 2 9 1 "FUNCTION"
 C L "interrupt_timer1" 2 9 1 "FUNCTION"
 C L "interrupt_timer1" 2 9 1 "FUNCTION"
-F N "setup_initialize" 2 104 ""
-F G "setup_initialize" 2 104 "void()" `728  "! set up timer 1 to timer count is 10ms of one cycle"
+F N "rrsf" 2 109 ""
+F G "rrsf" 2 109 "void()" `729 
+F N "setup_initialize" 2 113 ""
+F G "setup_initialize" 2 113 "void()" `730  "! set up timer 1 to timer count is 10ms of one cycle"
 C L "setup_initialize" 2 9 1 "FUNCTION"
 C L "setup_initialize" 2 9 1 "FUNCTION"
 C L "setup_initialize" 2 9 1 "FUNCTION"
-V G "countPush" 4 4 "int8" `729 
-V G "countTick" 4 5 "int8" `730 
+V G "countPush" 4 4 "int8" `731 
+V G "countTick" 4 5 "int8" `732 
 F N "push_btn" 4 7 ""
-V L "isRelease" 4 7 "int8" `732 
-V L "pin" 4 7 "int8" `733 
-F G "push_btn" 4 7 "int8(int8 isRelease,int8 pin)" `731  "! isRelease == 0 --> push button is hold"
+V L "isRelease" 4 7 "int8" `734 
+V L "pin" 4 7 "int8" `735 
+F G "push_btn" 4 7 "int8(int8 isRelease,int8 pin)" `733  "! isRelease == 0 --> push button is hold"
 C L "push_btn" 4 1 1 "FUNCTION"
 C L "push_btn" 4 1 1 "FUNCTION"
 C L "push_btn" 4 1 1 "FUNCTION"
 F N "tick_btn" 4 27 ""
-V L "delay" 4 27 "int8" `742 
-V L "pin" 4 27 "int8" `743 
-F G "tick_btn" 4 27 "int8(int8 delay,int8 pin)" `741  "! dl is time delay that compute with 10ms for dl is 1"
+V L "delay" 4 27 "int8" `744 
+V L "pin" 4 27 "int8" `745 
+F G "tick_btn" 4 27 "int8(int8 delay,int8 pin)" `743  "! dl is time delay that compute with 10ms for dl is 1"
 C L "tick_btn" 4 1 1 "FUNCTION"
 C L "tick_btn" 4 1 1 "FUNCTION"
 D G "pcf8574_addr_wr" 5 1 "0x4E" "0b01001110"
 D G "pcf8574_addr_rd" 5 2 "0x4F" "0b01001111"
 C L "i2c_reset" 5 4 1 "FUNCTION"
 F N "i2c_reset" 5 5 ""
-F G "i2c_reset" 5 6 "void()" `744 
+F G "i2c_reset" 5 6 "void()" `746 
 C L "i2c_setup_write" 5 4 1 "FUNCTION"
 F N "i2c_setup_write" 5 12 ""
-F G "i2c_setup_write" 5 13 "void()" `745 
+F G "i2c_setup_write" 5 13 "void()" `747 
 C L "i2c_write_1byte" 5 4 1 "FUNCTION"
 F N "i2c_write_1byte" 5 19 ""
-V L "payload" 5 19 "int8" `747 
-F G "i2c_write_1byte" 5 20 "void(int8 payload)" `746 
+V L "payload" 5 19 "int8" `749 
+F G "i2c_write_1byte" 5 20 "void(int8 payload)" `748 
 D G "lcd_cols" 6 1 "16"
 D G "lcd_rows" 6 2 "2"
 D G "LCD_CLEARDISPLAY" 6 5 "0x01"
@@ -1278,39 +1281,39 @@ D G "En" 6 46 "0B00000100" "Enable bit"
 D G "Rw" 6 47 "0B00000010" "Read/Write bit"
 D G "Rs" 6 48 "0B00000001" "Register select bit"
 F N "write4bits" 6 50 ""
-V L "value" 6 50 "int8" `749 
-f G "write4bits" 6 50 "void(int8 value)" `748 
+V L "value" 6 50 "int8" `751 
+f G "write4bits" 6 50 "void(int8 value)" `750 
 F N "expanderWrite" 6 51 ""
-V L "_data" 6 51 "int8" `751 
-f G "expanderWrite" 6 51 "void(int8 _data)" `750 
+V L "_data" 6 51 "int8" `753 
+f G "expanderWrite" 6 51 "void(int8 _data)" `752 
 F N "pulseEnable" 6 52 ""
-V L "_data" 6 52 "int8" `753 
-f G "pulseEnable" 6 52 "void(int8 _data)" `752 
+V L "_data" 6 52 "int8" `755 
+f G "pulseEnable" 6 52 "void(int8 _data)" `754 
 F N "lcd_command" 6 53 ""
-V L "value" 6 53 "int8" `755 
-f G "lcd_command" 6 53 "void(int8 value)" `754 
+V L "value" 6 53 "int8" `757 
+f G "lcd_command" 6 53 "void(int8 value)" `756 
 F N "lcd_display" 6 54 ""
-f G "lcd_display" 6 54 "void()" `756 
+f G "lcd_display" 6 54 "void()" `758 
 F N "lcd_clear" 6 55 ""
-f G "lcd_clear" 6 55 "void()" `757 
+f G "lcd_clear" 6 55 "void()" `759 
 F N "lcd_home" 6 56 ""
-f G "lcd_home" 6 56 "void()" `758 
+f G "lcd_home" 6 56 "void()" `760 
 F N "lcd_send" 6 57 ""
-V L "value" 6 57 "int8" `760 
-V L "mode" 6 57 "int8" `761 
-f G "lcd_send" 6 57 "void(int8 value,int8 mode)" `759 
+V L "value" 6 57 "int8" `762 
+V L "mode" 6 57 "int8" `763 
+f G "lcd_send" 6 57 "void(int8 value,int8 mode)" `761 
 F N "lcd_data" 6 58 ""
-V L "value" 6 58 "int8" `763 
-f G "lcd_data" 6 58 "void(int8 value)" `762 
-V G "_displayfunction" 6 60 "int8" `764 
-V G "_displaycontrol" 6 61 "int8" `765 
-V G "_displaymode" 6 62 "int8" `766 
-V G "_numlines" 6 63 "int8" `767 
-V G "_cols" 6 64 "int8" `768 
-V G "_rows" 6 65 "int8" `769 
-V G "_backlightval" 6 66 "int8" `770 
+V L "value" 6 58 "int8" `765 
+f G "lcd_data" 6 58 "void(int8 value)" `764 
+V G "_displayfunction" 6 60 "int8" `766 
+V G "_displaycontrol" 6 61 "int8" `767 
+V G "_displaymode" 6 62 "int8" `768 
+V G "_numlines" 6 63 "int8" `769 
+V G "_cols" 6 64 "int8" `770 
+V G "_rows" 6 65 "int8" `771 
+V G "_backlightval" 6 66 "int8" `772 
 F N "lcd_setup" 6 68 ""
-F G "lcd_setup" 6 68 "void()" `771 
+F G "lcd_setup" 6 68 "void()" `773 
 C L "lcd_setup" 6 4 1 "FUNCTION"
 C L "lcd_setup" 6 4 1 "FUNCTION"
 C L "lcd_setup" 6 4 1 "FUNCTION"
@@ -1318,90 +1321,90 @@ C L "lcd_setup" 6 4 1 "FUNCTION"
 C L "lcd_setup" 6 4 1 "FUNCTION"
 C L "lcd_setup" 6 4 1 "FUNCTION"
 F N "lcd_clear" 6 109 ""
-F G "lcd_clear" 6 109 "void()" `757 
+F G "lcd_clear" 6 109 "void()" `759 
 F N "lcd_home" 6 114 ""
-F G "lcd_home" 6 114 "void()" `758 
+F G "lcd_home" 6 114 "void()" `760 
 F N "lcd_setCursor" 6 119 ""
-V L "col" 6 119 "int8" `773 
-V L "row" 6 119 "int8" `774 
-F G "lcd_setCursor" 6 119 "void(int8 col,int8 row)" `772 
-V L "row_offsets" 6 120 "int8[1]" `775 
+V L "col" 6 119 "int8" `775 
+V L "row" 6 119 "int8" `776 
+F G "lcd_setCursor" 6 119 "void(int8 col,int8 row)" `774 
+V L "row_offsets" 6 120 "int8[1]" `777 
 F N "lcd_display" 6 127 ""
-F G "lcd_display" 6 127 "void()" `756 
+F G "lcd_display" 6 127 "void()" `758 
 F N "lcd_command" 6 132 ""
-V L "value" 6 132 "int8" `777 
-F G "lcd_command" 6 132 "void(int8 value)" `754 
+V L "value" 6 132 "int8" `779 
+F G "lcd_command" 6 132 "void(int8 value)" `756 
 F N "lcd_data" 6 136 ""
-V L "value" 6 136 "int8" `777 
-F G "lcd_data" 6 136 "void(int8 value)" `762 
+V L "value" 6 136 "int8" `779 
+F G "lcd_data" 6 136 "void(int8 value)" `764 
 F N "lcd_send" 6 140 ""
-V L "value" 6 140 "int8" `760 
-V L "mode" 6 140 "int8" `778 
-F G "lcd_send" 6 140 "void(int8 value,int8 mode)" `759 
-V L "highnib" 6 141 "int8" `776 
-V L "lownib" 6 142 "int8" `777 
+V L "value" 6 140 "int8" `762 
+V L "mode" 6 140 "int8" `780 
+F G "lcd_send" 6 140 "void(int8 value,int8 mode)" `761 
+V L "highnib" 6 141 "int8" `778 
+V L "lownib" 6 142 "int8" `779 
 F N "write4bits" 6 147 ""
-V L "value" 6 147 "int8" `779 
-F G "write4bits" 6 147 "void(int8 value)" `748 
+V L "value" 6 147 "int8" `781 
+F G "write4bits" 6 147 "void(int8 value)" `750 
 F N "expanderWrite" 6 152 ""
-V L "_data" 6 152 "int8" `779 
-F G "expanderWrite" 6 152 "void(int8 _data)" `750 
+V L "_data" 6 152 "int8" `781 
+F G "expanderWrite" 6 152 "void(int8 _data)" `752 
 F N "pulseEnable" 6 156 ""
-V L "_data" 6 156 "int8" `779 
-F G "pulseEnable" 6 156 "void(int8 _data)" `752 
+V L "_data" 6 156 "int8" `781 
+F G "pulseEnable" 6 156 "void(int8 _data)" `754 
 F N "log_lcd_initialize" 6 163 ""
-F G "log_lcd_initialize" 6 163 "void(int8 _data)" `778 
+F G "log_lcd_initialize" 6 163 "void(int8 _data)" `780 
 F N "lcd_dis_xx_yy_zz" 6 172 ""
-V L "x" 6 172 "int8" `786 
-V L "y" 6 172 "int8" `787 
-V L "a" 6 172 "int8" `788 
-V L "b" 6 172 "int8" `789 
-V L "c" 6 172 "int8" `790 
-V L "e3" 6 172 "int8" `791 
-V L "e2" 6 172 "int8" `792 
-V L "e1" 6 172 "int8" `793 
-F G "lcd_dis_xx_yy_zz" 6 172 "void(int8 x,int8 y,int8 a,int8 b,int8 c,int8 e3,int8 e2,int8 e1)" `785 
-V L "a_ch" 6 173 "int8" `794 
-V L "a_dv" 6 173 "int8" `795 
-V L "b_ch" 6 173 "int8" `796 
-V L "b_dv" 6 173 "int8" `797 
-V L "c_ch" 6 173 "int8" `798 
-V L "c_dv" 6 173 "int8" `799 
+V L "x" 6 172 "int8" `788 
+V L "y" 6 172 "int8" `789 
+V L "a" 6 172 "int8" `790 
+V L "b" 6 172 "int8" `791 
+V L "c" 6 172 "int8" `792 
+V L "e3" 6 172 "int8" `793 
+V L "e2" 6 172 "int8" `794 
+V L "e1" 6 172 "int8" `795 
+F G "lcd_dis_xx_yy_zz" 6 172 "void(int8 x,int8 y,int8 a,int8 b,int8 c,int8 e3,int8 e2,int8 e1)" `787 
+V L "a_ch" 6 173 "int8" `796 
+V L "a_dv" 6 173 "int8" `797 
+V L "b_ch" 6 173 "int8" `798 
+V L "b_dv" 6 173 "int8" `799 
+V L "c_ch" 6 173 "int8" `800 
+V L "c_dv" 6 173 "int8" `801 
 F N "lcd_dis_2num_dot" 6 183 ""
-V L "dt" 6 183 "int16" `806 
-V L "x" 6 183 "int8" `807 
-V L "y" 6 183 "int8" `808 
-V L "is_xvn" 6 183 "int8" `809 
-V L "is_dot" 6 183 "int8" `810 
-F G "lcd_dis_2num_dot" 6 183 "void(int16 dt,int8 x,int8 y,int8 is_xvn,int8 is_dot)" `805 
-V L "ch" 6 184 "int8" `811 
-V L "dv" 6 184 "int8" `812 
+V L "dt" 6 183 "int16" `808 
+V L "x" 6 183 "int8" `809 
+V L "y" 6 183 "int8" `810 
+V L "is_xvn" 6 183 "int8" `811 
+V L "is_dot" 6 183 "int8" `812 
+F G "lcd_dis_2num_dot" 6 183 "void(int16 dt,int8 x,int8 y,int8 is_xvn,int8 is_dot)" `807 
+V L "ch" 6 184 "int8" `813 
+V L "dv" 6 184 "int8" `814 
 F N "lcd_dis_3num_dot" 6 193 ""
-V L "dt" 6 193 "int16" `819 
-V L "x" 6 193 "int8" `820 
-V L "y" 6 193 "int8" `821 
-V L "is_xvn" 6 193 "int8" `822 
-V L "is_dot" 6 193 "int8" `823 
-F G "lcd_dis_3num_dot" 6 193 "void(int16 dt,int8 x,int8 y,int8 is_xvn,int8 is_dot)" `818 
-V L "tr" 6 194 "int8" `824 
-V L "ch" 6 194 "int8" `825 
-V L "dv" 6 194 "int8" `826 
+V L "dt" 6 193 "int16" `821 
+V L "x" 6 193 "int8" `822 
+V L "y" 6 193 "int8" `823 
+V L "is_xvn" 6 193 "int8" `824 
+V L "is_dot" 6 193 "int8" `825 
+F G "lcd_dis_3num_dot" 6 193 "void(int16 dt,int8 x,int8 y,int8 is_xvn,int8 is_dot)" `820 
+V L "tr" 6 194 "int8" `826 
+V L "ch" 6 194 "int8" `827 
+V L "dv" 6 194 "int8" `828 
 C L "lcd_dis_3num_dot" 6 4 1 "FUNCTION"
 F N "lcd_dis_temperature" 6 207 ""
-V L "x" 6 207 "int8" `831 
-V L "y" 6 207 "int8" `832 
-V L "ng" 6 207 "int16" `833 
-V L "th" 6 207 "int16" `834 
-F G "lcd_dis_temperature" 6 207 "void(int8 x,int8 y,int16 ng,int16 th)" `830 
+V L "x" 6 207 "int8" `833 
+V L "y" 6 207 "int8" `834 
+V L "ng" 6 207 "int16" `835 
+V L "th" 6 207 "int16" `836 
+F G "lcd_dis_temperature" 6 207 "void(int8 x,int8 y,int16 ng,int16 th)" `832 
 F N "lcd_dis_temperature_limit" 6 215 ""
-V L "x" 6 215 "int8" `838 
-V L "y" 6 215 "int8" `839 
-V L "ng" 6 215 "int16" `840 
-F G "lcd_dis_temperature_limit" 6 215 "void(int8 x,int8 y,int16 ng)" `837 
+V L "x" 6 215 "int8" `840 
+V L "y" 6 215 "int8" `841 
+V L "ng" 6 215 "int16" `842 
+F G "lcd_dis_temperature_limit" 6 215 "void(int8 x,int8 y,int16 ng)" `839 
 D G "ds13_addr_wr" 7 1 "0xd0"
 D G "ds13_addr_rd" 7 2 "0xd1"
-V G "time_w" 7 5 "int8[9]" `843 
-V G "time_r" 7 6 "int8[9]" `844 
+V G "time_w" 7 5 "int8[9]" `845 
+V G "time_r" 7 6 "int8[9]" `846 
 D G "dec_giay_eat" 7 8 "ds1307_bcdToDec(eat_ss)"
 D G "dec_phut_eat" 7 9 "ds1307_bcdToDec(eat_pp)"
 D G "dec_gio_eat" 7 10 "ds1307_bcdToDec(eat_hh)"
@@ -1422,26 +1425,26 @@ D G "nam_ds" 7 26 "time_r[6]"
 D G "ma_qd" 7 28 "time_w[8]"
 D G "ma_ds" 7 29 "time_r[8]"
 F N "ds1307_decToBcd" 7 31 ""
-V L "val" 7 31 "int8" `846 
-F G "ds1307_decToBcd" 7 31 "int8(int8 val)" `845 
+V L "val" 7 31 "int8" `848 
+F G "ds1307_decToBcd" 7 31 "int8(int8 val)" `847 
 F N "ds1307_bcdToDec" 7 35 ""
-V L "val" 7 35 "int8" `848 
-F G "ds1307_bcdToDec" 7 35 "int8(int8 val)" `847 
+V L "val" 7 35 "int8" `850 
+F G "ds1307_bcdToDec" 7 35 "int8(int8 val)" `849 
 F N "ds1307_read_time" 7 39 ""
-V L "j" 7 39 "int8" `853 
-F G "ds1307_read_time" 7 40 "void(int8 j)" `852 
-V L "i" 7 41 "int8" `854 
+V L "j" 7 39 "int8" `855 
+F G "ds1307_read_time" 7 40 "void(int8 j)" `854 
+V L "i" 7 41 "int8" `856 
 C L "ds1307_read_time" 7 4 1 "FUNCTION"
 F N "ds1307_update_time" 7 53 ""
-V L "sel" 7 53 "int8" `856 
-F G "ds1307_update_time" 7 54 "void(int8 sel)" `855 
-V L "i" 7 55 "int8" `857 
+V L "sel" 7 53 "int8" `858 
+F G "ds1307_update_time" 7 54 "void(int8 sel)" `857 
+V L "i" 7 55 "int8" `859 
 F N "ds1307_setup" 7 67 ""
-F G "ds1307_setup" 7 68 "void()" `858 
+F G "ds1307_setup" 7 68 "void()" `860 
 F N "ds1307_save_ds" 7 76 ""
-V L "dcdt" 7 76 "int8" `860 
-V L "dt" 7 76 "int8" `861 
-F G "ds1307_save_ds" 7 77 "void(int8 dcdt,int8 dt)" `859 
+V L "dcdt" 7 76 "int8" `862 
+V L "dt" 7 76 "int8" `863 
+F G "ds1307_save_ds" 7 77 "void(int8 dcdt,int8 dt)" `861 
 D G "TOUCH_C" 9 36 ""
 D G "TOUCH_PIN" 9 39 "PIN_B0"
 D G "TOUCH_PIN_LOW" 9 42 "()    output_drive(TOUCH_PIN); output_low(TOUCH_PIN)"
@@ -1450,49 +1453,49 @@ D G "TOUCH_PIN_FLOAT" 9 44 "()  output_float(TOUCH_PIN)"
 D G "TOUCH_PIN_READ" 9 45 "()      input_state(TOUCH_PIN)"
 C L "touch_read_bit" 9 2 7 "FUNCTION"
 F N "touch_read_bit" 9 59 ""
-f G "touch_read_bit" 9 59 "int8()" `862  "BYTE touch_read_byte()"
+f G "touch_read_bit" 9 59 "int8()" `864  "BYTE touch_read_byte()"
 C L "touch_read_bit" 9 2 3 "FUNCTION"
 F N "touch_read_byte" 9 67 ""
-f G "touch_read_byte" 9 67 "int8()" `863  "BOOLEAN touch_write_bit(int1 data)"
+f G "touch_read_byte" 9 67 "int8()" `865  "BOOLEAN touch_write_bit(int1 data)"
 C L "touch_read_byte" 9 2 3 "FUNCTION"
 F N "touch_write_bit" 9 75 ""
-V L "data" 9 75 "int8" `865 
-f G "touch_write_bit" 9 75 "int8(int8 data)" `864  "BOOLEAN touch_write_byte(BYTE data)"
+V L "data" 9 75 "int8" `867 
+f G "touch_write_bit" 9 75 "int8(int8 data)" `866  "BOOLEAN touch_write_byte(BYTE data)"
 C L "touch_write_bit" 9 2 3 "FUNCTION"
 F N "touch_write_byte" 9 83 ""
-V L "data" 9 83 "int8" `867 
-f G "touch_write_byte" 9 83 "int8(int8 data)" `866  "BOOLEAN touch_present()"
+V L "data" 9 83 "int8" `869 
+f G "touch_write_byte" 9 83 "int8(int8 data)" `868  "BOOLEAN touch_present()"
 C L "touch_write_byte" 9 2 3 "FUNCTION"
 F N "touch_present" 9 91 ""
-f G "touch_present" 9 91 "int8()" `868  "void reset_pulse()"
+f G "touch_present" 9 91 "int8()" `870  "void reset_pulse()"
 C L "touch_present" 9 2 3 "FUNCTION"
 F N "reset_pulse" 9 99 ""
-f G "reset_pulse" 9 99 "void()" `869  "////"
+f G "reset_pulse" 9 99 "void()" `871  "////"
 C L "reset_pulse" 9 2 6 "FUNCTION"
 F N "touch_read_bit" 9 113 ""
-F G "touch_read_bit" 9 114 "int8()" `862 
-V L "data" 9 115 "int1" `870 
+F G "touch_read_bit" 9 114 "int8()" `864 
+V L "data" 9 115 "int1" `872 
 C L "touch_read_byte" 9 2 4 "FUNCTION"
 F N "touch_read_byte" 9 133 ""
-F G "touch_read_byte" 9 134 "int8()" `863 
-V L "i" 9 135 "int8" `871 
-V L "data" 9 135 "int8" `872 
+F G "touch_read_byte" 9 134 "int8()" `865 
+V L "i" 9 135 "int8" `873 
+V L "data" 9 135 "int8" `874 
 C L "touch_write_bit" 9 2 4 "FUNCTION"
 F N "touch_write_bit" 9 149 ""
-V L "data" 9 149 "int8" `874 
-F G "touch_write_bit" 9 150 "int8(int8 data)" `864 
+V L "data" 9 149 "int8" `876 
+F G "touch_write_bit" 9 150 "int8(int8 data)" `866 
 C L "touch_write_byte" 9 2 4 "FUNCTION"
 F N "touch_write_byte" 9 179 ""
-V L "data" 9 179 "int8" `874 
-F G "touch_write_byte" 9 180 "int8(int8 data)" `866 
-V L "i" 9 181 "int8" `873 
+V L "data" 9 179 "int8" `876 
+F G "touch_write_byte" 9 180 "int8(int8 data)" `868 
+V L "i" 9 181 "int8" `875 
 C L "touch_present" 9 2 4 "FUNCTION"
 F N "touch_present" 9 196 ""
-F G "touch_present" 9 197 "int8()" `868 
-V L "present" 9 198 "int1" `874 
+F G "touch_present" 9 197 "int8()" `870 
+V L "present" 9 198 "int1" `876 
 C L "reset_pulse" 9 2 4 "FUNCTION"
 F N "reset_pulse" 9 219 ""
-F G "reset_pulse" 9 220 "void()" `869 
+F G "reset_pulse" 9 220 "void()" `871 
 D G "search_rom" 8 2 "0xf0"
 D G "read_rom" 8 3 "0x33"
 D G "match_rom" 8 4 "0x55"
@@ -1502,143 +1505,143 @@ D G "read_scratchpad" 8 7 "0xbe"
 D G "write_scratchpad" 8 8 "0x4e"
 D G "copy_scratchpad" 8 9 "0x48"
 D G "convert_t" 8 10 "0x44"
-V G "temperature" 8 12 "sint16" `875 
-V G "dt_ng" 8 13 "int8" `876 
-V G "dt_tp" 8 14 "int16" `877 
-V G "tt" 8 15 "int16" `878 
+V G "temperature" 8 12 "sint16" `877 
+V G "dt_ng" 8 13 "int8" `878 
+V G "dt_tp" 8 14 "int16" `879 
+V G "tt" 8 15 "int16" `880 
 F N "ds18b20_start" 8 17 ""
-F G "ds18b20_start" 8 17 "int8()" `879 
+F G "ds18b20_start" 8 17 "int8()" `881 
 F N "ds18b20_write_bit" 8 30 ""
-V L "value" 8 30 "int8" `881 
-F G "ds18b20_write_bit" 8 30 "void(int8 value)" `880 
+V L "value" 8 30 "int8" `883 
+F G "ds18b20_write_bit" 8 30 "void(int8 value)" `882 
 F N "ds18b20_write_byte" 8 40 ""
-V L "value" 8 40 "int8" `883 
-F G "ds18b20_write_byte" 8 40 "void(int8 value)" `882 
-V L "i" 8 41 "int8" `884 
+V L "value" 8 40 "int8" `885 
+F G "ds18b20_write_byte" 8 40 "void(int8 value)" `884 
+V L "i" 8 41 "int8" `886 
 F N "ds18b20_read_bit" 8 45 ""
-F G "ds18b20_read_bit" 8 45 "int8()" `885 
-V L "value" 8 46 "int1" `886 
+F G "ds18b20_read_bit" 8 45 "int8()" `887 
+V L "value" 8 46 "int1" `888 
 F N "ds18b20_read_byte" 8 57 ""
-F G "ds18b20_read_byte" 8 57 "int8()" `887 
-V L "value" 8 58 "int8" `888 
-V L "i" 8 59 "int8" `889 
+F G "ds18b20_read_byte" 8 57 "int8()" `889 
+V L "value" 8 58 "int8" `890 
+V L "i" 8 59 "int8" `891 
 F N "ds18b20_read_temp_c2" 8 64 ""
-V L "raw_temp_value" 8 64 "*int16" `891 
-F G "ds18b20_read_temp_c2" 8 64 "int8(*int16 raw_temp_value)" `890 
+V L "raw_temp_value" 8 64 "*int16" `893 
+F G "ds18b20_read_temp_c2" 8 64 "int8(*int16 raw_temp_value)" `892 
 F N "ds18b20_read_temp" 8 79 ""
-F G "ds18b20_read_temp" 8 79 "void()" `892 
+F G "ds18b20_read_temp" 8 79 "void()" `894 
 F N "tang_or_giam_bcd" 10 2 ""
-V L "x" 10 2 "int8" `897 
-V L "sel" 10 2 "int8" `898 
-F G "tang_or_giam_bcd" 10 2 "int8(int8 x,int8 sel)" `896 
-V L "y" 10 3 "int8" `899 
-V L "dv" 10 3 "int8" `900 
-V L "ch" 10 3 "int8" `901 
-V L "v" 10 3 "int8" `902 
+V L "x" 10 2 "int8" `899 
+V L "sel" 10 2 "int8" `900 
+F G "tang_or_giam_bcd" 10 2 "int8(int8 x,int8 sel)" `898 
+V L "y" 10 3 "int8" `901 
+V L "dv" 10 3 "int8" `902 
+V L "ch" 10 3 "int8" `903 
+V L "v" 10 3 "int8" `904 
 F N "tat_bat_2led_chinh" 10 14 ""
-F G "tat_bat_2led_chinh" 10 14 "void()" `903 
+F G "tat_bat_2led_chinh" 10 14 "void()" `905 
 F N "giai_ma_gpg_lcd" 10 21 ""
-F G "giai_ma_gpg_lcd" 10 21 "void()" `904 
+F G "giai_ma_gpg_lcd" 10 21 "void()" `906 
 F N "giai_ma_ntn_lcd" 10 25 ""
-F G "giai_ma_ntn_lcd" 10 25 "void()" `905 
+F G "giai_ma_ntn_lcd" 10 25 "void()" `907 
 F N "giai_ma_thu_lcd" 10 29 ""
-F G "giai_ma_thu_lcd" 10 29 "void()" `906 
+F G "giai_ma_thu_lcd" 10 29 "void()" `908 
 F N "giai_ma_gpg_ntn_thu_lcd" 10 33 ""
-F G "giai_ma_gpg_ntn_thu_lcd" 10 33 "void()" `907 
+F G "giai_ma_gpg_ntn_thu_lcd" 10 33 "void()" `909 
 F N "xu_ly_choptat" 10 46 ""
-F G "xu_ly_choptat" 10 46 "void()" `908 
+F G "xu_ly_choptat" 10 46 "void()" `910 
 F N "phim_chon_hthi_mode" 10 54 ""
-F G "phim_chon_hthi_mode" 10 54 "void()" `909 
+F G "phim_chon_hthi_mode" 10 54 "void()" `911 
 F N "tang_giay" 10 72 ""
-F G "tang_giay" 10 72 "void()" `910 
+F G "tang_giay" 10 72 "void()" `912 
 F N "tang_phut" 10 77 ""
-F G "tang_phut" 10 77 "void()" `911 
+F G "tang_phut" 10 77 "void()" `913 
 F N "tang_gio" 10 82 ""
-F G "tang_gio" 10 82 "void()" `912 
+F G "tang_gio" 10 82 "void()" `914 
 F N "chinh_tang_gpg" 10 87 ""
-F G "chinh_tang_gpg" 10 87 "void()" `913 
+F G "chinh_tang_gpg" 10 87 "void()" `915 
 F N "tang_nam" 10 101 ""
-F G "tang_nam" 10 101 "void()" `914 
+F G "tang_nam" 10 101 "void()" `916 
 F N "tang_thang" 10 106 ""
-F G "tang_thang" 10 106 "void()" `915 
+F G "tang_thang" 10 106 "void()" `917 
 F N "tang_ngay" 10 111 ""
-F G "tang_ngay" 10 111 "void()" `916 
+F G "tang_ngay" 10 111 "void()" `918 
 F N "chinh_tang_ntn" 10 116 ""
-F G "chinh_tang_ntn" 10 116 "void()" `917 
+F G "chinh_tang_ntn" 10 116 "void()" `919 
 F N "chinh_tang_thu" 10 130 ""
-F G "chinh_tang_thu" 10 130 "void()" `918 
+F G "chinh_tang_thu" 10 130 "void()" `920 
 F N "phim_up" 10 136 ""
-F G "phim_up" 10 136 "void()" `919 
+F G "phim_up" 10 136 "void()" `921 
 F N "giam_giay" 10 146 ""
-F G "giam_giay" 10 146 "void()" `920 
+F G "giam_giay" 10 146 "void()" `922 
 F N "giam_phut" 10 151 ""
-F G "giam_phut" 10 151 "void()" `921 
+F G "giam_phut" 10 151 "void()" `923 
 F N "giam_gio" 10 156 ""
-F G "giam_gio" 10 156 "void()" `922 
+F G "giam_gio" 10 156 "void()" `924 
 F N "chinh_giam_gpg" 10 161 ""
-F G "chinh_giam_gpg" 10 161 "void()" `923 
+F G "chinh_giam_gpg" 10 161 "void()" `925 
 F N "giam_nam" 10 175 ""
-F G "giam_nam" 10 175 "void()" `924 
+F G "giam_nam" 10 175 "void()" `926 
 F N "giam_thang" 10 180 ""
-F G "giam_thang" 10 180 "void()" `925 
+F G "giam_thang" 10 180 "void()" `927 
 F N "giam_ngay" 10 185 ""
-F G "giam_ngay" 10 185 "void()" `926 
+F G "giam_ngay" 10 185 "void()" `928 
 F N "chinh_giam_ntn" 10 190 ""
-F G "chinh_giam_ntn" 10 190 "void()" `927 
+F G "chinh_giam_ntn" 10 190 "void()" `929 
 F N "chinh_giam_thu" 10 204 ""
-F G "chinh_giam_thu" 10 204 "void()" `928 
+F G "chinh_giam_thu" 10 204 "void()" `930 
 F N "phim_dw" 10 209 ""
-F G "phim_dw" 10 209 "void()" `929 
+F G "phim_dw" 10 209 "void()" `931 
 F N "log_mode" 10 219 ""
-F G "log_mode" 10 219 "void()" `930 
+F G "log_mode" 10 219 "void()" `932 
 F N "giai_ma_gpg_alarm_lcd" 11 1 ""
-F G "giai_ma_gpg_alarm_lcd" 11 1 "void()" `939 
+F G "giai_ma_gpg_alarm_lcd" 11 1 "void()" `941 
 F N "phim_chon_mode_alarm" 11 4 ""
-F G "phim_chon_mode_alarm" 11 4 "void()" `940 
+F G "phim_chon_mode_alarm" 11 4 "void()" `942 
 F N "tang_giay_eat" 11 15 ""
-F G "tang_giay_eat" 11 15 "void()" `941 
+F G "tang_giay_eat" 11 15 "void()" `943 
 F N "tang_phut_eat" 11 19 ""
-F G "tang_phut_eat" 11 19 "void()" `942 
+F G "tang_phut_eat" 11 19 "void()" `944 
 F N "tang_gio_eat" 11 23 ""
-F G "tang_gio_eat" 11 23 "void()" `943 
+F G "tang_gio_eat" 11 23 "void()" `945 
 F N "chinh_tang_gpg_eat" 11 27 ""
-F G "chinh_tang_gpg_eat" 11 27 "void()" `944 
+F G "chinh_tang_gpg_eat" 11 27 "void()" `946 
 F N "phim_up_eat" 11 42 ""
-F G "phim_up_eat" 11 42 "void()" `945 
-F N "giam_giay_eat" 11 50 ""
-F G "giam_giay_eat" 11 50 "void()" `946 
-F N "giam_phut_eat" 11 54 ""
-F G "giam_phut_eat" 11 54 "void()" `947 
-F N "giam_gio_eat" 11 58 ""
-F G "giam_gio_eat" 11 58 "void()" `948 
-F N "chinh_giam_gpg_eat" 11 62 ""
-F G "chinh_giam_gpg_eat" 11 62 "void()" `949 
-F N "phim_dw_eat" 11 76 ""
-F G "phim_dw_eat" 11 76 "void()" `950 
-F N "log_mode_alarm" 11 84 ""
-F G "log_mode_alarm" 11 84 "void()" `951 
+F G "phim_up_eat" 11 42 "void()" `947 
+F N "giam_giay_eat" 11 51 ""
+F G "giam_giay_eat" 11 51 "void()" `948 
+F N "giam_phut_eat" 11 55 ""
+F G "giam_phut_eat" 11 55 "void()" `949 
+F N "giam_gio_eat" 11 59 ""
+F G "giam_gio_eat" 11 59 "void()" `950 
+F N "chinh_giam_gpg_eat" 11 63 ""
+F G "chinh_giam_gpg_eat" 11 63 "void()" `951 
+F N "phim_dw_eat" 11 77 ""
+F G "phim_dw_eat" 11 77 "void()" `952 
+F N "log_mode_alarm" 11 85 ""
+F G "log_mode_alarm" 11 85 "void()" `953 
 F N "control_temperature" 12 1 ""
-V L "nd_ss" 12 1 "int8" `954 
-V L "gh" 12 1 "int8" `955 
-F G "control_temperature" 12 1 "void(int8 nd_ss,int8 gh)" `953 
+V L "nd_ss" 12 1 "int8" `956 
+V L "gh" 12 1 "int8" `957 
+F G "control_temperature" 12 1 "void(int8 nd_ss,int8 gh)" `955 
 C L "control_temperature" 12 3 1 "FUNCTION"
 C L "control_temperature" 12 3 1 "FUNCTION"
 F N "servo_degree_0" 12 14 ""
-F G "servo_degree_0" 12 14 "void()" `956 
-V L "i" 12 15 "int8" `957 
+F G "servo_degree_0" 12 14 "void()" `958 
+V L "i" 12 15 "int8" `959 
 C L "servo_degree_0" 12 3 1 "FUNCTION"
 F N "servo_degree_90" 12 24 ""
-F G "servo_degree_90" 12 24 "void()" `958 
-V L "i" 12 25 "int8" `959 
+F G "servo_degree_90" 12 24 "void()" `960 
+V L "i" 12 25 "int8" `961 
 C L "servo_degree_90" 12 3 1 "FUNCTION"
 F N "servo_degree_180" 12 34 ""
-F G "servo_degree_180" 12 34 "void()" `960 
-V L "i" 12 35 "int8" `961 
+F G "servo_degree_180" 12 34 "void()" `962 
+V L "i" 12 35 "int8" `963 
 C L "servo_degree_180" 12 3 1 "FUNCTION"
 F N "control_servo" 12 44 ""
-F G "control_servo" 12 44 "void()" `962 
+F G "control_servo" 12 44 "void()" `964 
 F N "menu" 13 2 ""
-F G "menu" 13 2 "void()" `963 
+F G "menu" 13 2 "void()" `965 
 C L "menu" 13 14 1 "FUNCTION"
 C L "menu" 13 14 1 "FUNCTION"
 C L "menu" 13 14 1 "FUNCTION"
@@ -1650,9 +1653,10 @@ C L "menu" 13 14 1 "FUNCTION"
 C L "menu" 13 14 1 "FUNCTION"
 C L "menu" 13 14 1 "FUNCTION"
 F N "loop" 0 3 ""
-F G "loop" 0 3 "void()" `968  "! function to access for change limit temperature, change time for time rtc, change time clock for eat fish, check com with esp, log version sys"
+F G "loop" 0 3 "void()" `971  "! function to access for change limit temperature, change time for time rtc, change time clock for eat fish, check com with esp, log version sys"
 F N "MAIN" 0 8 ""
-F G "MAIN" 0 8 "void()" `969  "! setup enviroments"
+F G "MAIN" 0 8 "void()" `972  "! setup enviroments"
+C L "MAIN" 0 13 1 "FUNCTION"
 C L "MAIN" 0 13 1 "FUNCTION"
 C L "MAIN" 0 13 1 "FUNCTION"
 C L "MAIN" 0 13 1 "FUNCTION"
