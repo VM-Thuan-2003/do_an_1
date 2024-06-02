@@ -5,9 +5,9 @@
 usi8 time_w[9]={0x31,0x15,0x15,0x04,0x25,0x10,0x23,0x90,0x91};
 usi8 time_r[9]={0x30,0x30,0x10,0x08,0x20,0x02,0x20,0x90,0x91};
 
-//!#define dec_giay_eat  ds1307_bcdToDec(eat_ss)
-//!#define dec_phut_eat  ds1307_bcdToDec(eat_pp)
-//!#define dec_gio_eat   ds1307_bcdToDec(eat_hh)
+#define dec_giay_eat  ds1307_bcdToDec(eat_ss)
+#define dec_phut_eat  ds1307_bcdToDec(eat_pp)
+#define dec_gio_eat   ds1307_bcdToDec(eat_hh)
 
 #define dec_giay_ds  ds1307_bcdToDec(time_r[0])
 #define dec_phut_ds  ds1307_bcdToDec(time_r[1])

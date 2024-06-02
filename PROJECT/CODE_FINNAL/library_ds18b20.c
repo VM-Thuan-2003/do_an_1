@@ -10,8 +10,8 @@
 #define convert_t        0x44
 
 si16 temperature;
-usi8 dt_ng, dt_ngt;
-usi16 dt_tp, dt_tpt;
+usi8 dt_ng;
+usi16 dt_tp;
 usi16 tt;
 
 bool ds18b20_start(){

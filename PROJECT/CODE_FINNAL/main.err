@@ -1,4 +1,10 @@
-Compiling E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\main on 02-Jun-24 at 02:07
->>> Warning 245 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\define_pic16f.c" Line 83(0,1): File may have mis-matched #if/#endif
+Compiling E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\main on 02-Jun-24 at 11:34
+>>> Warning 245 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\define_pic16f.c" Line 129(0,1): File may have mis-matched #if/#endif
+>>> Warning 230 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_lcd_i2c.c" Line 188(1,1): String truncated
+>>> Warning 230 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_lcd_i2c.c" Line 200(1,1): String truncated
+>>> Warning 230 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_lcd_i2c.c" Line 201(1,1): String truncated
 >>> Warning 240 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_ds18b20.c" Line 80(29,40): Pointer types do not match
->>> Warning 245 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_project.c" Line 36(0,1): File may have mis-matched #if/#endif
+>>> Warning 245 "E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\library_project.c" Line 104(0,1): File may have mis-matched #if/#endif
+      Memory usage:   ROM=42%      RAM=19% - 30%
+      0 Errors,  6 Warnings.
+Build Successful.

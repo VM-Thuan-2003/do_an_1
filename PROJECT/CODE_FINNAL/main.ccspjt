@@ -11,36 +11,56 @@ Type=4
 1=main.c
 
 [defines]
-buildcount=34
+buildcount=81
 
 [ProjectLog]
 Days=1
 D1=02-06-2024
-D1_L=3
+D1_L=10
 D1_L1=[467]Started Editing.
 D1_L2=[2526]Stopped Editing.
 D1_L3=[2548]Started Editing.
+D1_L4=[8059]Stopped Editing.
+D1_L5=[32967]Project Opened.
+D1_L6=[33008]Started Editing.
+D1_L7=[37923]Stopped Editing.
+TotalEdit=82
+TotalDebug=0
+D1_E=82
+D1_D=0
+D1_L8=[37975]Started Editing.
+D1_L9=[39788]Stopped Editing.
+D1_L10=[40254]Started Editing.
 
 [Opened Files]
 1=main.c
 t1=1
-2=define_pic16f.c
-t2=28
+2=library_menu.c
+t2=1
 3=library_project.c
 t3=1
-Count=9
-4=library_button.c
+Count=12
+4=library_ds1307_i2c.c
 t4=1
-5=library_i2c.c
-t5=1
-6=library_lcd_i2c.c
-t6=170
-7=library_ds1307_i2c.c
-t7=1
-8=library_ds18b20.c
-t8=58
-9=library_menu.c
-t9=58
+5=library_lcd_i2c.c
+t5=190
+6=library_ds18b20.c
+t6=57
+7=library_button.c
+t7=57
+8=define_pic16f.c
+t8=99
+9=library_change_rtc.c
+t9=177
+10=library_change_alarm_eat.c
+t10=1
+11=library_uart.c
+t11=1
+12=library_control_chiller.c
+t12=1
+
+[fileformats]
+forcecoff=0
 [Units]
 Count=1
 1=main (main)

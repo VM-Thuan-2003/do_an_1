@@ -1,3 +1,6 @@
+//! button place
+//! bt3 - bt2 - bt1 - bt0
+
 usi8 countPush = 0;
 usi8 countTick = 0;
 
@@ -7,7 +10,7 @@ bool push_btn(bool isRelease, usi8 pin){
    if(!input(pin)){
       if(flag_10ms == true) countPush++;
 //! check if countPush == 2 (20ms) --> debound button
-      if(countPush >= 2){
+      if(countPush >= 1){
          if(!input(pin)){
             if(isRelease == false) while(!input(pin));
             countPush = 0;
@@ -17,7 +20,7 @@ bool push_btn(bool isRelease, usi8 pin){
       }
       return false;
    }
-   countPush = 0;
+//!   countPush = 0;
    return false;
 }
 
@@ -32,6 +35,6 @@ bool tick_btn(usi8 delay, usi8 pin){
       }
       return false;
    }
-   countTick = 0;
+//!   countTick = 0;
    return false;
 }

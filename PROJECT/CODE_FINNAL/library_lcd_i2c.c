@@ -179,3 +179,42 @@ void lcd_dis_xx_yy_zz(usi8 x, usi8 y, usi8 a, usi8 b, usi8 c, bool e3, bool e2, 
    lcd_data(b_ch); lcd_data(b_dv); lcd_data("-");
    lcd_data(c_ch); lcd_data(c_dv);
 }
+
+void lcd_dis_2num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
+   usi8 ch, dv;
+   lcd_setCursor(x, y);
+   ch = dt/10 + 0x30;
+   dv = dt%10 + 0x30;
+   if(is_xvn == true) if(ch == 0x30) ch = " ";
+   if(is_dot == true) lcd_data(".");
+   lcd_data(ch); lcd_data(dv);
+}
+
+void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
+   usi8 tr, ch, dv;
+   lcd_setCursor(x, y); //xxx /10 -> xx 
+   tr = dt/100 + 0x30; 
+   ch = dt/10%10  + 0x30;
+   dv = dt%10     + 0x30;
+   if(is_xvn == true) if(tr == 0x30){
+      tr = " ";
+      if(ch == 0x30) ch = " ";
+   }
+   if(is_dot == true) lcd_data(".");
+   lcd_data(tr); lcd_data(ch); lcd_data(dv);
+}
+
+void lcd_dis_temperature (int8 x, int8 y, usi16 ng, usi16 th){
+   lcd_setCursor(x,y);
+   lcd_data("ND: ");
+   lcd_dis_2num_dot(ng, x + 4, y, true, false);
+   lcd_dis_3num_dot(th, x + 6, y, false, true);
+   lcd_data(" oC");
+}
+
+void lcd_dis_temperature_limit (int8 x, int8 y, usi16 ng){
+   lcd_setCursor(x,y);
+   lcd_data("ND-GH: ");
+   lcd_dis_2num_dot(ng, x + 7, y, true, false);
+   lcd_data(" oC");
+}

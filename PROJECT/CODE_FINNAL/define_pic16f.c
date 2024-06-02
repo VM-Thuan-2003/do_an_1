@@ -19,10 +19,32 @@
 bool flag_10ms = false;
 bool isDs18b20 = false;
 
+usi16 limitTemperature = 25;
+
+usi16 tick_10ms;
+
+usi8 giay_tam, bdn, tt_ht = 0;
+si8 gt_mod = 0, tg_chinh = 0;
+
+bool e_11, e_22, e_33;
+
+usi8 eat_hh, eat_pp, eat_ss;
+
+#define maxLevel 5
+
+usi8 countLevel = 0;
+usi8 countLevelRev = 0;
+
+bool flag_servo;
+usi8 count_servo = 0;
+
+#define tang true
+#define giam false
+
 //! define button to use
 #ifndef bt0
 #define bt0    pin_b0
-#endif 
+#endif
 
 #ifndef bt1
 #define bt1    pin_b1
@@ -58,7 +80,25 @@ bool isDs18b20 = false;
 void interrupt_timer1()
 {
    set_timer1(59286);
+   
    flag_10ms = !flag_10ms;
+
+   tick_10ms++;
+
+//! when tick_10ms >= 10 --> 100ms
+   if(tick_10ms >= 10){
+      bdn++;
+      tick_10ms = 0;
+      
+//! disable flag servo on --> flag_servo >> false
+      if(flag_servo == true){
+         if(count_servo < 100) count_servo++; // 10s
+         else{
+            count_servo = 0;
+            flag_servo = false;
+         }
+      }
+   }
 }
 
 void setup_initialize(){
@@ -80,4 +120,10 @@ void setup_initialize(){
 //! setup variable initialize
    flag_10ms = false;
    isDs18b20 = false;
+   
+   limitTemperature = 25;
+   
+   e_11 = true; e_22 = true; e_33 = true;
+   
+   eat_hh = 0x16; eat_pp = 0x00; eat_ss = 0x01;
 }
