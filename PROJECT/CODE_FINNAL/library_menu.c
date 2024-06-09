@@ -24,6 +24,12 @@ void menu(){
 //! control delay and servo
          control_temperature(dt_ng,limitTemperature);
          control_servo();
+         
+         handle_uart();
+         
+//!         fprintf(UART_STREAM, "%s %d\r\n", "dt:rt:", dt_ng);
+//!         fprintf(UART_STREAM, "%s %d\r\n", "dt:lt:", limitTemperature);
+         
          break;
       case 1:
 //! function to read temperature from ds18b20 sensor
@@ -92,7 +98,19 @@ void menu(){
          lcd_setCursor(1,0);
          lcd_data("check com esp");
          lcd_setCursor(1,1);
-//!         lcd_data(ccsc);
+         lcd_data(indexComplete + 0x30);
+         if (stringComplete) {
+            stringComplete = 0;
+            index = 0;
+            lcd_clear();
+
+//!            if(!strncmp(ledon, receivedString, 2)){
+//!               output_bit(ledTest,1);
+//!            }
+//!            else{
+//!               output_bit(ledTest,0);
+//!            }
+         }
          if(tick_btn(1,bt3)) countLevel = 0;
          break;
       default:

@@ -1,0 +1,4 @@
+//! config mode to operation of pic16f877a
+#include <16f877a.h>
+
+

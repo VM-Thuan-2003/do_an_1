@@ -12,16 +12,16 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   if(espSerial.available()){
-    String input = espSerial.readString() + "\n";
-    Serial.println(input);
+    String input = espSerial.readString();
+    Serial.print(input);
     // espSerial.print("sss");
   }
 
   // espSerial.write("c");
 
   if(Serial.available()){
-    int inputss = Serial.read();
+    String inputss = Serial.readString();
     Serial.print(inputss);
-    espSerial.println("o");
+    espSerial.print(inputss + '\r');
   }
 }

@@ -1,0 +1,58 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.115
+Compiler=PCM
+[Target Data]
+FileList=main.c
+[main.c]
+Type=4
+[mru-list]
+1=main.c
+
+[defines]
+buildcount=67
+
+[ProjectLog]
+Days=1
+D1=09-06-2024
+D1_L=15
+D1_L1=[37729]Started Editing.
+D1_L2=[38655]Stopped Editing.
+D1_L3=[38669]Started Editing.
+D1_L4=[39362]Stopped Editing.
+D1_L5=[39928]Started Editing.
+D1_L6=[41470]Stopped Editing.
+D1_L7=[41518]Started Editing.
+D1_L8=[41948]Stopped Editing.
+D1_L9=[42132]Started Editing.
+D1_L10=[46155]Stopped Editing.
+D1_L11=[46223]Started Editing.
+D1_L12=[46525]Stopped Editing.
+D1_L13=[46550]Started Editing.
+D1_L14=[46623]Stopped Editing.
+TotalEdit=104
+TotalDebug=0
+D1_E=104
+D1_D=0
+D1_L15=[46623]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=25
+2=library_project.c
+t2=1
+3=define_pic16f.c
+t3=41
+4=library_i2c.c
+t4=3
+5=library_lcd_i2c.c
+t5=65
+Count=7
+6=library_uart.c
+t6=9
+7=C:\Program Files (x86)\PICC\Devices\16f877a.h
+t7=485
+[Units]
+Count=1
+1=main (main)

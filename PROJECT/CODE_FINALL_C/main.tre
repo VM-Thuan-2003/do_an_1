@@ -1,0 +1,86 @@
+ÀÄmain
+   ÃÄMAIN  0/179  Ram=3
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄ@cinit2  (Inline)  Ram=0
+   ³  ÃÄsetup_initialize  0/15  Ram=0
+   ³  ÃÄlcd_setup  0/77  Ram=1
+   ³  ³  ÃÄi2c_setup_write  (Inline)  Ram=0
+   ³  ³  ³  ÀÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³  ÀÄi2c_write_1byte  (Inline)  Ram=1
+   ³  ³  ³     ÃÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ³     ÀÄ@I2C_WRITEU_129  0/16  Ram=1
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÃÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄpulseEnable  (Inline)  Ram=2
+   ³  ³  ³     ÃÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÀÄexpanderWrite  0/22  Ram=2
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_command  0/5  Ram=1
+   ³  ³  ³  ÀÄlcd_send  0/21  Ram=5
+   ³  ³  ³     ÃÄwrite4bits  0/23  Ram=1
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÀÄwrite4bits  0/23  Ram=1
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄlcd_display  (Inline)  Ram=1
+   ³  ³  ³  ÀÄlcd_command  0/5  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_clear  0/7  Ram=0
+   ³  ³  ³  ÃÄlcd_command  0/5  Ram=1
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÃÄlcd_command  0/5  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄlcd_home  (Inline)  Ram=0
+   ³  ³     ÃÄlcd_command  0/5  Ram=1
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄ@delay_ms1  0/20  Ram=1
+   ³  ÃÄlog_lcd_initialize  0/34  Ram=1
+   ³  ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³  ³  ³  ÀÄlcd_command  0/5  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC7_828  0/86  Ram=4
+   ³  ³  ³  ÃÄlcd_data  0/6  Ram=1
+   ³  ³  ³  ³  ÀÄlcd_send  0/21  Ram=5
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÀÄlcd_data  0/6  Ram=1
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@PSTRINGC7_828  0/86  Ram=4
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ³  ÀÄlcd_clear  0/7  Ram=0
+   ³  ³     ÀÄ*
+   ³  ÃÄ@PSTRINGC7_9600_62_63  0/90  Ram=4
+   ³  ÃÄ@delay_ms1  0/20  Ram=1
+   ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC7_828  0/86  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_data  0/6  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÃÄstrncpy  0/70  Ram=10
+   ³  ÃÄ@PSTRINGCN7_9600_62_63  0/91  Ram=5
+   ³  ÃÄ@PSTRINGR_9600_62_63  0/25  Ram=2
+   ³  ÃÄlcd_clear  0/7  Ram=0
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_setCursor  0/25  Ram=7
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_data  0/6  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÀÄstrncmp  0/81  Ram=6
+   ÀÄread_uart  0/42  Ram=4

@@ -9,11 +9,6 @@
 #define copy_scratchpad  0x48
 #define convert_t        0x44
 
-si16 temperature;
-usi8 dt_ng;
-usi16 dt_tp;
-usi16 tt;
-
 bool ds18b20_start(){
    output_low(pin_ds18b20);
    output_drive(pin_ds18b20);
@@ -61,7 +56,7 @@ int8 ds18b20_read_byte(){
    return value;
 }
 
-bool ds18b20_read_temp_c2(int16 *raw_temp_value){
+bool ds18b20_read_temp_c2(usi16 *raw_temp_value){
    if(!ds18b20_start())
       return false;
    ds18b20_write_byte(skip_rom);

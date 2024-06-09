@@ -1,0 +1,51 @@
+#include <library_project.c>
+
+char data[16]="";
+
+char ledon[] = "ledon";
+
+void main(void){
+   setup_initialize();
+   
+   lcd_setup();
+   
+   log_lcd_initialize();
+   printf("hello");
+
+   output_bit(ledTest,1);
+   delay_ms(1000);
+   output_bit(ledTest,0);
+   
+   while(true){
+      lcd_setCursor(0,0);
+      lcd_data("dt: "); lcd_data(indexComplete + 0x30);
+      
+      if (stringComplete) {
+            
+            strncpy( data, receivedString, indexComplete );
+            data[indexComplete] = '\0'; 
+            
+            // Process the received string
+            printf("Received: %s\n", data);
+
+            // Reset the flag and index for next reception
+            stringComplete = 0;
+            index = 0;
+            lcd_clear();
+            
+            for(int i = 0; i < 16 ; i++){
+               lcd_setCursor(i,1);
+               lcd_data(data[i]);
+            }
+            
+            if(strncmp(receivedString, ledon, indexComplete)){
+               output_bit(ledTest,1);
+            }
+            else{
+               output_bit(ledTest,0);
+            }
+            
+        }
+      
+   }
+}

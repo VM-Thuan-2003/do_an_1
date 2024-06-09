@@ -1,0 +1,48 @@
+#include <library_project.c>
+
+char data[16]="";
+void main(void){
+   setup_initialize();
+   
+   lcd_setup();
+   
+   log_lcd_initialize();
+   printf("hello");
+
+   output_bit(ledTest,1);
+   delay_ms(1000);
+   output_bit(ledTest,0);
+   
+   while(true){
+      lcd_setCursor(0,0);
+      lcd_data("dt: "); lcd_data(indexComplete + 0x30);
+      
+      if (stringComplete) {
+            
+            trncpy( t, str+3, 5 ); /*C?t 5 ký t? t? v? trí th? 3 */
+    t[5] = '\0'; 
+            
+            // Process the received string
+            printf("Received: %s\n", receivedString);
+
+            // Reset the flag and index for next reception
+            stringComplete = 0;
+            index = 0;
+            lcd_clear();
+            
+            for(int i = 0; i < indexComplete ; i++){
+               lcd_setCursor(i,1);
+               lcd_data(receivedString[i]);
+            }
+            
+            if(receivedString == "ledon"){
+               output_bit(ledTest,1);
+            }
+            else{
+               output_bit(ledTest,0);
+            }
+            
+        }
+      
+   }
+}

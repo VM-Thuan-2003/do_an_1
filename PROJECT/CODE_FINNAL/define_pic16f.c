@@ -4,9 +4,7 @@
 #fuses   hs, nowdt, put, noprotect, nolvp
 #use     delay(clock=20MHz) 
 #use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
-#use     rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7,)
-
-//!#include <library_uart.c>
+#use     rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, bits = 8, stream=UART_STREAM)
 
 //! define name again to user
 #define usi8  unsigned int8
@@ -21,7 +19,7 @@
 bool flag_10ms = false;
 bool isDs18b20 = false;
 
-usi16 limitTemperature = 25;
+usi8 limitTemperature = 25;
 
 usi16 tick_10ms;
 
@@ -42,6 +40,12 @@ usi8 count_servo = 0;
 
 #define tang false
 #define giam true
+
+//! define available for ds18b20
+usi16 temperature;
+usi8 dt_ng;
+usi16 dt_tp;
+usi16 tt;
 
 //! define button to use
 #ifndef bt0
@@ -74,11 +78,13 @@ usi8 count_servo = 0;
 
 #ifndef pinDLHot
 #define pinDLHot      pin_d7
+#endif
 
 #ifndef ledTest
-#define ledTest      pin_b5
+#define ledTest       pin_b5
+#endif
 
-usi8 rdata;
+#include <library_uart.c>
 
 #int_timer1
 void interrupt_timer1()
@@ -105,15 +111,6 @@ void interrupt_timer1()
    }
 }
 
-#int_rda
-void interrupt_uart(){
-   if (kbhit()){
-      rdata = getch();
-      output_bit(ledTest,1);
-   }
-   else output_bit(ledTest,0);
-}
-
 void setup_initialize(){
 //! set up timer 1 to timer count is 10ms of one cycle
    setup_timer_1(T1_INTERNAL|T1_DIV_BY_8);
@@ -128,10 +125,10 @@ void setup_initialize(){
 //! setup mode for all gpio of pic16f877a
    set_tris_a(0xff);
    set_tris_b(0xdf);
-   set_tris_d(0x00);
-   set_tris_e(0x00);
-   set_tris_c(0x40);
-
+   set_tris_d(0x00); output_d(0x00);
+   set_tris_e(0x00); output_e(0x00);
+   set_tris_c(0x98); output_c(0x98);
+ 
 //! setup variable initialize
    flag_10ms = false;
    isDs18b20 = false;

@@ -185,7 +185,7 @@ void lcd_dis_2num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    lcd_setCursor(x, y);
    ch = dt/10 + 0x30;
    dv = dt%10 + 0x30;
-   if(is_xvn == true) if(ch == 0x30) ch = " ";
+   if(is_xvn == true) if(ch == 0x30) ch = 0x20;
    if(is_dot == true) lcd_data(".");
    lcd_data(ch); lcd_data(dv);
 }
@@ -197,8 +197,8 @@ void lcd_dis_3num_dot(usi16 dt, int8 x, int8 y, bool is_xvn, bool is_dot){
    ch = dt/10%10  + 0x30;
    dv = dt%10     + 0x30;
    if(is_xvn == true) if(tr == 0x30){
-      tr = " ";
-      if(ch == 0x30) ch = " ";
+      tr = 0x20;
+      if(ch == 0x30) ch = 0x20;
    }
    if(is_dot == true) lcd_data(".");
    lcd_data(tr); lcd_data(ch); lcd_data(dv);
