@@ -1,9 +1,10 @@
-D G "__PCM__" 0 33 ""5.115""
-D G "__DEVICE__" 0 33 "877"
-D G "__DATE__" 0 33 ""02-Jun-24""
-D G "__TIME__" 0 33 ""17:14:54""
-D G "_UNICODE" 0 33 ""?""
-D G "__EVAL" 0 33 ""?"" "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+F N "lM" 3 540 ""
+D G "__PCM__" 3 540 ""5.115""
+D G "__DEVICE__" 3 540 "877"
+D G "__DATE__" 3 540 ""09-Jun-24""
+D G "__TIME__" 3 540 ""10:01:28""
+D G "_UNICODE" 3 540 ""?""
+D G "__EVAL" 3 540 ""?"" "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 c L "set_tris_a" 3 1 6 "FUNCTION"
 F N "set_tris_a" 3 37 ""
 V L "value" 3 37 "int8" `55 
@@ -1205,16 +1206,16 @@ D G "pinServo" 2 68 "pin_c1"
 D G "pinDLCold" 2 72 "pin_d6"
 D G "pinDLHot" 2 76 "pin_d7"
 D G "ledTest" 2 79 "pin_b5"
-V G "ccsc" 2 81 "int8" `727 
+V G "rData" 2 81 "int8" `727 
 F N "interrupt_timer1" 2 84 ""
 F G "interrupt_timer1" 2 85 "void()" `728 
 C L "interrupt_timer1" 2 9 1 "FUNCTION"
 C L "interrupt_timer1" 2 9 1 "FUNCTION"
 C L "interrupt_timer1" 2 9 1 "FUNCTION"
-F N "rrsf" 2 109 ""
-F G "rrsf" 2 109 "void()" `729 
-F N "setup_initialize" 2 113 ""
-F G "setup_initialize" 2 113 "void()" `730  "! set up timer 1 to timer count is 10ms of one cycle"
+F N "interrupt_uart" 2 109 ""
+F G "interrupt_uart" 2 109 "void()" `729 
+F N "setup_initialize" 2 117 ""
+F G "setup_initialize" 2 117 "void()" `730  "! set up timer 1 to timer count is 10ms of one cycle"
 C L "setup_initialize" 2 9 1 "FUNCTION"
 C L "setup_initialize" 2 9 1 "FUNCTION"
 C L "setup_initialize" 2 9 1 "FUNCTION"
@@ -1223,7 +1224,7 @@ V G "countTick" 4 5 "int8" `732
 F N "push_btn" 4 7 ""
 V L "isRelease" 4 7 "int8" `734 
 V L "pin" 4 7 "int8" `735 
-F G "push_btn" 4 7 "int8(int8 isRelease,int8 pin)" `733  "! isRelease == 0 --> push button is hold"
+F G "push_btn" 4 7 "int8(int8 isRelease,int8 pin,int8 ,int16 )" `733  "! isRelease == 0 --> push button is hold"
 C L "push_btn" 4 1 1 "FUNCTION"
 C L "push_btn" 4 1 1 "FUNCTION"
 C L "push_btn" 4 1 1 "FUNCTION"
@@ -1237,7 +1238,7 @@ D G "pcf8574_addr_wr" 5 1 "0x4E" "0b01001110"
 D G "pcf8574_addr_rd" 5 2 "0x4F" "0b01001111"
 C L "i2c_reset" 5 4 1 "FUNCTION"
 F N "i2c_reset" 5 5 ""
-F G "i2c_reset" 5 6 "void()" `746 
+F G "i2c_reset" 5 6 "void(int8 payload)" `746 
 C L "i2c_setup_write" 5 4 1 "FUNCTION"
 F N "i2c_setup_write" 5 12 ""
 F G "i2c_setup_write" 5 13 "void()" `747 
@@ -1295,9 +1296,9 @@ f G "lcd_command" 6 53 "void(int8 value)" `756
 F N "lcd_display" 6 54 ""
 f G "lcd_display" 6 54 "void()" `758 
 F N "lcd_clear" 6 55 ""
-f G "lcd_clear" 6 55 "void()" `759 
+f G "lcd_clear" 6 55 "void(int8 value,int8 mode)" `759 
 F N "lcd_home" 6 56 ""
-f G "lcd_home" 6 56 "void()" `760 
+f G "lcd_home" 6 56 "void(int8 mode)" `760 
 F N "lcd_send" 6 57 ""
 V L "value" 6 57 "int8" `762 
 V L "mode" 6 57 "int8" `763 
@@ -1313,7 +1314,7 @@ V G "_cols" 6 64 "int8" `770
 V G "_rows" 6 65 "int8" `771 
 V G "_backlightval" 6 66 "int8" `772 
 F N "lcd_setup" 6 68 ""
-F G "lcd_setup" 6 68 "void()" `773 
+F G "lcd_setup" 6 68 "void(int8 row)" `773 
 C L "lcd_setup" 6 4 1 "FUNCTION"
 C L "lcd_setup" 6 4 1 "FUNCTION"
 C L "lcd_setup" 6 4 1 "FUNCTION"
@@ -1429,10 +1430,10 @@ V L "val" 7 31 "int8" `848
 F G "ds1307_decToBcd" 7 31 "int8(int8 val)" `847 
 F N "ds1307_bcdToDec" 7 35 ""
 V L "val" 7 35 "int8" `850 
-F G "ds1307_bcdToDec" 7 35 "int8(int8 val)" `849 
+F G "ds1307_bcdToDec" 7 35 "int8(int8 val,int8 )" `849 
 F N "ds1307_read_time" 7 39 ""
 V L "j" 7 39 "int8" `855 
-F G "ds1307_read_time" 7 40 "void(int8 j)" `854 
+F G "ds1307_read_time" 7 40 "void(int8 j,int8 sel)" `854 
 V L "i" 7 41 "int8" `856 
 C L "ds1307_read_time" 7 4 1 "FUNCTION"
 F N "ds1307_update_time" 7 53 ""
@@ -1440,7 +1441,7 @@ V L "sel" 7 53 "int8" `858
 F G "ds1307_update_time" 7 54 "void(int8 sel)" `857 
 V L "i" 7 55 "int8" `859 
 F N "ds1307_setup" 7 67 ""
-F G "ds1307_setup" 7 68 "void()" `860 
+F G "ds1307_setup" 7 68 "void(int8 @const806)" `860 
 F N "ds1307_save_ds" 7 76 ""
 V L "dcdt" 7 76 "int8" `862 
 V L "dt" 7 76 "int8" `863 
@@ -1453,7 +1454,7 @@ D G "TOUCH_PIN_FLOAT" 9 44 "()  output_float(TOUCH_PIN)"
 D G "TOUCH_PIN_READ" 9 45 "()      input_state(TOUCH_PIN)"
 C L "touch_read_bit" 9 2 7 "FUNCTION"
 F N "touch_read_bit" 9 59 ""
-f G "touch_read_bit" 9 59 "int8()" `864  "BYTE touch_read_byte()"
+f G "touch_read_bit" 9 59 "int8(int8 data)" `864  "BYTE touch_read_byte()"
 C L "touch_read_bit" 9 2 3 "FUNCTION"
 F N "touch_read_byte" 9 67 ""
 f G "touch_read_byte" 9 67 "int8()" `865  "BOOLEAN touch_write_bit(int1 data)"
@@ -1527,9 +1528,9 @@ V L "value" 8 58 "int8" `890
 V L "i" 8 59 "int8" `891 
 F N "ds18b20_read_temp_c2" 8 64 ""
 V L "raw_temp_value" 8 64 "*int16" `893 
-F G "ds18b20_read_temp_c2" 8 64 "int8(*int16 raw_temp_value)" `892 
+F G "ds18b20_read_temp_c2" 8 64 "int8(*int16 raw_temp_value,int16 ,int16 )" `892 
 F N "ds18b20_read_temp" 8 79 ""
-F G "ds18b20_read_temp" 8 79 "void()" `894 
+F G "ds18b20_read_temp" 8 79 "void(int16 )" `894 
 F N "tang_or_giam_bcd" 10 2 ""
 V L "x" 10 2 "int8" `899 
 V L "sel" 10 2 "int8" `900 
@@ -1619,7 +1620,7 @@ F G "chinh_giam_gpg_eat" 11 63 "void()" `951
 F N "phim_dw_eat" 11 77 ""
 F G "phim_dw_eat" 11 77 "void()" `952 
 F N "log_mode_alarm" 11 85 ""
-F G "log_mode_alarm" 11 85 "void()" `953 
+F G "log_mode_alarm" 11 85 "void(int8 nd_ss,int8 gh)" `953 
 F N "control_temperature" 12 1 ""
 V L "nd_ss" 12 1 "int8" `956 
 V L "gh" 12 1 "int8" `957 
@@ -1652,16 +1653,15 @@ C L "menu" 13 14 1 "FUNCTION"
 C L "menu" 13 14 1 "FUNCTION"
 C L "menu" 13 14 1 "FUNCTION"
 C L "menu" 13 14 1 "FUNCTION"
+C L "menu" 13 14 1 "FUNCTION"
 F N "loop" 0 3 ""
 F G "loop" 0 3 "void()" `971  "! function to access for change limit temperature, change time for time rtc, change time clock for eat fish, check com with esp, log version sys"
 F N "MAIN" 0 8 ""
 F G "MAIN" 0 8 "void()" `972  "! setup enviroments"
-C L "MAIN" 0 13 1 "FUNCTION"
-C L "MAIN" 0 13 1 "FUNCTION"
-C L "MAIN" 0 13 1 "FUNCTION"
-C L "MAIN" 0 13 1 "FUNCTION"
-C L "MAIN" 0 13 1 "FUNCTION"
-C L "MAIN" 0 13 1 "FUNCTION"
+C L "MAIN" 0 13 3 "FUNCTION"
+C L "MAIN" 0 13 3 "FUNCTION"
+C L "MAIN" 0 13 2 "FUNCTION"
+C L "MAIN" 0 13 7 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 0

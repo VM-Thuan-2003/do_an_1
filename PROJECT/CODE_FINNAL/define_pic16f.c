@@ -4,7 +4,7 @@
 #fuses   hs, nowdt, put, noprotect, nolvp
 #use     delay(clock=20MHz) 
 #use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
-#use     rs232(baud=9600, xmit=pin_c6,rcv=pin_c7, bits=8)
+#use     rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7,)
 
 //!#include <library_uart.c>
 
@@ -78,7 +78,7 @@ usi8 count_servo = 0;
 #ifndef ledTest
 #define ledTest      pin_b5
 
-char ccsc;
+usi8 rdata;
 
 #int_timer1
 void interrupt_timer1()
@@ -106,8 +106,12 @@ void interrupt_timer1()
 }
 
 #int_rda
-void rrsf(){
-   ccsc = getc();
+void interrupt_uart(){
+   if (kbhit()){
+      rdata = getch();
+      output_bit(ledTest,1);
+   }
+   else output_bit(ledTest,0);
 }
 
 void setup_initialize(){
@@ -124,9 +128,9 @@ void setup_initialize(){
 //! setup mode for all gpio of pic16f877a
    set_tris_a(0xff);
    set_tris_b(0xdf);
-   set_tris_d(0x00); output_d(0x00);
-   set_tris_e(0x00); output_e(0x00);
-   set_tris_c(0x00); output_c(0x00);
+   set_tris_d(0x00);
+   set_tris_e(0x00);
+   set_tris_c(0x40);
 
 //! setup variable initialize
    flag_10ms = false;

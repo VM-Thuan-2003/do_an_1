@@ -91,7 +91,8 @@ void menu(){
       case 4:
          lcd_setCursor(1,0);
          lcd_data("check com esp");
-         
+         lcd_setCursor(1,1);
+//!         lcd_data(ccsc);
          if(tick_btn(1,bt3)) countLevel = 0;
          break;
       default:
