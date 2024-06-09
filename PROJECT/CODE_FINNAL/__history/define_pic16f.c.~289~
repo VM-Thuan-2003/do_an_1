@@ -10,7 +10,6 @@
 #use fast_io(E)
 #use fast_io(B)
 #use fast_io(A)
-
 //! define name again to user
 #define usi8  unsigned int8
 #define usi16 unsigned int16

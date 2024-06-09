@@ -5,11 +5,6 @@
 #use     delay(clock=20MHz) 
 #use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
 #use     rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, bits = 8, stream=UART_STREAM)
-#use fast_io(C)
-#use fast_io(D)
-#use fast_io(E)
-#use fast_io(B)
-#use fast_io(A)
 
 //! define name again to user
 #define usi8  unsigned int8
@@ -28,7 +23,6 @@ bool isDs18b20 = false;
 usi8 limitTemperature = 25;
 
 usi16 tick_10ms;
-usi16 tick_100ms;
 
 usi8 giay_tam, bdn, tt_ht = 0;
 si8 gt_mod = 0, tg_chinh = 0;
@@ -107,12 +101,6 @@ void interrupt_timer1()
       bdn++;
       tick_10ms = 0;
       
-      if(tick_100ms < 100) tick_100ms++;
-      else{
-         tick_100ms = 0;
-         flag_10s = true;
-      }
-      
 //! disable flag servo on --> flag_servo >> false
       if(flag_servo == true){
          if(count_servo < 100) count_servo++; // 10s
@@ -138,13 +126,12 @@ void setup_initialize(){
 //! setup mode for all gpio of pic16f877a
    set_tris_a(0xff);
    set_tris_b(0xdf);
-   set_tris_d(0x00); //output_d(0x00);
-   set_tris_e(0x00); //output_e(0x00);
-   set_tris_c(0x98); //output_c(0x98);
+   set_tris_d(0x00); output_d(0x00);
+   set_tris_e(0x00); output_e(0x00);
+   set_tris_c(0x98); output_c(0x98);
  
 //! setup variable initialize
    flag_10ms = false;
-   flag_10s  = false;
    isDs18b20 = false;
    
    limitTemperature = 25;

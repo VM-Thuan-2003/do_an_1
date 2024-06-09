@@ -28,11 +28,12 @@ void menu(){
          handle_uart();
          
          if(flag_10s == true){
-            flag_10s = false;
             fprintf(UART_STREAM, "%s%d\r\n", "dt:rt:", dt_ng);
-            fprintf(UART_STREAM, "%s%d\r\n", "dt:lt:", limitTemperature);
-            fprintf(UART_STREAM, "%s%d-%d-%d\r\n", "dt:ra:", dec_gio_eat, dec_phut_eat, dec_giay_eat);
+         fprintf(UART_STREAM, "%s%d\r\n", "dt:lt:", limitTemperature);
+         fprintf(UART_STREAM, "%s%d-%d-%d\r\n", "dt:ra:", dec_gio_eat, dec_phut_eat, dec_giay_eat);
          }
+         
+         
          break;
       case 1:
 //! function to read temperature from ds18b20 sensor

@@ -5,11 +5,7 @@
 #use     delay(clock=20MHz) 
 #use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
 #use     rs232(baud=9600, xmit=PIN_C6, rcv=PIN_C7, bits = 8, stream=UART_STREAM)
-#use fast_io(C)
-#use fast_io(D)
-#use fast_io(E)
-#use fast_io(B)
-#use fast_io(A)
+#use fast_io(C,D)
 
 //! define name again to user
 #define usi8  unsigned int8
