@@ -32,6 +32,7 @@ void menu(){
             fprintf(UART_STREAM, "%s%d\r\n", "dt:rt:", dt_ng);
             fprintf(UART_STREAM, "%s%d\r\n", "dt:lt:", limitTemperature);
             fprintf(UART_STREAM, "%s%d-%d-%d\r\n", "dt:ra:", dec_gio_eat, dec_phut_eat, dec_giay_eat);
+            fprintf(UART_STREAM, "%s%d-%d-%d\r\n", "dt:rc:", dec_gio_ds, dec_phut_ds, dec_giay_ds);
          }
          break;
       case 1:

@@ -121,6 +121,7 @@ void interrupt_timer1()
             flag_servo = false;
          }
       }
+      else flag_servo = 0;
    }
 }
 

@@ -189,13 +189,13 @@ void giam_ngay(){
 }
 void chinh_giam_ntn(){
    switch(gt_mod){
-      case 4:
+      case 1:
          giam_nam();
          break;
-      case 5:
+      case 2:
          giam_thang();
          break;
-      case 6:
+      case 3:
          giam_ngay();
          break;
       default: break;
