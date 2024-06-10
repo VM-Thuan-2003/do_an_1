@@ -14,7 +14,7 @@ Type=4
 buildcount=234
 
 [ProjectLog]
-Days=6
+Days=7
 D1=02-06-2024
 D1_L=39
 D1_L1=[467]Started Editing.
@@ -122,7 +122,7 @@ D5_L27=[66272]Stopped Editing.
 D5_L28=[66272]Project Closed.
 D5_L29=[81162]Project Opened.
 D6=10-06-2024
-D6_L=8
+D6_L=9
 D6_L1=[78129]Project Opened.
 D6_L2=[78148]Started Editing.
 D6_L3=[78500]Stopped Editing.
@@ -133,6 +133,10 @@ D6_L7=[79772]Stopped Editing.
 D6_E=4
 D6_D=0
 D6_L8=[80965]Project Closed.
+D6_L9=[83235]Project Opened.
+D7=11-06-2024
+D7_L=1
+D7_L1=[4145]Project Closed.
 
 [Opened Files]
 1=main.c
