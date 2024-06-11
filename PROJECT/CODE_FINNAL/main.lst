@@ -1,8 +1,8 @@
-CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
+CCS PCM C Compiler, Version 5.115, 43599               12-Jun-24 01:58
 
                Filename:   E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\main.lst
 
-               ROM used:   4604 words (56%)
+               ROM used:   4596 words (56%)
                            Largest free fragment is 2048
                RAM used:   91 (25%) at main() level
                            142 (39%) worst case
@@ -6436,7 +6436,7 @@ CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
 10CD:  XORLW  07
 10CE:  BTFSC  03.2
 10CF:  GOTO   775
-10D0:  GOTO   7AB
+10D0:  GOTO   7A3
 ....................       case 0:
 .................... //! function to read time rtc from ds1307 sensor
 ....................          ds1307_read_time(8);
@@ -6767,7 +6767,7 @@ CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
 130A:  MOVWF  19
 ....................          }
 ....................          break;
-130B:  GOTO   7D9
+130B:  GOTO   7D1
 ....................       case 1:
 .................... //! function to read temperature from ds18b20 sensor
 ....................          ds18b20_read_temp();
@@ -6841,7 +6841,7 @@ CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
 1371:  CLRF   3A
 ....................          
 ....................          break;
-1372:  GOTO   7D9
+1372:  GOTO   7D1
 ....................       case 2:
 .................... //! function to read time rtc from ds1307 sensor
 ....................          ds1307_read_time(8);
@@ -6935,7 +6935,7 @@ CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
 ....................          log_mode();
 ....................          break;
 *
-163B:  GOTO   7D9
+163B:  GOTO   7D1
 ....................       case 3:
 ....................          lcd_setCursor(1,0);
 163C:  MOVLW  01
@@ -7010,7 +7010,7 @@ CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
 ....................          log_mode_alarm();
 ....................          break;
 *
-1774:  GOTO   7D9
+1774:  GOTO   7D1
 ....................       case 4:
 ....................          lcd_setCursor(1,0);
 1775:  MOVLW  01
@@ -7050,95 +7050,75 @@ CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
 1794:  BCF    03.5
 1795:  CALL   336
 1796:  BSF    0A.4
-....................          if (stringComplete) {
-1797:  MOVF   57,F
-1798:  BTFSC  03.2
-1799:  GOTO   79F
-....................             stringComplete = 0;
-179A:  CLRF   57
-....................             index = 0;
-179B:  CLRF   56
-....................             lcd_clear();
-179C:  BCF    0A.4
-179D:  CALL   26D
-179E:  BSF    0A.4
-.................... 
-.................... //!            if(!strncmp(ledon, receivedString, 2)){
-.................... //!               output_bit(ledTest,1);
-.................... //!            }
-.................... //!            else{
-.................... //!               output_bit(ledTest,0);
-.................... //!            }
-....................          }
 ....................          if(tick_btn(1,bt3)) countLevel = 0;
-179F:  MOVLW  01
-17A0:  MOVWF  76
-17A1:  MOVLW  33
-17A2:  MOVWF  7B
-17A3:  BCF    0A.4
-17A4:  CALL   7D7
-17A5:  BSF    0A.4
-17A6:  MOVF   78,F
-17A7:  BTFSC  03.2
-17A8:  GOTO   7AA
-17A9:  CLRF   3A
+1797:  MOVLW  01
+1798:  MOVWF  76
+1799:  MOVLW  33
+179A:  MOVWF  7B
+179B:  BCF    0A.4
+179C:  CALL   7D7
+179D:  BSF    0A.4
+179E:  MOVF   78,F
+179F:  BTFSC  03.2
+17A0:  GOTO   7A2
+17A1:  CLRF   3A
 ....................          break;
-17AA:  GOTO   7D9
+17A2:  GOTO   7D1
 ....................       default:
 ....................          lcd_setCursor(2,0);
-17AB:  MOVLW  02
-17AC:  BSF    03.5
-17AD:  MOVWF  35
-17AE:  CLRF   36
-17AF:  BCF    0A.4
-17B0:  BCF    03.5
-17B1:  CALL   317
-17B2:  BSF    0A.4
+17A3:  MOVLW  02
+17A4:  BSF    03.5
+17A5:  MOVWF  35
+17A6:  CLRF   36
+17A7:  BCF    0A.4
+17A8:  BCF    03.5
+17A9:  CALL   317
+17AA:  BSF    0A.4
 ....................          lcd_data("Information");
-17B3:  MOVLW  11
-17B4:  BSF    03.6
-17B5:  MOVWF  0D
-17B6:  MOVLW  01
-17B7:  MOVWF  0F
-17B8:  BCF    0A.4
-17B9:  BCF    03.6
-17BA:  CALL   353
-17BB:  BSF    0A.4
+17AB:  MOVLW  11
+17AC:  BSF    03.6
+17AD:  MOVWF  0D
+17AE:  MOVLW  01
+17AF:  MOVWF  0F
+17B0:  BCF    0A.4
+17B1:  BCF    03.6
+17B2:  CALL   353
+17B3:  BSF    0A.4
 ....................          lcd_setCursor(0,1);
-17BC:  BSF    03.5
-17BD:  CLRF   35
-17BE:  MOVLW  01
-17BF:  MOVWF  36
-17C0:  BCF    0A.4
-17C1:  BCF    03.5
-17C2:  CALL   317
-17C3:  BSF    0A.4
+17B4:  BSF    03.5
+17B5:  CLRF   35
+17B6:  MOVLW  01
+17B7:  MOVWF  36
+17B8:  BCF    0A.4
+17B9:  BCF    03.5
+17BA:  CALL   317
+17BB:  BSF    0A.4
 ....................          lcd_data("Version: V1.0.0");
-17C4:  MOVLW  17
-17C5:  BSF    03.6
-17C6:  MOVWF  0D
-17C7:  MOVLW  01
-17C8:  MOVWF  0F
-17C9:  BCF    0A.4
-17CA:  BCF    03.6
-17CB:  CALL   353
-17CC:  BSF    0A.4
+17BC:  MOVLW  17
+17BD:  BSF    03.6
+17BE:  MOVWF  0D
+17BF:  MOVLW  01
+17C0:  MOVWF  0F
+17C1:  BCF    0A.4
+17C2:  BCF    03.6
+17C3:  CALL   353
+17C4:  BSF    0A.4
 .................... 
 .................... //! when button 3 is true --> return menu 0
 ....................          if(tick_btn(1,bt3)) countLevel = 0;
-17CD:  MOVLW  01
-17CE:  MOVWF  76
-17CF:  MOVLW  33
-17D0:  MOVWF  7B
-17D1:  BCF    0A.4
-17D2:  CALL   7D7
-17D3:  BSF    0A.4
-17D4:  MOVF   78,F
-17D5:  BTFSC  03.2
-17D6:  GOTO   7D8
-17D7:  CLRF   3A
+17C5:  MOVLW  01
+17C6:  MOVWF  76
+17C7:  MOVLW  33
+17C8:  MOVWF  7B
+17C9:  BCF    0A.4
+17CA:  CALL   7D7
+17CB:  BSF    0A.4
+17CC:  MOVF   78,F
+17CD:  BTFSC  03.2
+17CE:  GOTO   7D0
+17CF:  CLRF   3A
 ....................          break;
-17D8:  GOTO   7D9
+17D0:  GOTO   7D1
 ....................    }
 .................... }
 .................... 
@@ -7254,10 +7234,10 @@ CCS PCM C Compiler, Version 5.115, 43599               10-Jun-24 22:04
 .................... //! loop function is function suport in process of system
 ....................       loop();
 *
-17D9:  GOTO   075
+17D1:  GOTO   075
 ....................    }
 .................... }
-17DA:  SLEEP
+17D2:  SLEEP
 
 Configuration Fuses:
    Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

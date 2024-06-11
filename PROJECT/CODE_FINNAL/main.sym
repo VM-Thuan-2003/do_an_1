@@ -469,11 +469,11 @@ Project Files:
     library_change_rtc.c                                    [10-Jun-24 22:04  CRC=800E6899]
     library_change_alarm_eat.c                              [02-Jun-24 12:09  CRC=58D62720]
     library_control_chiller.c                               [02-Jun-24 11:25  CRC=0DAE471F]
-    library_menu.c                                          [10-Jun-24 21:43  CRC=65FBCB71]
+    library_menu.c                                          [12-Jun-24 01:58  CRC=D7634483]
 
-Source signature=B924C955
+Source signature=9BF3BB79
 Program memory checksum=0000
-Hex file CRC=6D33
+Hex file CRC=4153
 
 Units:
     E:\STUDY\HKII-2023-2024\DO_AN_1\PROJECT\CODE_FINNAL\main (main)

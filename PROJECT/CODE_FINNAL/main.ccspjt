@@ -11,10 +11,10 @@ Type=4
 1=main.c
 
 [defines]
-buildcount=234
+buildcount=235
 
 [ProjectLog]
-Days=7
+Days=8
 D1=02-06-2024
 D1_L=39
 D1_L1=[467]Started Editing.
@@ -24,7 +24,7 @@ D1_L4=[8059]Stopped Editing.
 D1_L5=[32967]Project Opened.
 D1_L6=[33008]Started Editing.
 D1_L7=[37923]Stopped Editing.
-TotalEdit=512
+TotalEdit=513
 TotalDebug=0
 D1_E=283
 D1_D=0
@@ -137,6 +137,14 @@ D6_L9=[83235]Project Opened.
 D7=11-06-2024
 D7_L=1
 D7_L1=[4145]Project Closed.
+D8=12-06-2024
+D8_L=4
+D8_L1=[7051]Project Opened.
+D8_L2=[7084]Started Editing.
+D8_L3=[7125]Stopped Editing.
+D8_E=1
+D8_D=0
+D8_L4=[7125]Project Closed.
 
 [Opened Files]
 1=main.c
@@ -144,10 +152,10 @@ t1=1
 2=define_pic16f.c
 t2=98
 3=library_menu.c
-t3=13
+t3=98
 Count=11
 4=library_uart.c
-t4=50
+t4=42
 5=library_lcd_i2c.c
 t5=173
 6=library_ds18b20.c
@@ -159,7 +167,7 @@ t8=5
 9=library_change_alarm_eat.c
 t9=5
 10=library_change_rtc.c
-t10=5
+t10=146
 11=library_ds1307_i2c.c
 t11=1
 12=library_control_chiller.c

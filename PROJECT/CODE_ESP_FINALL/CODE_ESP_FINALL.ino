@@ -16,6 +16,8 @@ const int maxParts = 3; // Maximum number of parts we expect
 String stringParts[maxParts];
 int intParts[maxParts];
 
+unsigned long time_curr, time_prev;
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -80,6 +82,36 @@ void loop() {
         firebase.setInt("data/alarm/eat/ss", intParts[2]);
         Serial.println("alarm eat");
       }
+    }
+  }
+
+  time_curr = millis();
+
+  if(time_curr - time_prev >= 2000){
+    time_prev = time_curr;
+    
+    String data1 = firebase.getString("set/temperture/limit");
+    Serial.print(data1);
+    espSerial.print( "st:" + data1 + '\r');
+    espSerial.print( "st:" + data1 + '\r');
+
+    String data2 = firebase.getString("set/alarm/eat/hh");
+    String data3 = firebase.getString("set/alarm/eat/pp");
+    String data4 = firebase.getString("set/alarm/eat/ss");
+    Serial.print(data2); Serial.print(" - ");
+    Serial.print(data3); Serial.print(" - ");
+    Serial.print(data4);
+    espSerial.print( "sa:gpg:" + data2 + "-" + data3 + "-" + data4 + '\r');
+    espSerial.print( "sa:gpg:" + data2 + "-" + data3 + "-" + data4 + '\r');
+
+    int data5 = firebase.getInt("control/servo/eat");
+    if(data5 == 1){
+      Serial.print("control servo for eat fish");
+      
+      espSerial.print( "cs:" + data5 + '\r');
+      espSerial.print( "cs:" + data5 + '\r');
+
+      firebase.setInt("control/servo/eat",0);
     }
   }
 

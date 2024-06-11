@@ -1,5 +1,5 @@
 ÀÄmain
-   ÃÄMAIN  2/2011  Ram=0
+   ÃÄMAIN  2/2003  Ram=0
    ³  ÃÄ@cinit1  (Inline)  Ram=0
    ³  ÃÄ@cinit2  (Inline)  Ram=0
    ³  ÃÄsetup_initialize  0/41  Ram=0
@@ -490,8 +490,6 @@
    ³        ÃÄlcd_setCursor  0/31  Ram=7
    ³        ³  ÀÄ*
    ³        ÃÄlcd_data  0/29  Ram=1
-   ³        ³  ÀÄ*
-   ³        ÃÄlcd_clear  0/9  Ram=0
    ³        ³  ÀÄ*
    ³        ÃÄtick_btn  0/25  Ram=3
    ³        ³  ÀÄ*
