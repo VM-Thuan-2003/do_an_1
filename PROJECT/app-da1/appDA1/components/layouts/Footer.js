@@ -28,7 +28,7 @@ const Footer = (props) => {
         style={styles.footerLogo}
         source={require('../static/imgs/logo.png')}
       />
-      <Text style={styles.footerText}>© 2024 App-Parking-Slot. Nhóm 3 con báo.</Text>
+      <Text style={styles.footerText}>© 2024 App-monitoring-fish. Đồ án 1.</Text>
     </View>
   );
 };

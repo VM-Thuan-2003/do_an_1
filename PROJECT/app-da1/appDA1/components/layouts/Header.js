@@ -25,12 +25,12 @@ const Header = (props) => {
     <View style={styles.header}>
       <View>
         <Text style={styles.headerName}>
-            APP - PARKING - SLOT
+            APP - MONITORING - FISH
         </Text>
       </View>
       <View>
         <Text style={styles.headerGroup}>
-            Nhóm 3 con báo
+            Đồ án 1 - SPK
         </Text>
       </View>
     </View>

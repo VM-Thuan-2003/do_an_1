@@ -12,6 +12,10 @@ Firebase firebase(REFERENCE_URL);
 
 SoftwareSerial espSerial(14, 12); //13-15 // rx-tx
 
+const int maxParts = 3; // Maximum number of parts we expect
+String stringParts[maxParts];
+int intParts[maxParts];
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -67,13 +71,17 @@ void loop() {
       }
       else if(data[3] == 'r' && data[4] == 'a' && data[5] == ':'){
         String dt_alarm = input.substring(6, input.length());
-        firebase.setString("data/alarm/eat", dt_alarm);
+        splitString(dt_alarm, '-', stringParts, maxParts);
+        for (int i = 0; i < maxParts; i++) {
+          intParts[i] = stringParts[i].toInt();
+        }
+        firebase.setInt("data/alarm/eat/hh", intParts[0]);
+        firebase.setInt("data/alarm/eat/pp", intParts[1]);
+        firebase.setInt("data/alarm/eat/ss", intParts[2]);
         Serial.println("alarm eat");
       }
     }
   }
-
-  // espSerial.write("c");
 
   if(Serial.available()){
     String inputss = Serial.readString();
@@ -84,4 +92,21 @@ void loop() {
 
 int decToBcd(int val) {
     return ((val / 10 * 16) + (val % 10));
+}
+
+void splitString(String str, char delimiter, String* resultArray, int maxParts) {
+  int startIndex = 0;
+  int endIndex = 0;
+  int partIndex = 0;
+
+  while (endIndex < str.length() && partIndex < maxParts) {
+    endIndex = str.indexOf(delimiter, startIndex);
+    if (endIndex == -1) {
+      endIndex = str.length();
+    }
+
+    resultArray[partIndex] = str.substring(startIndex, endIndex);
+    partIndex++;
+    startIndex = endIndex + 1;
+  }
 }
