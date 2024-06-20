@@ -22,7 +22,7 @@ void main(){
 //! display info include: name project and name university
    log_lcd_initialize();
    
-   printf("Hello from PIC16F877A!");
+   printf("Hello from PIC16F877A!\r\n");
    
    while(true){
 //! loop function is function suport in process of system

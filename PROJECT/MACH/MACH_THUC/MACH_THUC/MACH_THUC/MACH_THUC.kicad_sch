@@ -2894,208 +2894,6 @@
 				)
 			)
 		)
-		(symbol "Transistor_BJT:2SB631"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "2SB631"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-126-3_Vertical"
-				(at 5.08 -1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://pdf.datasheetcatalog.com/datasheet/sanyo/ds_pdf_e/2SB631.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "-1A Ic, -100V Vce, High Voltage Power PNP Transistor, TO-126"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "High Voltage Transistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO?126*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "2SB631_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0.635 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 0.635 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.778 -2.286) (xy 2.286 -1.778) (xy 1.27 -1.27) (xy 1.778 -2.286) (xy 1.778 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "2SB631_1_1"
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 5.08)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Transistor_BJT:BC547"
 			(pin_names
 				(offset 0) hide)
@@ -6345,34 +6143,22 @@
 		)
 	)
 	(junction
-		(at 53.34 31.115)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "09176f56-00c7-4af7-8aef-a38e1c04741e")
-	)
-	(junction
-		(at 66.04 41.275)
+		(at 54.61 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ddd5a85-6f8a-4dd6-80fd-35b1405ebf2e")
 	)
 	(junction
-		(at 23.495 77.47)
+		(at 236.855 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14928b19-051b-4225-a7f5-690ad325bab3")
 	)
 	(junction
-		(at 56.515 31.115)
+		(at 45.085 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "198745db-3a4c-4e19-b238-310524d746d3")
-	)
-	(junction
-		(at 118.11 31.115)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1a4f7773-20ed-465e-b8af-5f82feb36913")
 	)
 	(junction
 		(at 227.33 21.59)
@@ -6381,25 +6167,25 @@
 		(uuid "1f3a5e1f-bacb-4875-8368-393a893d9ca8")
 	)
 	(junction
-		(at 93.98 22.225)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1f777b6f-44eb-4db0-8bd2-2d3368801390")
-	)
-	(junction
 		(at 238.125 128.905)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2060d85d-c337-47be-ae20-6e7dbece93cf")
 	)
 	(junction
-		(at 104.14 31.115)
+		(at 38.1 31.115)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "285996ab-3f06-4f42-9652-f174a2bd305c")
+	)
+	(junction
+		(at 92.71 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29e63ac9-3c9f-4b62-832d-0949a0ec843e")
 	)
 	(junction
-		(at 41.91 77.47)
+		(at 29.845 88.265)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2be284bf-a1e5-4bdc-969c-8d10cd998d2a")
@@ -6417,25 +6203,25 @@
 		(uuid "2d50f36c-734e-40b4-872d-37d106d2ee95")
 	)
 	(junction
-		(at 93.98 31.115)
+		(at 82.55 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "367f6731-1305-495b-bd3f-003baa7a779b")
 	)
 	(junction
-		(at 38.1 52.705)
+		(at 37.465 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38eb550d-48c9-4da5-a4e5-98c0ec5d58d8")
 	)
 	(junction
-		(at 27.305 77.47)
+		(at 240.665 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ec09d0d-7c93-490f-8e2e-2c50f069eefd")
 	)
 	(junction
-		(at 15.875 77.47)
+		(at 229.235 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42a8708f-dcb6-4535-99d9-b4c1100e8c75")
@@ -6471,19 +6257,13 @@
 		(uuid "6eb30d09-2567-4de2-8ff3-45e1e6e291db")
 	)
 	(junction
-		(at 38.1 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72024577-fb8e-43d6-b347-f30a60afdbf5")
-	)
-	(junction
 		(at 179.705 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "724d6475-8455-40c8-ad80-55892a856783")
 	)
 	(junction
-		(at 74.295 31.115)
+		(at 62.865 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7728b2a9-4dfa-49ee-897e-05fe33185ddc")
@@ -6507,25 +6287,25 @@
 		(uuid "86c6f840-15e0-40a2-a96c-e0c636e74b34")
 	)
 	(junction
-		(at 82.55 41.275)
+		(at 71.12 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "893be56f-5423-429f-9c47-7f49d65805b3")
 	)
 	(junction
-		(at 87.63 78.105)
+		(at 75.565 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9427bf55-25e2-4c26-bc89-ac38abf3712d")
 	)
 	(junction
-		(at 93.98 41.275)
+		(at 82.55 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "97fd3bc5-9f5a-4497-a855-25a71bd05249")
 	)
 	(junction
-		(at 66.04 31.115)
+		(at 54.61 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9cc2c395-6282-4484-a3f8-d3c2bd6046b7")
@@ -6537,7 +6317,7 @@
 		(uuid "9d01a828-3864-456d-94a5-f10c7018db05")
 	)
 	(junction
-		(at 51.435 52.705)
+		(at 50.8 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a12ba801-f326-4f87-b3d3-fa94e81f5c3c")
@@ -6585,13 +6365,13 @@
 		(uuid "d004fe95-c123-48a9-bd35-c9e0c8bfbf51")
 	)
 	(junction
-		(at 38.1 60.96)
+		(at 37.465 66.675)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4f8ccca-dec6-4ad4-9ddf-add4c116f89a")
 	)
 	(junction
-		(at 51.435 60.96)
+		(at 50.8 66.675)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d7d1049f-54fd-4641-805a-9a0d37eefcd8")
@@ -6603,19 +6383,19 @@
 		(uuid "e13f9cb4-c8ef-4cb6-a457-f6fa81bd0031")
 	)
 	(junction
-		(at 56.515 41.275)
+		(at 45.085 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1a7a22d-4218-4ad2-9e1c-4fd7bba89b80")
 	)
 	(junction
-		(at 57.15 77.47)
+		(at 45.085 88.265)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea6e2a2e-4467-4b6c-bdd2-3162ba8d0ac5")
 	)
 	(junction
-		(at 72.39 78.105)
+		(at 60.325 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f138521a-e41a-4afe-9767-38987b9ec0d6")
@@ -6633,13 +6413,7 @@
 		(uuid "f7e9493c-aeaa-4d71-a37a-5e1766262e23")
 	)
 	(junction
-		(at 38.1 31.115)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb881952-0c86-4f18-8ceb-d8f36adc1207")
-	)
-	(junction
-		(at 104.14 41.275)
+		(at 92.71 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe2b0b78-2ae4-466c-969f-548565038c6d")
@@ -6666,7 +6440,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.945 77.47) (xy 71.12 77.47)
+			(xy 55.88 88.265) (xy 59.055 88.265)
 		)
 		(stroke
 			(width 0)
@@ -6686,7 +6460,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 41.275) (xy 82.55 41.275)
+			(xy 54.61 40.64) (xy 71.12 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6716,7 +6490,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 78.105) (xy 73.025 78.105)
+			(xy 60.325 88.9) (xy 60.96 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6726,7 +6500,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.165 52.705) (xy 51.435 52.705)
+			(xy 49.53 58.42) (xy 50.8 58.42)
 		)
 		(stroke
 			(width 0)
@@ -6736,13 +6510,23 @@
 	)
 	(wire
 		(pts
-			(xy 19.685 77.47) (xy 23.495 77.47)
+			(xy 233.045 41.91) (xy 236.855 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "13678790-8216-4776-bbdd-01070f9108d9")
+	)
+	(wire
+		(pts
+			(xy 92.71 29.845) (xy 92.71 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1431d090-da49-4de2-bf37-28af983ac8a9")
 	)
 	(wire
 		(pts
@@ -6766,13 +6550,23 @@
 	)
 	(wire
 		(pts
-			(xy 15.875 77.47) (xy 15.875 80.645)
+			(xy 229.235 41.91) (xy 229.235 45.085)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "16437ff6-241a-4c4c-9430-e99539cad314")
+	)
+	(wire
+		(pts
+			(xy 45.085 31.115) (xy 45.085 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1936fa2d-736d-4e76-95e8-2ab63c58239f")
 	)
 	(wire
 		(pts
@@ -6816,7 +6610,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 60.96) (xy 38.1 60.96)
+			(xy 42.545 66.675) (xy 37.465 66.675)
 		)
 		(stroke
 			(width 0)
@@ -6856,7 +6650,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 78.105) (xy 88.265 78.105)
+			(xy 75.565 88.9) (xy 76.2 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6866,13 +6660,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 20.32) (xy 38.1 31.115)
+			(xy 38.1 31.115) (xy 38.1 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "25d7956e-0d8f-4d31-b9d5-3813553d8f05")
+		(uuid "249a6c02-abb8-448d-90d1-d8868ea92f24")
 	)
 	(wire
 		(pts
@@ -6906,7 +6700,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.185 77.47) (xy 86.36 77.47)
+			(xy 71.12 88.265) (xy 74.295 88.265)
 		)
 		(stroke
 			(width 0)
@@ -6923,16 +6717,6 @@
 			(type default)
 		)
 		(uuid "28513ed9-48b2-4290-a98d-5bc06c692f25")
-	)
-	(wire
-		(pts
-			(xy 53.34 34.29) (xy 53.34 31.115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c1c4f5b-7720-4215-9066-95978a578310")
 	)
 	(wire
 		(pts
@@ -7006,7 +6790,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 22.225) (xy 93.98 31.115)
+			(xy 82.55 21.59) (xy 82.55 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7016,7 +6800,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.975 52.705) (xy 51.435 52.705)
+			(xy 53.34 58.42) (xy 50.8 58.42)
 		)
 		(stroke
 			(width 0)
@@ -7026,7 +6810,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 77.47) (xy 57.785 77.47)
+			(xy 45.085 88.265) (xy 45.72 88.265)
 		)
 		(stroke
 			(width 0)
@@ -7066,7 +6850,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 77.47) (xy 42.545 77.47)
+			(xy 29.845 88.265) (xy 30.48 88.265)
 		)
 		(stroke
 			(width 0)
@@ -7106,7 +6890,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 31.115) (xy 56.515 31.115)
+			(xy 38.1 31.115) (xy 45.085 31.115)
 		)
 		(stroke
 			(width 0)
@@ -7146,7 +6930,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 85.725) (xy 72.39 85.725)
+			(xy 57.785 96.52) (xy 60.325 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7166,23 +6950,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 38.735) (xy 93.98 41.275)
+			(xy 82.55 38.1) (xy 82.55 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3b411203-b1ef-43c8-a4b2-5bb769888c18")
-	)
-	(wire
-		(pts
-			(xy 71.12 20.32) (xy 93.98 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c6d3f6b-b492-46b7-bec2-b0259ea07bd0")
 	)
 	(wire
 		(pts
@@ -7216,16 +6990,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 27.94) (xy 66.04 31.115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40687b20-5d47-4dbb-8126-65a36dc33f88")
-	)
-	(wire
-		(pts
 			(xy 226.695 106.045) (xy 213.995 106.045)
 		)
 		(stroke
@@ -7236,7 +7000,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.305 77.47) (xy 27.94 77.47)
+			(xy 240.665 41.91) (xy 241.3 41.91)
 		)
 		(stroke
 			(width 0)
@@ -7266,23 +7030,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 38.735) (xy 82.55 41.275)
+			(xy 71.12 38.1) (xy 71.12 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "45ddc919-f209-44bb-9aca-0fbc35587ddb")
-	)
-	(wire
-		(pts
-			(xy 60.96 20.32) (xy 38.1 20.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "481d54cd-3a6a-4c4d-897a-580549d70b20")
 	)
 	(wire
 		(pts
@@ -7296,7 +7050,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 31.115) (xy 74.295 31.115)
+			(xy 54.61 30.48) (xy 62.865 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7306,7 +7060,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 60.96) (xy 51.435 60.96)
+			(xy 47.625 66.675) (xy 50.8 66.675)
 		)
 		(stroke
 			(width 0)
@@ -7326,7 +7080,7 @@
 	)
 	(wire
 		(pts
-			(xy 56.515 38.735) (xy 56.515 41.275)
+			(xy 45.085 38.1) (xy 45.085 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7356,17 +7110,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 34.29) (xy 38.1 52.705)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f07f8d2-a592-48f3-ad70-29d674210016")
-	)
-	(wire
-		(pts
-			(xy 57.15 77.47) (xy 57.15 76.835)
+			(xy 45.085 88.265) (xy 45.085 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7396,7 +7140,7 @@
 	)
 	(wire
 		(pts
-			(xy 23.495 77.47) (xy 27.305 77.47)
+			(xy 236.855 41.91) (xy 240.665 41.91)
 		)
 		(stroke
 			(width 0)
@@ -7416,7 +7160,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 31.115) (xy 93.98 31.115)
+			(xy 78.74 30.48) (xy 82.55 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7426,7 +7170,7 @@
 	)
 	(wire
 		(pts
-			(xy 23.495 41.275) (xy 56.515 41.275)
+			(xy 23.495 40.64) (xy 45.085 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7436,7 +7180,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.705 76.835) (xy 55.88 76.835)
+			(xy 40.64 87.63) (xy 43.815 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7456,7 +7200,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.685 77.47) (xy 19.685 76.835)
+			(xy 233.045 41.91) (xy 233.045 41.275)
 		)
 		(stroke
 			(width 0)
@@ -7506,17 +7250,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 34.29) (xy 53.34 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e283c98-6b96-4fe2-a926-91b873241a3a")
-	)
-	(wire
-		(pts
-			(xy 51.435 52.705) (xy 51.435 53.34)
+			(xy 50.8 58.42) (xy 50.8 59.055)
 		)
 		(stroke
 			(width 0)
@@ -7546,7 +7280,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 41.275) (xy 104.14 41.275)
+			(xy 106.68 40.64) (xy 92.71 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7576,7 +7310,7 @@
 	)
 	(wire
 		(pts
-			(xy 37.465 76.835) (xy 40.64 76.835)
+			(xy 25.4 87.63) (xy 28.575 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7596,7 +7330,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 52.705) (xy 38.1 52.705)
+			(xy 44.45 58.42) (xy 37.465 58.42)
 		)
 		(stroke
 			(width 0)
@@ -7606,7 +7340,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 38.735) (xy 118.11 41.275)
+			(xy 106.68 38.1) (xy 106.68 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7636,7 +7370,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 78.105) (xy 87.63 77.47)
+			(xy 75.565 88.9) (xy 75.565 88.265)
 		)
 		(stroke
 			(width 0)
@@ -7646,7 +7380,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 31.115) (xy 110.49 31.115)
+			(xy 92.71 30.48) (xy 99.06 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7666,7 +7400,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 85.09) (xy 41.91 85.09)
+			(xy 27.305 95.885) (xy 29.845 95.885)
 		)
 		(stroke
 			(width 0)
@@ -7676,7 +7410,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.295 31.115) (xy 74.93 31.115)
+			(xy 62.865 30.48) (xy 63.5 30.48)
 		)
 		(stroke
 			(width 0)
@@ -7716,7 +7450,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 51.435) (xy 43.18 60.96)
+			(xy 42.545 57.15) (xy 42.545 66.675)
 		)
 		(stroke
 			(width 0)
@@ -7736,7 +7470,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 22.225) (xy 74.295 22.225)
+			(xy 67.31 21.59) (xy 62.865 21.59)
 		)
 		(stroke
 			(width 0)
@@ -7756,7 +7490,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.165 52.705) (xy 50.165 51.435)
+			(xy 49.53 58.42) (xy 49.53 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7786,7 +7520,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 85.725) (xy 87.63 85.725)
+			(xy 73.025 96.52) (xy 75.565 96.52)
 		)
 		(stroke
 			(width 0)
@@ -7846,7 +7580,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 78.105) (xy 72.39 77.47)
+			(xy 60.325 88.9) (xy 60.325 88.265)
 		)
 		(stroke
 			(width 0)
@@ -7866,17 +7600,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 31.115) (xy 38.1 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "975711a4-6e4b-4b81-bd1b-4546c6a7907e")
-	)
-	(wire
-		(pts
-			(xy 18.415 77.47) (xy 18.415 76.835)
+			(xy 231.775 41.91) (xy 231.775 41.275)
 		)
 		(stroke
 			(width 0)
@@ -7896,7 +7620,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 41.275) (xy 56.515 41.275)
+			(xy 54.61 40.64) (xy 45.085 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7986,6 +7710,16 @@
 	)
 	(wire
 		(pts
+			(xy 37.465 31.75) (xy 38.1 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a88677f0-8d93-471a-957e-88e546959100")
+	)
+	(wire
+		(pts
 			(xy 225.425 144.145) (xy 225.425 140.97)
 		)
 		(stroke
@@ -8046,7 +7780,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 41.275) (xy 93.98 41.275)
+			(xy 71.12 40.64) (xy 82.55 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8056,7 +7790,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 51.435) (xy 45.085 52.705)
+			(xy 44.45 57.15) (xy 44.45 58.42)
 		)
 		(stroke
 			(width 0)
@@ -8086,7 +7820,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 51.435) (xy 48.26 60.96)
+			(xy 47.625 57.15) (xy 47.625 66.675)
 		)
 		(stroke
 			(width 0)
@@ -8146,7 +7880,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 41.275) (xy 104.14 41.275)
+			(xy 82.55 40.64) (xy 92.71 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8166,7 +7900,17 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 38.735) (xy 66.04 41.275)
+			(xy 92.71 30.48) (xy 92.71 31.115)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfd97151-4b41-4228-9b64-ba7fdd8da430")
+	)
+	(wire
+		(pts
+			(xy 54.61 38.1) (xy 54.61 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8176,7 +7920,7 @@
 	)
 	(wire
 		(pts
-			(xy 56.515 31.115) (xy 66.04 31.115)
+			(xy 45.085 30.48) (xy 54.61 30.48)
 		)
 		(stroke
 			(width 0)
@@ -8186,7 +7930,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 77.47) (xy 41.91 76.835)
+			(xy 29.845 88.265) (xy 29.845 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8206,7 +7950,7 @@
 	)
 	(wire
 		(pts
-			(xy 23.495 80.645) (xy 23.495 77.47)
+			(xy 236.855 45.085) (xy 236.855 41.91)
 		)
 		(stroke
 			(width 0)
@@ -8226,7 +7970,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.765 85.09) (xy 27.305 85.09)
+			(xy 238.125 49.53) (xy 240.665 49.53)
 		)
 		(stroke
 			(width 0)
@@ -8276,7 +8020,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.875 77.47) (xy 18.415 77.47)
+			(xy 229.235 41.91) (xy 231.775 41.91)
 		)
 		(stroke
 			(width 0)
@@ -8286,7 +8030,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 31.115) (xy 104.14 31.115)
+			(xy 82.55 30.48) (xy 92.71 30.48)
 		)
 		(stroke
 			(width 0)
@@ -8316,16 +8060,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 31.115) (xy 118.11 31.115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3f15b9a-cc84-43fa-8bbf-d3e9d598be98")
-	)
-	(wire
-		(pts
 			(xy 245.745 127.635) (xy 260.35 127.635)
 		)
 		(stroke
@@ -8333,16 +8067,6 @@
 			(type default)
 		)
 		(uuid "d8c52ecf-da0b-442f-af34-ddc98103f8b3")
-	)
-	(wire
-		(pts
-			(xy 93.98 20.32) (xy 93.98 22.225)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d946e655-17c8-45b1-a882-b3113d72fa28")
 	)
 	(wire
 		(pts
@@ -8376,7 +8100,17 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 85.09) (xy 57.15 85.09)
+			(xy 37.465 31.75) (xy 37.465 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df64f95c-5df8-4949-80aa-4b5f037884c3")
+	)
+	(wire
+		(pts
+			(xy 42.545 95.885) (xy 45.085 95.885)
 		)
 		(stroke
 			(width 0)
@@ -8396,7 +8130,7 @@
 	)
 	(wire
 		(pts
-			(xy 13.97 77.47) (xy 15.875 77.47)
+			(xy 227.33 41.91) (xy 229.235 41.91)
 		)
 		(stroke
 			(width 0)
@@ -8416,7 +8150,17 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 52.705) (xy 38.1 53.34)
+			(xy 23.495 40.64) (xy 23.495 41.275)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e23b9364-0e9f-4b49-ba50-298cb7910133")
+	)
+	(wire
+		(pts
+			(xy 37.465 58.42) (xy 37.465 59.055)
 		)
 		(stroke
 			(width 0)
@@ -8426,7 +8170,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.295 22.225) (xy 74.295 31.115)
+			(xy 62.865 21.59) (xy 62.865 30.48)
 		)
 		(stroke
 			(width 0)
@@ -8446,7 +8190,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 22.225) (xy 93.98 22.225)
+			(xy 74.93 21.59) (xy 82.55 21.59)
 		)
 		(stroke
 			(width 0)
@@ -8496,16 +8240,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 29.21) (xy 120.015 31.115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f070fa31-ec6b-44f9-8ab4-79ad950161ff")
-	)
-	(wire
-		(pts
 			(xy 152.4 61.595) (xy 169.545 61.595)
 		)
 		(stroke
@@ -8516,7 +8250,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 38.735) (xy 104.14 41.275)
+			(xy 92.71 38.1) (xy 92.71 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8587,18 +8321,6 @@
 		(uuid 0c7232e0-3944-425a-a423-93bea40ef0a2)
 	)
 	(rectangle
-		(start 12.065 12.065)
-		(end 140.97 69.215)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 2f176549-e472-4e14-9719-e0208fc78259)
-	)
-	(rectangle
 		(start 160.02 69.215)
 		(end 210.82 98.425)
 		(stroke
@@ -8621,6 +8343,18 @@
 			(type none)
 		)
 		(uuid 549cb341-9dec-4aae-8a7d-359d214013ef)
+	)
+	(rectangle
+		(start 11.938 79.756)
+		(end 99.06 98.298)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 5603eada-c48c-4dc8-86f9-cb9e5a2dc404)
 	)
 	(rectangle
 		(start 99.06 98.425)
@@ -8647,18 +8381,6 @@
 		(uuid 6e8d01f1-3888-414e-a983-6a46038aa2ef)
 	)
 	(rectangle
-		(start 12.065 69.215)
-		(end 99.06 98.425)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 6eaac17f-4f77-4386-a18a-48877e26d8fa)
-	)
-	(rectangle
 		(start 160.02 69.215)
 		(end 285.115 98.425)
 		(stroke
@@ -8669,44 +8391,6 @@
 			(type none)
 		)
 		(uuid 84daf1cc-6baf-4ec2-ac94-dd4e0db6e6ea)
-	)
-	(text_box "Khối nguồn gồm: \n- Nguồn chuyển đổi từ 12V->5V để cấp cho thiết bị\n- Nguồn cách ly cấp cho Relay để điều khiển tải	\n-> Giúp tránh việc xung đột nguồn khi điều khiển relay quá tải				"
-		(exclude_from_sim no)
-		(at 74.295 46.355 0)
-		(size 62.23 19.685)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "035ae7a0-1149-4cab-a59c-bd71bae05f9d")
-	)
-	(text_box "Khối nút nhấn để reset lại thiết bị và điều chỉnh thông số cho thiết bị."
-		(exclude_from_sim no)
-		(at 45.085 88.265 0)
-		(size 52.07 8.89)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "c1bbe71d-2110-401a-b8ed-a76aa3ae50b9")
 	)
 	(global_label " pgd"
 		(shape input)
@@ -8754,7 +8438,7 @@
 	)
 	(global_label "btn_4"
 		(shape input)
-		(at 88.265 78.105 0)
+		(at 76.2 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8764,7 +8448,7 @@
 		)
 		(uuid "1103c839-69d8-49b7-bacc-8614b732c8a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.451 78.105 0)
+			(at 84.386 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8798,7 +8482,7 @@
 	)
 	(global_label "rst"
 		(shape input)
-		(at 27.94 77.47 0)
+		(at 241.3 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8808,7 +8492,7 @@
 		)
 		(uuid "18f9fee0-b191-487d-8cd0-529928f34029")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.4652 77.47 0)
+			(at 246.8252 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9018,7 +8702,7 @@
 	)
 	(global_label "btn_1"
 		(shape input)
-		(at 42.545 77.47 0)
+		(at 30.48 88.265 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9028,7 +8712,7 @@
 		)
 		(uuid "7cfb4ac8-9f74-4bde-9fb8-f4b0514fed20")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 50.731 77.47 0)
+			(at 38.666 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9150,7 +8834,7 @@
 	)
 	(global_label "btn_3"
 		(shape input)
-		(at 73.025 78.105 0)
+		(at 60.96 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9160,7 +8844,7 @@
 		)
 		(uuid "ab22625a-1c69-4dce-b89d-305739dcdbc4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.211 78.105 0)
+			(at 69.146 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9238,7 +8922,7 @@
 	)
 	(global_label "btn_2"
 		(shape input)
-		(at 57.785 77.47 0)
+		(at 45.72 88.265 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9248,7 +8932,7 @@
 		)
 		(uuid "c455f93b-aef3-4d98-964a-264766ebb6fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 65.971 77.47 0)
+			(at 53.906 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10024,80 +9708,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2SB631")
-		(at 66.04 22.86 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0f2c014f-3e3d-4d97-82ed-087316529b9e")
-		(property "Reference" "Q1"
-			(at 66.04 13.335 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2SB688"
-			(at 66.04 15.875 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-218-3_Vertical"
-			(at 64.135 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.thegioiic.com/2sb688-transistor-pnp-120v-8a-3-chan-sot-93"
-			(at 66.04 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 66.04 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24895ad5-12c9-426f-89cf-442573c99e51")
-		)
-		(pin "2"
-			(uuid "74a91ff0-c0b7-4b1b-b3ee-a55ac64fdcdd")
-		)
-		(pin "3"
-			(uuid "4f04c151-1d33-4083-adc5-e4fc666bda34")
-		)
-		(instances
-			(project "MACH_THUC"
-				(path "/fa9b692b-a58b-4246-a447-a74a2194b64e"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND2")
 		(at 225.425 156.845 0)
 		(unit 1)
@@ -10232,7 +9842,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:LM7805_TO220")
-		(at 82.55 31.115 0)
+		(at 71.12 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10241,7 +9851,7 @@
 		(fields_autoplaced yes)
 		(uuid "1851ff00-774b-4999-90a2-8ac07c26836c")
 		(property "Reference" "U1"
-			(at 82.55 24.765 0)
+			(at 71.12 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10249,7 +9859,7 @@
 			)
 		)
 		(property "Value" "LM7805_TO220"
-			(at 82.55 27.305 0)
+			(at 71.12 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10257,7 +9867,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
-			(at 82.55 25.4 0)
+			(at 71.12 24.765 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10267,7 +9877,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/l7805cv-ic-on-ap-5v-1-5a"
-			(at 82.55 32.385 0)
+			(at 71.12 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10276,7 +9886,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 82.55 31.115 0)
+			(at 71.12 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10304,7 +9914,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 118.11 34.925 90)
+		(at 106.68 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10313,7 +9923,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b55340b-b2f5-4478-9da7-d2f1c9f82d80")
 		(property "Reference" "D3"
-			(at 121.285 35.2425 90)
+			(at 109.855 34.6075 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10322,7 +9932,7 @@
 			)
 		)
 		(property "Value" "LED-NGUON"
-			(at 121.285 37.7825 90)
+			(at 109.855 37.1475 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10331,7 +9941,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:LED_5MM"
-			(at 118.11 34.925 0)
+			(at 106.68 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10340,7 +9950,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/led-xanh-duong-5mm-chan-dai"
-			(at 118.11 34.925 0)
+			(at 106.68 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10349,7 +9959,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 118.11 34.925 0)
+			(at 106.68 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10511,7 +10121,7 @@
 	)
 	(symbol
 		(lib_id "library_thuan:push_button")
-		(at 86.995 70.485 0)
+		(at 74.93 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10520,7 +10130,7 @@
 		(fields_autoplaced yes)
 		(uuid "205634c8-bb6a-4069-aa8c-bba042d327db")
 		(property "Reference" "PB5"
-			(at 89.535 73.0794 0)
+			(at 77.47 83.8744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10529,7 +10139,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 86.995 70.485 0)
+			(at 74.93 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10537,7 +10147,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:push_button"
-			(at 86.995 70.485 0)
+			(at 74.93 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10546,7 +10156,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/nut-nhan-d5-cao-5mm-2-chan-tron-xuyen-lo"
-			(at 86.36 66.675 0)
+			(at 74.295 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10555,7 +10165,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.995 70.485 0)
+			(at 74.93 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10573,74 +10183,6 @@
 			(project "MACH_THUC"
 				(path "/fa9b692b-a58b-4246-a447-a74a2194b64e"
 					(reference "PB5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 41.91 31.115 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20dbb8d1-2781-43f8-b325-212c3075715e")
-		(property "Reference" "R1"
-			(at 41.91 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100ohm"
-			(at 41.91 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "library_thuan_footprint:RES_1ohm_1w"
-			(at 41.91 32.893 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.thegioiic.com/dien-tro-1-ohm-1w-5-4-vong-mau"
-			(at 41.91 31.115 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 41.91 31.115 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "97b7bc8b-4189-42e7-8e95-76d3dda15947")
-		)
-		(pin "2"
-			(uuid "92df7ab3-630c-41e6-a47a-65e7675cf1ab")
-		)
-		(instances
-			(project "MACH_THUC"
-				(path "/fa9b692b-a58b-4246-a447-a74a2194b64e"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -11297,7 +10839,7 @@
 	)
 	(symbol
 		(lib_id "library_thuan:push_button")
-		(at 41.275 69.85 0)
+		(at 29.21 80.645 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11306,7 +10848,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d57c3ac-c79f-464a-baa3-ff34b181013d")
 		(property "Reference" "PB2"
-			(at 43.815 72.4444 0)
+			(at 31.75 83.2394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11315,7 +10857,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 41.275 69.85 0)
+			(at 29.21 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11323,7 +10865,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:push_button"
-			(at 41.275 69.85 0)
+			(at 29.21 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11332,7 +10874,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/nut-nhan-d5-cao-5mm-2-chan-tron-xuyen-lo"
-			(at 40.64 66.04 0)
+			(at 28.575 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11341,7 +10883,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.275 69.85 0)
+			(at 29.21 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12054,7 +11596,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 72.39 81.915 0)
+		(at 60.325 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12063,7 +11605,7 @@
 		(fields_autoplaced yes)
 		(uuid "44bebda8-9a04-4dbc-95f9-c31d6c4b9ed6")
 		(property "Reference" "R8"
-			(at 74.295 80.645 0)
+			(at 62.23 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12072,7 +11614,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 74.295 83.185 0)
+			(at 62.23 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12081,7 +11623,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:RES_DEFAULT"
-			(at 70.612 81.915 90)
+			(at 58.547 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12090,7 +11632,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/dien-tro-10-kohm-1-4w-1-5-vong-mau"
-			(at 72.39 81.915 0)
+			(at 60.325 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12099,7 +11641,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 81.915 0)
+			(at 60.325 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12124,7 +11666,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 66.04 34.925 0)
+		(at 54.61 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12133,7 +11675,7 @@
 		(fields_autoplaced yes)
 		(uuid "44e5c4ad-0713-4dd2-a7ba-c7b2d6d5b840")
 		(property "Reference" "C4"
-			(at 69.85 33.02 0)
+			(at 58.42 32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12142,7 +11684,7 @@
 			)
 		)
 		(property "Value" "1000uF"
-			(at 69.85 35.56 0)
+			(at 58.42 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12151,7 +11693,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:CAP_1000uF"
-			(at 66.04 34.925 0)
+			(at 54.61 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12160,7 +11702,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/tu-hoa-1000uf-25v-10x17mm-xuyen-lo"
-			(at 66.04 34.925 0)
+			(at 54.61 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12169,7 +11711,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 34.925 0)
+			(at 54.61 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12534,7 +12076,7 @@
 	)
 	(symbol
 		(lib_id "library_thuan:push_button")
-		(at 56.515 69.85 0)
+		(at 44.45 80.645 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12543,7 +12085,7 @@
 		(fields_autoplaced yes)
 		(uuid "53215519-fb82-44a1-81a7-1c1b8f8e7992")
 		(property "Reference" "PB3"
-			(at 59.055 72.4444 0)
+			(at 46.99 83.2394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12552,7 +12094,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 56.515 69.85 0)
+			(at 44.45 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12560,7 +12102,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:push_button"
-			(at 56.515 69.85 0)
+			(at 44.45 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12569,7 +12111,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/nut-nhan-d5-cao-5mm-2-chan-tron-xuyen-lo"
-			(at 55.88 66.04 0)
+			(at 43.815 76.835 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12578,7 +12120,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 56.515 69.85 0)
+			(at 44.45 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12712,7 +12254,7 @@
 	)
 	(symbol
 		(lib_id "power:GND2")
-		(at 51.435 60.96 0)
+		(at 50.8 66.675 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12721,7 +12263,7 @@
 		(fields_autoplaced yes)
 		(uuid "5af714c0-1166-4694-a080-112fa2d542fb")
 		(property "Reference" "#PWR06"
-			(at 51.435 67.31 0)
+			(at 50.8 73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12730,7 +12272,7 @@
 			)
 		)
 		(property "Value" "GND2"
-			(at 51.435 65.405 0)
+			(at 50.8 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12738,7 +12280,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 51.435 60.96 0)
+			(at 50.8 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12747,7 +12289,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 51.435 60.96 0)
+			(at 50.8 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12756,7 +12298,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 51.435 60.96 0)
+			(at 50.8 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12848,7 +12390,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 52.705 76.835 0)
+		(at 40.64 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12857,7 +12399,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f57d7dc-34d5-4979-8812-7be9b0be07c7")
 		(property "Reference" "#PWR010"
-			(at 52.705 83.185 0)
+			(at 40.64 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12866,7 +12408,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 52.705 81.915 0)
+			(at 40.64 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12874,7 +12416,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.705 76.835 0)
+			(at 40.64 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12883,7 +12425,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.705 76.835 0)
+			(at 40.64 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12892,7 +12434,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 52.705 76.835 0)
+			(at 40.64 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13112,7 +12654,7 @@
 	)
 	(symbol
 		(lib_id "library_thuan:B1205S-1WR3")
-		(at 46.355 43.815 0)
+		(at 45.72 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13120,7 +12662,7 @@
 		(dnp no)
 		(uuid "68001c85-5620-4ee8-b437-be2514b2c356")
 		(property "Reference" "B1"
-			(at 42.545 42.545 0)
+			(at 41.91 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13129,7 +12671,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 46.355 43.815 0)
+			(at 45.72 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13137,7 +12679,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:B1205S-1WR3_12_5V"
-			(at 46.355 43.815 0)
+			(at 45.72 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13146,7 +12688,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/b1205s-1wr3-chuyen-doi-dc-dc-vao-12v-ra-5v-1w"
-			(at 46.355 43.815 0)
+			(at 45.72 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13155,7 +12697,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 46.355 43.815 0)
+			(at 45.72 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13324,7 +12866,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 85.09 85.725 0)
+		(at 73.025 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13333,7 +12875,7 @@
 		(fields_autoplaced yes)
 		(uuid "69976ba1-9d14-44b0-a634-711a2de40f5f")
 		(property "Reference" "#PWR015"
-			(at 85.09 89.535 0)
+			(at 73.025 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13342,7 +12884,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 85.09 81.28 0)
+			(at 73.025 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13350,7 +12892,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 85.725 0)
+			(at 73.025 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13359,7 +12901,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 85.725 0)
+			(at 73.025 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13368,7 +12910,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 85.725 0)
+			(at 73.025 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13390,7 +12932,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 51.435 57.15 0)
+		(at 50.8 62.865 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13399,7 +12941,7 @@
 		(fields_autoplaced yes)
 		(uuid "6ac29b91-71e5-4858-a921-01517e7482c0")
 		(property "Reference" "C7"
-			(at 54.61 55.245 0)
+			(at 53.975 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13408,7 +12950,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 54.61 57.785 0)
+			(at 53.975 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13417,7 +12959,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:CAP_10uF"
-			(at 51.435 57.15 0)
+			(at 50.8 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13426,7 +12968,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/tu-hoa-10uf-16v-4x7mm-xuyen-lo"
-			(at 51.435 57.15 0)
+			(at 50.8 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13435,7 +12977,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 51.435 57.15 0)
+			(at 50.8 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13596,7 +13138,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 83.185 77.47 0)
+		(at 71.12 88.265 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13605,7 +13147,7 @@
 		(fields_autoplaced yes)
 		(uuid "7011aa18-7ff4-448e-ac95-84671d5a89d0")
 		(property "Reference" "#PWR014"
-			(at 83.185 83.82 0)
+			(at 71.12 94.615 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13614,7 +13156,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 83.185 82.55 0)
+			(at 71.12 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13622,7 +13164,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.185 77.47 0)
+			(at 71.12 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13631,7 +13173,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.185 77.47 0)
+			(at 71.12 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13640,7 +13182,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.185 77.47 0)
+			(at 71.12 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13662,7 +13204,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 114.3 31.115 90)
+		(at 102.87 30.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13671,7 +13213,7 @@
 		(fields_autoplaced yes)
 		(uuid "70e28ea4-80fc-4025-981c-6e4a76f7fb5c")
 		(property "Reference" "R4"
-			(at 114.3 24.765 90)
+			(at 102.87 24.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13679,7 +13221,7 @@
 			)
 		)
 		(property "Value" "1kohm"
-			(at 114.3 27.305 90)
+			(at 102.87 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13687,7 +13229,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:RES_DEFAULT"
-			(at 114.3 32.893 90)
+			(at 102.87 32.258 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13696,7 +13238,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/dien-tro-1-kohm-1-4w-5-4-vong-mau"
-			(at 114.3 31.115 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13705,7 +13247,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 114.3 31.115 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13809,75 +13351,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 41.91 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "735917d3-530b-4b2a-8524-20a2b28bd6ad")
-		(property "Reference" "R3"
-			(at 39.37 38.735 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100ohm"
-			(at 41.275 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "library_thuan_footprint:RES_1ohm_1w"
-			(at 41.91 36.068 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.thegioiic.com/dien-tro-1-ohm-1w-5-4-vong-mau"
-			(at 41.91 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 41.91 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cd324b72-d4c3-4365-9d21-c3368ec580dd")
-		)
-		(pin "2"
-			(uuid "1d69cff6-634c-4501-a80f-5d6992c15776")
-		)
-		(instances
-			(project "MACH_THUC"
-				(path "/fa9b692b-a58b-4246-a447-a74a2194b64e"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5P")
-		(at 53.975 52.705 0)
+		(at 53.34 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13886,7 +13361,7 @@
 		(fields_autoplaced yes)
 		(uuid "7425b45e-23c2-42ca-9ba7-1a1b4faab9f2")
 		(property "Reference" "#PWR05"
-			(at 53.975 56.515 0)
+			(at 53.34 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13895,7 +13370,7 @@
 			)
 		)
 		(property "Value" "+5P"
-			(at 53.975 47.625 0)
+			(at 53.34 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13903,7 +13378,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.975 52.705 0)
+			(at 53.34 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13912,7 +13387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.975 52.705 0)
+			(at 53.34 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13921,7 +13396,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.975 52.705 0)
+			(at 53.34 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14080,7 +13555,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 56.515 34.925 0)
+		(at 45.085 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14089,7 +13564,7 @@
 		(fields_autoplaced yes)
 		(uuid "77278ac1-e8e3-4ada-9f60-16248f6e0169")
 		(property "Reference" "C2"
-			(at 60.325 33.655 0)
+			(at 48.895 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14098,7 +13573,7 @@
 			)
 		)
 		(property "Value" "104"
-			(at 60.325 36.195 0)
+			(at 48.895 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14107,7 +13582,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:CAP_104"
-			(at 57.4802 38.735 0)
+			(at 46.0502 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14116,7 +13591,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/tu-gom-tron-100nf-0-1uf-50v"
-			(at 56.515 34.925 0)
+			(at 45.085 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14125,7 +13600,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 56.515 34.925 0)
+			(at 45.085 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14285,7 +13760,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 41.91 81.28 0)
+		(at 29.845 92.075 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14294,7 +13769,7 @@
 		(fields_autoplaced yes)
 		(uuid "801042d5-d484-4556-9dc4-89087308dcaa")
 		(property "Reference" "R6"
-			(at 43.815 80.01 0)
+			(at 31.75 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14303,7 +13778,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 43.815 82.55 0)
+			(at 31.75 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14312,7 +13787,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:RES_DEFAULT"
-			(at 40.132 81.28 90)
+			(at 28.067 92.075 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14321,7 +13796,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/dien-tro-10-kohm-1-4w-1-5-vong-mau"
-			(at 41.91 81.28 0)
+			(at 29.845 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14330,7 +13805,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 41.91 81.28 0)
+			(at 29.845 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14552,7 +14027,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 81.915 0)
+		(at 75.565 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14561,7 +14036,7 @@
 		(fields_autoplaced yes)
 		(uuid "89c86827-061b-4823-b80a-15e337144f7c")
 		(property "Reference" "R9"
-			(at 89.535 80.645 0)
+			(at 77.47 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14570,7 +14045,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 89.535 83.185 0)
+			(at 77.47 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14579,7 +14054,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:RES_DEFAULT"
-			(at 85.852 81.915 90)
+			(at 73.787 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14588,7 +14063,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/dien-tro-10-kohm-1-4w-1-5-vong-mau"
-			(at 87.63 81.915 0)
+			(at 75.565 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14597,7 +14072,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 87.63 81.915 0)
+			(at 75.565 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14878,7 +14353,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 82.55 22.225 0)
+		(at 71.12 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14887,7 +14362,7 @@
 		(fields_autoplaced yes)
 		(uuid "917f27a4-a142-47b8-8b1f-a19bbca52137")
 		(property "Reference" "D1"
-			(at 82.55 15.875 0)
+			(at 71.12 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14895,7 +14370,7 @@
 			)
 		)
 		(property "Value" "1N4007"
-			(at 82.55 18.415 0)
+			(at 71.12 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14903,7 +14378,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:1N4007"
-			(at 82.55 22.225 0)
+			(at 71.12 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14912,7 +14387,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/1n4007-diode-chinh-luu-1a-1kv"
-			(at 82.55 22.225 0)
+			(at 71.12 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14921,7 +14396,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 82.55 22.225 0)
+			(at 71.12 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14930,7 +14405,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 82.55 22.225 0)
+			(at 71.12 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14939,7 +14414,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 82.55 22.225 0)
+			(at 71.12 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14964,7 +14439,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 27.305 81.28 0)
+		(at 240.665 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14973,7 +14448,7 @@
 		(fields_autoplaced yes)
 		(uuid "944fa57e-934d-401b-89f6-38b656d2b00a")
 		(property "Reference" "R5"
-			(at 29.21 80.01 0)
+			(at 242.57 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14982,7 +14457,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 29.21 82.55 0)
+			(at 242.57 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14991,7 +14466,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:RES_DEFAULT"
-			(at 25.527 81.28 90)
+			(at 238.887 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15000,7 +14475,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/dien-tro-10-kohm-1-4w-1-5-vong-mau"
-			(at 27.305 81.28 0)
+			(at 240.665 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15009,7 +14484,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 27.305 81.28 0)
+			(at 240.665 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15174,7 +14649,7 @@
 	)
 	(symbol
 		(lib_id "library_thuan:push_button")
-		(at 19.05 69.85 0)
+		(at 232.41 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15183,7 +14658,7 @@
 		(fields_autoplaced yes)
 		(uuid "9a56a235-ed64-4dbb-8044-a1feb4875544")
 		(property "Reference" "PB1"
-			(at 21.59 72.4444 0)
+			(at 234.95 36.8844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15192,7 +14667,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 19.05 69.85 0)
+			(at 232.41 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15200,7 +14675,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:push_button"
-			(at 19.05 69.85 0)
+			(at 232.41 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15209,7 +14684,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/nut-nhan-d5-cao-5mm-2-chan-tron-xuyen-lo"
-			(at 18.415 66.04 0)
+			(at 231.775 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15218,7 +14693,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 19.05 69.85 0)
+			(at 232.41 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15243,7 +14718,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 13.97 77.47 0)
+		(at 227.33 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15252,7 +14727,7 @@
 		(fields_autoplaced yes)
 		(uuid "9bf0269a-ef67-4131-853b-a394325b3415")
 		(property "Reference" "#PWR07"
-			(at 13.97 83.82 0)
+			(at 227.33 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15261,7 +14736,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 13.97 82.55 0)
+			(at 227.33 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15269,7 +14744,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 13.97 77.47 0)
+			(at 227.33 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15278,7 +14753,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 13.97 77.47 0)
+			(at 227.33 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15287,7 +14762,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 13.97 77.47 0)
+			(at 227.33 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15377,7 +14852,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 93.98 34.925 0)
+		(at 82.55 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15386,7 +14861,7 @@
 		(fields_autoplaced yes)
 		(uuid "a31471f1-ff6a-40d5-befd-6faeaccce97f")
 		(property "Reference" "C3"
-			(at 97.79 33.655 0)
+			(at 86.36 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15395,7 +14870,7 @@
 			)
 		)
 		(property "Value" "104"
-			(at 97.79 36.195 0)
+			(at 86.36 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15404,7 +14879,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:CAP_104"
-			(at 94.9452 38.735 0)
+			(at 83.5152 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15413,7 +14888,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/tu-gom-tron-100nf-0-1uf-50v"
-			(at 93.98 34.925 0)
+			(at 82.55 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15422,7 +14897,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 34.925 0)
+			(at 82.55 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15517,7 +14992,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 66.04 41.275 0)
+		(at 54.61 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15526,7 +15001,7 @@
 		(fields_autoplaced yes)
 		(uuid "b648d4d6-b912-45eb-90ee-1cf731bd38bb")
 		(property "Reference" "#PWR01"
-			(at 66.04 47.625 0)
+			(at 54.61 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15535,7 +15010,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 66.04 46.355 0)
+			(at 54.61 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15543,7 +15018,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 41.275 0)
+			(at 54.61 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15552,7 +15027,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 41.275 0)
+			(at 54.61 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15561,7 +15036,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 41.275 0)
+			(at 54.61 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15850,7 +15325,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 69.85 85.725 0)
+		(at 57.785 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15859,7 +15334,7 @@
 		(fields_autoplaced yes)
 		(uuid "c07d4b00-cd18-4822-899c-d31f4ed39e84")
 		(property "Reference" "#PWR013"
-			(at 69.85 89.535 0)
+			(at 57.785 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15868,7 +15343,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 69.85 81.28 0)
+			(at 57.785 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15876,7 +15351,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 85.725 0)
+			(at 57.785 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15885,7 +15360,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 85.725 0)
+			(at 57.785 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15894,7 +15369,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 69.85 85.725 0)
+			(at 57.785 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15981,76 +15456,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 49.53 31.115 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c616cebb-bc94-48b1-a954-500f1240e117")
-		(property "Reference" "R2"
-			(at 49.53 25.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100ohm"
-			(at 49.53 27.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "library_thuan_footprint:RES_1ohm_1w"
-			(at 49.53 32.893 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.thegioiic.com/dien-tro-1-ohm-1w-5-4-vong-mau"
-			(at 49.53 31.115 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 49.53 31.115 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b78c8afb-1bec-4ad2-82c2-af498b0c65a6")
-		)
-		(pin "2"
-			(uuid "60ec0c5a-047b-4677-8f4e-f309fd4eed51")
-		)
-		(instances
-			(project "MACH_THUC"
-				(path "/fa9b692b-a58b-4246-a447-a74a2194b64e"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
-		(at 39.37 85.09 0)
+		(at 27.305 95.885 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16059,7 +15466,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6cd1d7e-b305-4632-9323-6f8b6d1d2d4b")
 		(property "Reference" "#PWR09"
-			(at 39.37 88.9 0)
+			(at 27.305 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16068,7 +15475,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 39.37 80.645 0)
+			(at 27.305 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16076,7 +15483,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 85.09 0)
+			(at 27.305 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16085,7 +15492,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 85.09 0)
+			(at 27.305 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16094,7 +15501,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 85.09 0)
+			(at 27.305 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16116,7 +15523,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 67.945 77.47 0)
+		(at 55.88 88.265 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16125,7 +15532,7 @@
 		(fields_autoplaced yes)
 		(uuid "c84aab36-0a15-491c-bc18-d99624bd20b3")
 		(property "Reference" "#PWR012"
-			(at 67.945 83.82 0)
+			(at 55.88 94.615 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16134,7 +15541,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 67.945 82.55 0)
+			(at 55.88 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16142,7 +15549,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.945 77.47 0)
+			(at 55.88 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16151,7 +15558,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.945 77.47 0)
+			(at 55.88 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16160,7 +15567,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.945 77.47 0)
+			(at 55.88 88.265 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16182,7 +15589,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 104.14 34.925 0)
+		(at 92.71 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16191,7 +15598,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc1b2656-d901-4206-994d-950d4f4f045d")
 		(property "Reference" "C5"
-			(at 107.315 33.02 0)
+			(at 95.885 32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16200,7 +15607,7 @@
 			)
 		)
 		(property "Value" "470uF"
-			(at 107.315 35.56 0)
+			(at 95.885 34.925 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16209,7 +15616,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:CAP_470uF"
-			(at 104.14 34.925 0)
+			(at 92.71 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16218,7 +15625,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/tu-hoa-470uf-25v-8x12mm-xuyen-lo"
-			(at 104.14 34.925 0)
+			(at 92.71 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16227,7 +15634,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 104.14 34.925 0)
+			(at 92.71 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16389,7 +15796,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_US")
-		(at 38.1 57.15 0)
+		(at 37.465 62.865 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16398,7 +15805,7 @@
 		(fields_autoplaced yes)
 		(uuid "d02c165e-1271-4c28-adef-a7fe464b1db2")
 		(property "Reference" "C6"
-			(at 41.91 55.245 0)
+			(at 41.275 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16407,7 +15814,7 @@
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 41.91 57.785 0)
+			(at 41.275 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16416,7 +15823,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:CAP_2.2uF"
-			(at 38.1 57.15 0)
+			(at 37.465 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16425,7 +15832,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/tu-hoa-2-2uf-50v-4x7mm-xuyen-lo"
-			(at 38.1 57.15 0)
+			(at 37.465 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16434,7 +15841,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 57.15 0)
+			(at 37.465 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16527,7 +15934,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 19.685 80.645 270)
+		(at 233.045 45.085 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16536,7 +15943,7 @@
 		(dnp no)
 		(uuid "db04c6e9-f0b1-4eb8-aa01-6abd8669ffcb")
 		(property "Reference" "C10"
-			(at 19.685 88.265 90)
+			(at 233.045 52.705 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16544,7 +15951,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 19.685 85.725 90)
+			(at 233.045 50.165 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16552,7 +15959,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:CAP_104"
-			(at 15.875 79.6798 0)
+			(at 229.235 44.1198 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16561,7 +15968,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/tu-gom-tron-100nf-0-1uf-50v"
-			(at 19.685 80.645 0)
+			(at 233.045 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16570,7 +15977,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 19.685 80.645 0)
+			(at 233.045 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16802,7 +16209,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 54.61 85.09 0)
+		(at 42.545 95.885 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16811,7 +16218,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3befea1-e02e-400a-8cb9-b3352fe4524c")
 		(property "Reference" "#PWR011"
-			(at 54.61 88.9 0)
+			(at 42.545 99.695 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16820,7 +16227,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 54.61 80.645 0)
+			(at 42.545 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16828,7 +16235,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 85.09 0)
+			(at 42.545 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16837,7 +16244,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 85.09 0)
+			(at 42.545 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16846,7 +16253,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 54.61 85.09 0)
+			(at 42.545 95.885 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17015,7 +16422,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 38.1 60.96 0)
+		(at 37.465 66.675 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17024,7 +16431,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee937aa8-50e3-4a00-b9af-3dbfdbe56b4a")
 		(property "Reference" "#PWR03"
-			(at 38.1 67.31 0)
+			(at 37.465 73.025 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17033,7 +16440,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 38.1 66.04 0)
+			(at 37.465 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17041,7 +16448,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 60.96 0)
+			(at 37.465 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17050,7 +16457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 60.96 0)
+			(at 37.465 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17059,7 +16466,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 60.96 0)
+			(at 37.465 66.675 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17081,7 +16488,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 37.465 76.835 0)
+		(at 25.4 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17090,7 +16497,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1a97cb8-73f4-419f-ac7f-625f4bb371b8")
 		(property "Reference" "#PWR08"
-			(at 37.465 83.185 0)
+			(at 25.4 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17099,7 +16506,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 37.465 81.915 0)
+			(at 25.4 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17107,7 +16514,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 37.465 76.835 0)
+			(at 25.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17116,7 +16523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 37.465 76.835 0)
+			(at 25.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17125,7 +16532,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 37.465 76.835 0)
+			(at 25.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17147,7 +16554,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 24.765 85.09 0)
+		(at 238.125 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17156,7 +16563,7 @@
 		(fields_autoplaced yes)
 		(uuid "f2500a3e-2d50-4a38-8078-e6d813650bd9")
 		(property "Reference" "#PWR04"
-			(at 24.765 88.9 0)
+			(at 238.125 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17165,7 +16572,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 24.765 80.645 0)
+			(at 238.125 45.085 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17173,7 +16580,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.765 85.09 0)
+			(at 238.125 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17182,7 +16589,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.765 85.09 0)
+			(at 238.125 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17191,7 +16598,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 24.765 85.09 0)
+			(at 238.125 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17213,7 +16620,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 57.15 81.28 0)
+		(at 45.085 92.075 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17222,7 +16629,7 @@
 		(fields_autoplaced yes)
 		(uuid "f269fc66-3a60-4257-9b76-f39fa58ce47a")
 		(property "Reference" "R7"
-			(at 59.055 80.01 0)
+			(at 46.99 90.805 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17231,7 +16638,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 59.055 82.55 0)
+			(at 46.99 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17240,7 +16647,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:RES_DEFAULT"
-			(at 55.372 81.28 90)
+			(at 43.307 92.075 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17249,7 +16656,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/dien-tro-10-kohm-1-4w-1-5-vong-mau"
-			(at 57.15 81.28 0)
+			(at 45.085 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17258,7 +16665,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 81.28 0)
+			(at 45.085 92.075 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17439,7 +16846,7 @@
 	)
 	(symbol
 		(lib_id "library_thuan:push_button")
-		(at 71.755 70.485 0)
+		(at 59.69 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17448,7 +16855,7 @@
 		(fields_autoplaced yes)
 		(uuid "f504242c-760e-4d35-88ba-6aef125970d1")
 		(property "Reference" "PB4"
-			(at 74.295 73.0794 0)
+			(at 62.23 83.8744 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17457,7 +16864,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 71.755 70.485 0)
+			(at 59.69 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17465,7 +16872,7 @@
 			)
 		)
 		(property "Footprint" "library_thuan_footprint:push_button"
-			(at 71.755 70.485 0)
+			(at 59.69 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17474,7 +16881,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.thegioiic.com/nut-nhan-d5-cao-5mm-2-chan-tron-xuyen-lo"
-			(at 71.12 66.675 0)
+			(at 59.055 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17483,7 +16890,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.755 70.485 0)
+			(at 59.69 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17574,7 +16981,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 120.015 29.21 0)
+		(at 92.71 29.845 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17583,7 +16990,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc9d370d-0cba-45a6-a0a9-b7287ef40f48")
 		(property "Reference" "#PWR02"
-			(at 120.015 33.02 0)
+			(at 92.71 33.655 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17592,7 +16999,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 120.015 24.765 0)
+			(at 92.71 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17600,7 +17007,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.015 29.21 0)
+			(at 92.71 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17609,7 +17016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.015 29.21 0)
+			(at 92.71 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17618,7 +17025,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.015 29.21 0)
+			(at 92.71 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)

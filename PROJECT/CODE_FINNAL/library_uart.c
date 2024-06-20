@@ -39,7 +39,10 @@ usi8 decToBcd(usi8 val) {
 }
 
 void send_ok(){
-   printf("ss:ok");
+   output_bit(ledTest,1);
+   delay_ms(100);
+   output_bit(ledTest,0);
+   printf("ss:ok\r\n");
 }
 
 void handle_uart(){
@@ -68,7 +71,8 @@ void handle_uart(){
 //!      Header for controling servo manual
 //!      frame "cs:1" -> servo on    
 //!      frame "cs:0" -> servo off
-         flag_servo = receivedString[3] - '0';
+//!         flag_servo = receivedString[3] - '0';
+         flag_servo = 1;
          send_ok();
       }
    }  

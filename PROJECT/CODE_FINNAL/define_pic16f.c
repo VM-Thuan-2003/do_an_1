@@ -1,6 +1,5 @@
 //! config mode to operation of pic16f877a
 #include <16f877a.h>
-#device  adc=10
 #fuses   hs, nowdt, put, noprotect, nolvp
 #use     delay(clock=20MHz) 
 #use     i2c(master,slow,sda=pin_c4,scl=pin_c3)
@@ -23,6 +22,8 @@
 //! define variables
 bool flag_10ms = false;
 bool flag_10s = false;
+bool flag_13s = false;
+bool flag_16s = false;
 bool isDs18b20 = false;
 
 usi8 limitTemperature = 25;
@@ -96,7 +97,7 @@ usi16 tt;
 #int_timer1
 void interrupt_timer1()
 {
-   set_timer1(59286);
+   set_timer1(59285);
    
    flag_10ms = !flag_10ms;
 
@@ -107,12 +108,18 @@ void interrupt_timer1()
       bdn++;
       tick_10ms = 0;
       
-      if(tick_100ms < 100) tick_100ms++;
-      else{
-         tick_100ms = 0;
+      if(tick_100ms < 200) tick_100ms++;
+      else tick_100ms = 0;
+      
+      if (tick_100ms == 100 || tick_100ms == 200){
          flag_10s = true;
       }
-      
+      if (tick_100ms == 130){
+         flag_13s = true;
+      }
+      if (tick_100ms == 160){
+         flag_16s = true;
+      }
 //! disable flag servo on --> flag_servo >> false
       if(flag_servo == true){
          if(count_servo < 100) count_servo++; // 10s
@@ -134,7 +141,6 @@ void setup_initialize(){
    enable_interrupts(global);
    enable_interrupts(int_timer1);
    enable_interrupts(int_rda);
-
 
 //! setup mode for all gpio of pic16f877a
    set_tris_a(0xff);

@@ -1,8 +1,8 @@
 #include <ESP8266Firebase.h>
 #include <ESP8266WiFi.h>
 
-#define _SSID "H04_L1_2.4G"          // Your WiFi SSID
-#define _PASSWORD "happymk01"      // Your WiFi Password
+#define _SSID "Benjamin Albert"          // Your WiFi SSID
+#define _PASSWORD "11111111"      // Your WiFi Password
 #define REFERENCE_URL "https://da-1-15997-default-rtdb.europe-west1.firebasedatabase.app/"  // Your Firebase project reference url
 
 Firebase firebase(REFERENCE_URL);
@@ -58,18 +58,18 @@ void loop() {
 
   if(espSerial.available()){
     String input = espSerial.readStringUntil('\r\n');
-    // Serial.print(input);
+    Serial.println(input);
     const char *data = input.c_str();
     if(data[0] == 'd' && data[1] == 't' && data[2] == ':'){
       if(data[3] == 'r' && data[4] == 't' && data[5] == ':'){
         int dt_ng = (data[6] - '0') * 10 + (data[7] - '0');
         firebase.setInt("data/temperature/realtime", dt_ng);
-        Serial.println("temprature real");
+        Serial.println("pic temprature real");
       }
       else if(data[3] == 'l' && data[4] == 't' && data[5] == ':'){
         int lt_ng = (data[6] - '0') * 10 + (data[7] - '0');
         firebase.setInt("data/temperature/limit", lt_ng);
-        Serial.println("temprature limit");
+        Serial.println("pic temprature limit");
       }
       else if(data[3] == 'r' && data[4] == 'a' && data[5] == ':'){
         String dt_alarm = input.substring(6, input.length());
@@ -80,37 +80,38 @@ void loop() {
         firebase.setInt("data/alarm/eat/hh", intParts[0]);
         firebase.setInt("data/alarm/eat/pp", intParts[1]);
         firebase.setInt("data/alarm/eat/ss", intParts[2]);
-        Serial.println("alarm eat");
+        Serial.println("pic alarm eat");
       }
     }
   }
-
+  espSerial.flush(); 
   time_curr = millis();
 
-  if(time_curr - time_prev >= 2000){
+  if(time_curr - time_prev >= 10000){
     time_prev = time_curr;
     
     String data1 = firebase.getString("set/temperture/limit");
-    Serial.print(data1);
+    Serial.print("firebase ");
+    Serial.println(data1);
     espSerial.print( "st:" + data1 + '\r');
     espSerial.print( "st:" + data1 + '\r');
 
     String data2 = firebase.getString("set/alarm/eat/hh");
     String data3 = firebase.getString("set/alarm/eat/pp");
     String data4 = firebase.getString("set/alarm/eat/ss");
+    Serial.print("firebase ");
     Serial.print(data2); Serial.print(" - ");
     Serial.print(data3); Serial.print(" - ");
-    Serial.print(data4);
+    Serial.print(data4); Serial.println(" ");
     espSerial.print( "sa:gpg:" + data2 + "-" + data3 + "-" + data4 + '\r');
     espSerial.print( "sa:gpg:" + data2 + "-" + data3 + "-" + data4 + '\r');
 
     int data5 = firebase.getInt("control/servo/eat");
     if(data5 == 1){
-      Serial.print("control servo for eat fish");
+      Serial.println("firebase control servo for eat fish");
       
-      espSerial.print( "cs:" + data5 + '\r');
-      espSerial.print( "cs:" + data5 + '\r');
-
+      espSerial.println("cs:1");
+ 
       firebase.setInt("control/servo/eat",0);
     }
   }
